@@ -1,0 +1,523 @@
+<div class="mx-auto max-w-6xl px-6 py-10">
+
+    <!-- ===================================================== -->
+    <!-- LOADING -->
+    <!-- ===================================================== -->
+
+    @if (loading()) {
+
+    <div class="py-20 text-center">
+
+        <p class="text-slate-500">
+            Loading course...
+        </p>
+
+    </div>
+
+    }
+
+    <!-- ===================================================== -->
+    <!-- ERROR -->
+    <!-- ===================================================== -->
+
+    @else if (error()) {
+
+    <div class="rounded-xl bg-red-50 p-6 text-red-600">
+
+        {{ error() }}
+
+    </div>
+
+    }
+
+    <!-- ===================================================== -->
+    <!-- COURSE -->
+    <!-- ===================================================== -->
+
+    @else if (course()) {
+
+    <!-- =================================================== -->
+    <!-- COURSE HEADER -->
+    <!-- =================================================== -->
+
+    <div class="mb-10">
+
+        <p class="text-sm font-medium text-primary-600">
+            {{ course()!.category }}
+        </p>
+
+        <h1 class="mt-2 font-display text-4xl font-bold text-slate-900">
+            {{ course()!.title }}
+        </h1>
+
+        <p class="mt-4 max-w-3xl text-slate-500">
+            {{ course()!.description }}
+        </p>
+
+    </div>
+
+
+    <!-- =================================================== -->
+    <!-- COURSE PROGRESS -->
+    <!-- =================================================== -->
+
+    @if (progress()) {
+
+    <div class="mb-10 rounded-2xl bg-white p-6 shadow-sm">
+
+        <div class="flex items-center justify-between">
+
+            <div>
+
+                <h2 class="font-semibold text-slate-900">
+                    Your Progress
+                </h2>
+
+                <p class="mt-1 text-sm text-slate-500">
+
+                    {{ progress()!.completedLessons }}
+                    /
+                    {{ progress()!.totalLessons }}
+
+                    lessons completed
+
+                </p>
+
+            </div>
+
+
+            <span class="text-2xl font-bold text-primary-600">
+
+                {{ progress()!.progressPercentage }}%
+
+            </span>
+
+        </div>
+
+
+        <!-- Progress bar -->
+
+        <div class="progress-track mt-4">
+
+            <div class="progress-fill" [style.width.%]="
+              progress()!.progressPercentage
+            "></div>
+
+        </div>
+
+
+        <p class="mt-2 text-xs text-slate-500">
+
+            {{ progress()!.status }}
+
+        </p>
+
+
+        <!-- Completed course -->
+
+        @if (isCourseCompleted()) {
+
+        <div class="mt-4 rounded-lg bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-600">
+
+            🎉 You have completed this course!
+
+        </div>
+
+        }
+
+    </div>
+
+    }
+
+
+    <!-- =================================================== -->
+    <!-- MODULES -->
+    <!-- =================================================== -->
+
+    <div class="space-y-6">
+
+        @for (
+        module of modules();
+        track module.id
+        ) {
+
+        <!-- ================================================= -->
+        <!-- MODULE CARD -->
+        <!-- ================================================= -->
+
+        <div class="rounded-2xl bg-white p-6 shadow-sm">
+
+            <!-- MODULE HEADER -->
+
+            <div>
+
+                <div class="flex items-center gap-3">
+
+                    <span
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-primary-50 text-sm font-bold text-primary-600">
+
+                        {{ module.orderIndex }}
+
+                    </span>
+
+
+                    <h2 class="text-xl font-bold text-slate-900">
+
+                        {{ module.title }}
+
+                    </h2>
+
+                </div>
+
+
+                @if (module.description) {
+
+                <p class="mt-3 text-sm text-slate-500">
+
+                    {{ module.description }}
+
+                </p>
+
+                }
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- LESSONS -->
+            <!-- ================================================= -->
+
+            <div class="mt-6 space-y-3">
+
+                @for (
+                lesson of getLessons(module.id);
+                track lesson.id
+                ) {
+
+                <!-- ================================================= -->
+                <!-- LESSON CARD -->
+                <!-- ================================================= -->
+
+                <div class="rounded-xl border border-slate-200 p-4 transition" [class.border-primary-300]="
+                  currentLessonId() === lesson.id
+                " [class.bg-primary-50]="
+                  currentLessonId() === lesson.id
+                ">
+
+                    <!-- ================================================= -->
+                    <!-- LESSON MAIN ROW -->
+                    <!-- ================================================= -->
+
+                    <div class="flex items-center justify-between gap-4">
+
+                        <!-- ================================================= -->
+                        <!-- LESSON INFORMATION -->
+                        <!-- ================================================= -->
+
+                        <div class="flex min-w-0 items-center gap-4">
+
+                            <!-- Lesson Icon -->
+
+                            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full"
+                                [class.bg-emerald-50]="
+                        isLessonCompleted(lesson.id)
+                      " [class.text-emerald-600]="
+                        isLessonCompleted(lesson.id)
+                      " [class.bg-slate-100]="
+                        !isLessonCompleted(lesson.id)
+                      ">
+
+                                @if (
+                                isLessonCompleted(lesson.id)
+                                ) {
+
+                                ✓
+
+                                }
+
+                                @else {
+
+                                ▶
+
+                                }
+
+                            </div>
+
+
+                            <!-- Lesson Details -->
+
+                            <div class="min-w-0">
+
+                                <h3 class="font-medium text-slate-800">
+
+                                    {{ lesson.orderIndex }}.
+                                    {{ lesson.title }}
+
+                                </h3>
+
+
+                                @if (lesson.description) {
+
+                                <p class="mt-1 text-xs text-slate-500">
+
+                                    {{ lesson.description }}
+
+                                </p>
+
+                                }
+
+
+                                @if (lesson.durationMinutes) {
+
+                                <p class="mt-1 text-xs text-slate-400">
+
+                                    {{ lesson.durationMinutes }}
+                                    minutes
+
+                                </p>
+
+                                }
+
+
+                                <!-- Lesson Status -->
+
+                                @if (
+                                isLessonCompleted(lesson.id)
+                                ) {
+
+                                <p class="mt-1 text-xs font-medium text-emerald-600">
+
+                                    Completed
+
+                                </p>
+
+                                }
+
+                                @else if (
+                                isLessonStarted(lesson.id)
+                                ) {
+
+                                <p class="mt-1 text-xs font-medium text-blue-600">
+
+                                    In Progress
+
+                                </p>
+
+                                }
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================================================= -->
+                        <!-- LESSON ACTIONS -->
+                        <!-- ================================================= -->
+
+                        <div class="flex shrink-0 flex-wrap gap-2">
+
+                            <!-- COMPLETED -->
+
+                            @if (
+                            isLessonCompleted(lesson.id)
+                            ) {
+
+                            <span class="rounded-lg bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-600">
+
+                                ✓ Completed
+
+                            </span>
+
+                            }
+
+                            <!-- NOT COMPLETED -->
+
+                            @else {
+
+                            <!-- Start / Continue -->
+
+                            <button type="button" class="btn-secondary" (click)="startLesson(lesson)" [disabled]="
+                          startingLesson() === lesson.id
+                        ">
+
+                                @if (
+                                startingLesson() === lesson.id
+                                ) {
+
+                                Starting...
+
+                                }
+
+                                @else if (
+                                isLessonStarted(lesson.id)
+                                ) {
+
+                                Continue
+
+                                }
+
+                                @else {
+
+                                Start
+
+                                }
+
+                            </button>
+
+
+                            <!-- Complete -->
+
+                            <button type="button" class="btn-primary" (click)="completeLesson(lesson)" [disabled]="
+                          completingLesson() === lesson.id
+                        ">
+
+                                @if (
+                                completingLesson() === lesson.id
+                                ) {
+
+                                Completing...
+
+                                }
+
+                                @else {
+
+                                Complete
+
+                                }
+
+                            </button>
+
+                            }
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================================================= -->
+                    <!-- PREVIOUS / NEXT -->
+                    <!-- ================================================= -->
+
+                    @if (
+                    currentLessonId() === lesson.id
+                    ) {
+
+                    <div class="mt-4 flex items-center justify-between border-t border-slate-100 pt-4">
+
+                        <!-- Previous -->
+
+                        <div>
+
+                            @if (
+                            getPreviousLesson(lesson.id)
+                            ) {
+
+                            <button type="button" class="btn-secondary !px-3 !py-2 text-sm" (click)="
+                            goToPreviousLesson(
+                              lesson.id
+                            )
+                          ">
+
+                                ← Previous
+
+                            </button>
+
+                            }
+
+                        </div>
+
+
+                        <!-- Next -->
+
+                        <div>
+
+                            @if (
+                            getNextLesson(lesson.id)
+                            ) {
+
+                            <button type="button" class="btn-primary !px-3 !py-2 text-sm" (click)="
+                            goToNextLesson(
+                              lesson.id
+                            )
+                          ">
+
+                                Next Lesson →
+
+                            </button>
+
+                            }
+
+                            @else if (
+                            isLessonCompleted(lesson.id)
+                            ) {
+
+                            <span class="rounded-lg bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-600">
+
+                                🎉 Course Completed
+
+                            </span>
+
+                            }
+
+                            <a [routerLink]="[
+    '/courses',
+    course()!.id,
+    'lessons',
+    lesson.id,
+    'quiz'
+  ]" class="btn-secondary">
+                                Take Quiz
+                            </a>
+                        </div>
+
+                    </div>
+
+                    }
+
+                </div>
+
+                }
+
+                <!-- ================================================= -->
+                <!-- NO LESSONS -->
+                <!-- ================================================= -->
+
+                @empty {
+
+                <p class="py-4 text-sm text-slate-400">
+
+                    No lessons available in this module.
+
+                </p>
+
+                }
+
+            </div>
+
+        </div>
+
+        }
+
+        <!-- ================================================= -->
+        <!-- NO MODULES -->
+        <!-- ================================================= -->
+
+        @empty {
+
+        <div class="rounded-xl bg-slate-50 p-8 text-center">
+
+            <p class="text-slate-500">
+
+                No modules have been added to this course yet.
+
+            </p>
+
+        </div>
+
+        }
+
+    </div>
+
+    }
+
+</div>

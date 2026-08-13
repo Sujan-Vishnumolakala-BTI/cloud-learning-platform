@@ -1,0 +1,81 @@
+<section class="relative overflow-hidden bg-slate-950">
+  <div class="absolute inset-0 bg-hero-gradient"></div>
+  <div class="section relative py-20 text-center">
+    <p class="eyebrow text-secondary">Our mission</p>
+    <h1 class="mx-auto mt-3 max-w-2xl font-display text-4xl font-bold text-white sm:text-5xl">
+      Making cloud certification a hands-on habit, not a cram session
+    </h1>
+    <p class="mx-auto mt-5 max-w-xl text-slate-400">
+      CloudPath exists so engineers stop memorizing slides and start building the same infrastructure
+      they'll be paid to run — AWS, Azure, GCP, Docker and Kubernetes, taught by people who deploy for a living.
+    </p>
+  </div>
+</section>
+
+<section class="section py-16">
+  <div class="text-center">
+    <p class="eyebrow">Why choose us</p>
+    <h2 class="mt-2 font-display text-3xl font-bold text-slate-900">Built differently, on purpose</h2>
+  </div>
+
+  <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    @for (v of values; track v.title) {
+      <div class="card p-6">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary-600 to-accent-500 text-white">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path [attr.d]="v.d"/></svg>
+        </div>
+        <h3 class="mt-4 font-display text-base font-semibold text-slate-900">{{ v.title }}</h3>
+        <p class="mt-1.5 text-sm leading-relaxed text-slate-500">{{ v.desc }}</p>
+      </div>
+    }
+  </div>
+</section>
+
+<section class="bg-white py-16">
+  <div class="section grid gap-10 lg:grid-cols-2 lg:items-center">
+    <div>
+      <p class="eyebrow">Cloud learning, made practical</p>
+      <h2 class="mt-2 font-display text-3xl font-bold text-slate-900">Why cloud skills, and why now</h2>
+      <p class="mt-4 text-slate-500 leading-relaxed">
+        Cloud and DevOps roles remain among the fastest-growing in tech, and hiring teams increasingly filter
+        for certifications backed by demonstrable, hands-on experience. CloudPath's labs mirror real
+        production tasks — provisioning infrastructure, containerizing services, and automating
+        deployments — so what you learn transfers directly to the job.
+      </p>
+      <div class="mt-6 grid grid-cols-2 gap-4">
+        <div class="rounded-xl border border-slate-100 bg-slate-50 p-4">
+          <p class="font-display text-2xl font-bold text-primary-600">6</p>
+          <p class="text-xs text-slate-500">Certification tracks</p>
+        </div>
+        <div class="rounded-xl border border-slate-100 bg-slate-50 p-4">
+          <p class="font-display text-2xl font-bold text-accent-500">150+</p>
+          <p class="text-xs text-slate-500">Hands-on labs</p>
+        </div>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80" alt="Engineers collaborating" class="rounded-2xl object-cover shadow-xl" />
+  </div>
+</section>
+
+<section class="section py-16">
+  <div class="text-center">
+    <p class="eyebrow">The project team</p>
+    <h2 class="mt-2 font-display text-3xl font-bold text-slate-900">Meet the people behind CloudPath</h2>
+  </div>
+  <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    @for (m of team; track m.name) {
+      <div class="card p-6 text-center">
+        <img [src]="m.img" [alt]="m.name" class="mx-auto h-20 w-20 rounded-full bg-slate-100" />
+        <h3 class="mt-4 font-display text-sm font-semibold text-slate-900">{{ m.name }}</h3>
+        <p class="mt-1 text-xs text-slate-500">{{ m.role }}</p>
+      </div>
+    }
+  </div>
+</section>
+
+<section class="section pb-20">
+  <div class="rounded-3xl bg-gradient-to-br from-primary-700 to-accent-500 px-8 py-14 text-center">
+    <h2 class="font-display text-3xl font-bold text-white">Have a course idea or partnership in mind?</h2>
+    <a routerLink="/contact" class="btn-secondary mt-6 !bg-white">Get in touch</a>
+  </div>
+</section>

@@ -1,0 +1,273 @@
+<div class="mx-auto max-w-4xl space-y-6">
+
+  <!-- HEADER -->
+
+  <div>
+
+    <button
+      type="button"
+      (click)="back()"
+      class="text-sm text-indigo-600 hover:underline"
+    >
+      ← Back to Courses
+    </button>
+
+    <h1
+      class="mt-4 text-3xl font-bold text-gray-900"
+    >
+      Edit Course
+    </h1>
+
+    <p
+      class="mt-1 text-sm text-gray-500"
+    >
+      Update course information and platform status.
+    </p>
+
+  </div>
+
+
+  <!-- SUCCESS -->
+
+  @if (success()) {
+
+    <div
+      class="rounded-lg bg-green-50 p-4 text-green-700"
+    >
+      {{ success() }}
+    </div>
+
+  }
+
+
+  <!-- ERROR -->
+
+  @if (error()) {
+
+    <div
+      class="rounded-lg bg-red-50 p-4 text-red-700"
+    >
+      {{ error() }}
+    </div>
+
+  }
+
+
+  <!-- LOADING -->
+
+  @if (loading()) {
+
+    <div
+      class="rounded-xl bg-white p-12 text-center shadow"
+    >
+      Loading course...
+    </div>
+
+  }
+
+  @else {
+
+    <div
+      class="rounded-xl bg-white p-8 shadow"
+    >
+
+      <!-- COURSE ID -->
+
+      <div
+        class="mb-6 rounded-lg bg-gray-50 p-4"
+      >
+
+        <div class="text-sm text-gray-500">
+          Course ID
+        </div>
+
+        <div class="mt-1 font-semibold">
+          {{ courseId }}
+        </div>
+
+      </div>
+
+
+      <!-- TITLE -->
+
+      <div class="mb-6">
+
+        <label
+          class="mb-2 block text-sm font-medium text-gray-700"
+        >
+          Course Title
+        </label>
+
+        <input
+          type="text"
+          [(ngModel)]="title"
+          maxlength="255"
+          class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+          placeholder="Enter course title"
+        />
+
+      </div>
+
+
+      <!-- DESCRIPTION -->
+
+      <div class="mb-6">
+
+        <label
+          class="mb-2 block text-sm font-medium text-gray-700"
+        >
+          Description
+        </label>
+
+        <textarea
+          [(ngModel)]="description"
+          maxlength="2000"
+          rows="6"
+          class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+          placeholder="Enter course description"
+        ></textarea>
+
+      </div>
+
+
+      <!-- CATEGORY -->
+
+      <div class="mb-6">
+
+        <label
+          class="mb-2 block text-sm font-medium text-gray-700"
+        >
+          Category
+        </label>
+
+        <input
+          type="text"
+          [(ngModel)]="category"
+          class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+          placeholder="Example: PROGRAMMING"
+        />
+
+      </div>
+
+
+      <!-- STATUS -->
+
+      <div
+        class="grid gap-4 md:grid-cols-2"
+      >
+
+        <!-- ACTIVE -->
+
+        <div
+          class="rounded-lg border p-5"
+        >
+
+          <label
+            class="flex cursor-pointer items-center justify-between"
+          >
+
+            <div>
+
+              <div
+                class="font-semibold text-gray-900"
+              >
+                Course Active
+              </div>
+
+              <div
+                class="mt-1 text-sm text-gray-500"
+              >
+                Inactive courses cannot be published.
+              </div>
+
+            </div>
+
+            <input
+              type="checkbox"
+              [(ngModel)]="active"
+              class="h-5 w-5"
+            />
+
+          </label>
+
+        </div>
+
+
+        <!-- PUBLISHED -->
+
+        <div
+          class="rounded-lg border p-5"
+        >
+
+          <label
+            class="flex cursor-pointer items-center justify-between"
+          >
+
+            <div>
+
+              <div
+                class="font-semibold text-gray-900"
+              >
+                Published
+              </div>
+
+              <div
+                class="mt-1 text-sm text-gray-500"
+              >
+                Published courses are visible to students.
+              </div>
+
+            </div>
+
+            <input
+              type="checkbox"
+              [(ngModel)]="published"
+              [disabled]="!active"
+              class="h-5 w-5"
+            />
+
+          </label>
+
+        </div>
+
+      </div>
+
+
+      <!-- ACTIONS -->
+
+      <div
+        class="mt-8 flex flex-wrap gap-3"
+      >
+
+        <button
+          type="button"
+          (click)="back()"
+          class="rounded-lg border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-700 hover:bg-gray-50"
+        >
+          Cancel
+        </button>
+
+
+        <button
+          type="button"
+          (click)="saveCourse()"
+          [disabled]="saving()"
+          class="rounded-lg bg-indigo-600 px-5 py-3 text-sm font-semibold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+
+          @if (saving()) {
+            Saving...
+          }
+          @else {
+            Save Changes
+          }
+
+        </button>
+
+      </div>
+
+    </div>
+
+  }
+
+</div>

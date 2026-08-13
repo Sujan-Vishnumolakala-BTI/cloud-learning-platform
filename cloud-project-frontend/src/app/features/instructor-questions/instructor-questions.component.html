@@ -1,0 +1,432 @@
+<div class="space-y-6 p-6">
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
+  <div class="flex items-center justify-between">
+
+    <div>
+
+      <button
+        type="button"
+        (click)="back()"
+        class="text-sm text-indigo-600 hover:underline"
+      >
+        ← Back to Quizzes
+      </button>
+
+      <h1
+        class="mt-3 text-3xl font-bold"
+      >
+        Manage Questions
+      </h1>
+
+      <p
+        class="mt-1 text-sm text-gray-500"
+      >
+        Quiz ID: {{ quizId }}
+      </p>
+
+    </div>
+
+
+    <button
+      type="button"
+      (click)="openQuestionForm()"
+      class="rounded-lg bg-indigo-600 px-5 py-3 text-white hover:bg-indigo-700"
+    >
+      + Add Question
+    </button>
+
+  </div>
+
+
+  <!-- =====================================================
+       SUCCESS
+       ===================================================== -->
+
+  @if (successMessage) {
+
+    <div
+      class="rounded-lg bg-green-50 p-4 text-green-700"
+    >
+      {{ successMessage }}
+    </div>
+
+  }
+
+
+  <!-- =====================================================
+       ERROR
+       ===================================================== -->
+
+  @if (errorMessage) {
+
+    <div
+      class="rounded-lg bg-red-50 p-4 text-red-700"
+    >
+      {{ errorMessage }}
+    </div>
+
+  }
+
+
+  <!-- =====================================================
+       QUESTION FORM
+       ===================================================== -->
+
+  @if (showQuestionForm) {
+
+    <div
+      class="rounded-xl bg-white p-6 shadow"
+    >
+
+      <h2
+        class="text-xl font-semibold"
+      >
+        Create Question
+      </h2>
+
+
+      <!-- QUESTION TEXT -->
+
+      <div class="mt-5">
+
+        <label
+          class="mb-2 block text-sm font-medium"
+        >
+          Question
+        </label>
+
+        <textarea
+          [(ngModel)]="questionText"
+          rows="3"
+          placeholder="Enter question..."
+          class="w-full rounded-lg border p-3"
+        ></textarea>
+
+      </div>
+
+
+      <!-- ORDER -->
+
+      <div class="mt-4">
+
+        <label
+          class="mb-2 block text-sm font-medium"
+        >
+          Question Order
+        </label>
+
+        <input
+          type="number"
+          [(ngModel)]="orderIndex"
+          min="1"
+          class="w-full rounded-lg border p-3"
+        />
+
+      </div>
+
+
+      <!-- OPTIONS -->
+
+      <div class="mt-6">
+
+        <div
+          class="flex items-center justify-between"
+        >
+
+          <div>
+
+            <h3
+              class="font-semibold"
+            >
+              Answer Options
+            </h3>
+
+            <p
+              class="mt-1 text-sm text-gray-500"
+            >
+              Select exactly one correct answer.
+            </p>
+
+          </div>
+
+
+          <button
+            type="button"
+            (click)="addOption()"
+            class="text-sm text-indigo-600 hover:underline"
+          >
+            + Add Option
+          </button>
+
+        </div>
+
+
+        <div
+          class="mt-4 space-y-3"
+        >
+
+          @for (
+            option of options;
+            track $index;
+            let i = $index
+          ) {
+
+            <div
+              class="flex items-center gap-3"
+            >
+
+              <!-- CORRECT -->
+
+              <input
+                type="radio"
+                name="correctOption"
+                [checked]="option.correct"
+                (change)="selectCorrectOption(i)"
+              />
+
+
+              <!-- TEXT -->
+
+              <input
+                type="text"
+                [(ngModel)]="option.optionText"
+                [placeholder]="
+                  'Option ' + (i + 1)
+                "
+                class="flex-1 rounded-lg border p-3"
+              />
+
+
+              <!-- REMOVE -->
+
+              <button
+                type="button"
+                (click)="removeOption(i)"
+                [disabled]="options.length <= 2"
+                class="rounded-lg border border-red-200 px-3 py-2 text-red-600 disabled:opacity-40"
+              >
+                Remove
+              </button>
+
+            </div>
+
+          }
+
+        </div>
+
+      </div>
+
+
+      <!-- FORM ACTIONS -->
+
+      <div
+        class="mt-6 flex justify-end gap-3"
+      >
+
+        <button
+          type="button"
+          (click)="cancelQuestionForm()"
+          class="rounded-lg border px-5 py-2"
+        >
+          Cancel
+        </button>
+
+
+        <button
+          type="button"
+          (click)="saveQuestion()"
+          [disabled]="saving"
+          class="rounded-lg bg-indigo-600 px-5 py-2 text-white disabled:opacity-50"
+        >
+
+          {{
+            saving
+              ? 'Saving...'
+              : 'Save Question'
+          }}
+
+        </button>
+
+      </div>
+
+    </div>
+
+  }
+
+
+  <!-- =====================================================
+       LOADING
+       ===================================================== -->
+
+  @if (loading) {
+
+    <div
+      class="rounded-xl bg-white p-12 text-center shadow"
+    >
+      Loading questions...
+    </div>
+
+  }
+
+
+  <!-- =====================================================
+       QUESTION LIST
+       ===================================================== -->
+
+  @else {
+
+    @if (
+      questions.length === 0 &&
+      !showQuestionForm
+    ) {
+
+      <div
+        class="rounded-xl bg-white p-12 text-center shadow"
+      >
+
+        <h2
+          class="text-lg font-semibold"
+        >
+          No questions yet
+        </h2>
+
+        <p
+          class="mt-2 text-gray-500"
+        >
+          Click "Add Question" to create the first question.
+        </p>
+
+      </div>
+
+    }
+
+
+    @else {
+
+      <div
+        class="space-y-4"
+      >
+
+        @for (
+          question of questions;
+          track question.id
+        ) {
+
+          <div
+            class="rounded-xl bg-white p-6 shadow"
+          >
+
+            <!-- QUESTION HEADER -->
+
+            <div
+              class="flex items-start justify-between"
+            >
+
+              <div
+                class="flex items-start gap-3"
+              >
+
+                <span
+                  class="rounded-full bg-indigo-100 px-3 py-1 text-sm text-indigo-700"
+                >
+                  {{ question.orderIndex }}
+                </span>
+
+
+                <div>
+
+                  <h2
+                    class="font-semibold"
+                  >
+                    {{ question.questionText }}
+                  </h2>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- OPTIONS -->
+
+            @if (
+              question.options.length > 0
+            ) {
+
+              <div
+                class="mt-5 space-y-2"
+              >
+
+                @for (
+                  option of question.options;
+                  track option.id
+                ) {
+
+                  <div
+                    class="rounded-lg border p-3"
+                    [class.bg-green-50]="
+                      option.correct
+                    "
+                    [class.border-green-300]="
+                      option.correct
+                    "
+                  >
+
+                    <div
+                      class="flex items-center justify-between"
+                    >
+
+                      <span>
+                        {{ option.optionText }}
+                      </span>
+
+
+                      @if (
+                        option.correct
+                      ) {
+
+                        <span
+                          class="font-semibold text-green-600"
+                        >
+                          ✓ Correct
+                        </span>
+
+                      }
+
+                    </div>
+
+                  </div>
+
+                }
+
+              </div>
+
+            }
+
+
+            @else {
+
+              <p
+                class="mt-4 text-sm text-gray-400"
+              >
+                No options added.
+              </p>
+
+            }
+
+          </div>
+
+        }
+
+      </div>
+
+    }
+
+  }
+
+</div>

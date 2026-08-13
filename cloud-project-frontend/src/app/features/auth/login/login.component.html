@@ -1,0 +1,123 @@
+<section class="grid min-h-[calc(100vh-4rem)] lg:grid-cols-2">
+  <!-- Form side -->
+  <div class="flex items-center justify-center px-6 py-14 sm:px-10">
+    <div class="w-full max-w-sm">
+      <p class="eyebrow">Welcome back</p>
+      <h1 class="mt-2 font-display text-3xl font-bold text-slate-900">Log in to CloudPath</h1>
+      <p class="mt-2 text-sm text-slate-500">
+        New here? <a routerLink="/register" class="font-semibold text-primary-600 hover:underline">Create an account</a>
+      </p>
+
+      @if (errorMessage()) {
+        <div class="mt-5 flex items-start gap-2.5 rounded-xl border border-red-100 bg-red-50 px-4 py-3 text-sm text-red-600">
+          <svg class="mt-0.5 h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01" stroke-linecap="round"/></svg>
+          <span>{{ errorMessage() }}</span>
+        </div>
+      }
+
+      <form [formGroup]="form" (ngSubmit)="submit()" class="mt-6 space-y-5">
+        <div>
+          <label class="field-label" for="email">Email address</label>
+          <input
+            id="email" type="email" formControlName="email" placeholder="you@example.com"
+            class="field-input" [class.field-error]="f.email.invalid && f.email.touched"
+          />
+          @if (f.email.invalid && f.email.touched) {
+            <p class="field-error-text">Enter a valid email address.</p>
+          }
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between">
+            <label class="field-label" for="password">Password</label>
+            <a href="#" class="text-xs font-medium text-primary-600 hover:underline">Forgot password?</a>
+          </div>
+          <div class="relative">
+            <input
+              id="password" [type]="showPassword() ? 'text' : 'password'" formControlName="password" placeholder="••••••••"
+              class="field-input pr-11" [class.field-error]="f.password.invalid && f.password.touched"
+            />
+            <button type="button" (click)="togglePassword()" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600" tabindex="-1">
+              @if (showPassword()) {
+                <svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3l18 18M10.6 10.6a2 2 0 0 0 2.8 2.8M9.9 5.1A9.8 9.8 0 0 1 12 5c5 0 9 4 10 7-.4 1.2-1.2 2.6-2.3 3.8M6.6 6.6C4.5 8 3 10 2 12c1 3 5 7 10 7 1.1 0 2.1-.2 3-.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              } @else {
+                <svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3"/></svg>
+              }
+            </button>
+          </div>
+          @if (f.password.invalid && f.password.touched) {
+            <p class="field-error-text">Password must be at least 6 characters.</p>
+          }
+        </div>
+
+        <div class="flex items-center justify-between">
+          <label class="flex items-center gap-2 text-sm text-slate-600">
+            <input type="checkbox" formControlName="rememberMe" class="h-4 w-4 rounded border-slate-300 text-primary-600 focus:ring-primary-500/30" />
+            Remember me
+          </label>
+        </div>
+
+        <app-recaptcha-placeholder (checkedChange)="onCaptchaChecked($event)" />
+
+        <button type="submit" class="btn-primary w-full" [disabled]="loading()">
+          @if (loading()) {
+            <svg class="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="3" stroke-opacity="0.3"/><path d="M21 12a9 9 0 0 0-9-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            Logging in…
+          } @else {
+            Log in
+          }
+        </button>
+
+        <div class="relative py-2 text-center">
+          <span class="relative bg-white px-3 text-xs font-medium text-slate-400">or continue with</span>
+          <div class="absolute left-0 top-1/2 h-px w-full -translate-y-1/2 bg-slate-100"></div>
+        </div>
+
+        <button type="button" (click)="loginWithGoogle()" class="btn-secondary w-full">
+          <svg class="h-4.5 w-4.5" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.4H12v4.6h6.5c-.3 1.5-1.1 2.8-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8Z"/>
+            <path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.9-3c-1.1.7-2.4 1.1-4 1.1-3.1 0-5.7-2.1-6.6-4.9H1.4v3.1C3.3 21.4 7.3 24 12 24Z"/>
+            <path fill="#FBBC05" d="M5.4 14.3a7.2 7.2 0 0 1 0-4.6V6.6H1.4a12 12 0 0 0 0 10.8l4-3.1Z"/>
+            <path fill="#EA4335" d="M12 4.8c1.7 0 3.3.6 4.5 1.8l3.4-3.4C17.9 1.2 15.2 0 12 0 7.3 0 3.3 2.6 1.4 6.6l4 3.1C6.3 6.9 8.9 4.8 12 4.8Z"/>
+          </svg>
+          Continue with Google
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Banner side -->
+  <div class="relative hidden overflow-hidden bg-slate-950 lg:block">
+    <div class="absolute inset-0 bg-hero-gradient"></div>
+    <div class="absolute inset-0 bg-grid-pattern bg-grid opacity-40"></div>
+    <div class="relative flex h-full flex-col items-start justify-center px-14 py-16">
+      <span class="eyebrow text-secondary">CloudPath for teams &amp; individuals</span>
+      <h2 class="mt-4 max-w-md font-display text-3xl font-bold leading-snug text-white">
+        Learn AWS, Azure, Docker &amp; Kubernetes and become cloud certified.
+      </h2>
+      <ul class="mt-8 space-y-4">
+        @for (item of ['Hands-on labs in real cloud sandboxes', 'Mentor-reviewed capstone projects', 'Certificates recognized by hiring teams']; track item) {
+          <li class="flex items-center gap-3 text-slate-300">
+            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent-500/20 text-accent-500">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            {{ item }}
+          </li>
+        }
+      </ul>
+
+      <div class="glass-dark mt-10 w-full max-w-sm rounded-2xl p-5">
+        <div class="flex items-center gap-3">
+          <img src="https://i.pravatar.cc/64?img=47" class="h-11 w-11 rounded-full" alt="" />
+          <div>
+            <p class="text-sm font-semibold text-white">Ananya Iyer</p>
+            <p class="text-xs text-slate-400">Cloud Engineer, Chennai</p>
+          </div>
+        </div>
+        <p class="mt-3 text-sm leading-relaxed text-slate-300">
+          &ldquo;CloudPath took me from zero to AWS-certified in ten weeks.&rdquo;
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

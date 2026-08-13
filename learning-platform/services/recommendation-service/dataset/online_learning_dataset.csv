@@ -1,0 +1,1801 @@
+student_id,age,python_skill,sql_skill,ml_skill,web_skill,data_interest,ai_interest,web_interest,programming_interest,course_id,course_title,category,difficulty,duration_hours,course_python,course_sql,course_ml,course_web,course_data_science,enrolled,progress,completed,rating,lessons_viewed,time_spent_hours
+S025,29,3,4,3,0,1,1,0,2,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,1,0
+S076,24,0,3,3,2,4,3,3,0,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,1,4.6
+S013,28,1,5,3,3,5,3,1,2,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,26,0,3,4,12
+S002,35,0,4,3,0,0,0,1,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,2,0
+S007,30,0,4,2,5,4,2,4,1,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,1,0
+S082,30,2,1,3,2,2,3,2,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0.7
+S074,25,2,3,0,5,2,1,2,2,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S024,31,1,4,5,5,1,5,2,3,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S015,30,2,1,1,4,3,0,0,0,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,22,0,2,1,1.3
+S020,27,5,4,4,1,1,2,1,4,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,4,0
+S011,25,1,3,3,2,5,5,4,1,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S078,18,2,2,3,3,4,5,5,4,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,1,12,0,4,2,0
+S058,21,4,3,2,5,2,3,4,4,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,1,0
+S055,32,2,2,1,1,0,5,1,3,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,5,0,2,0,7.1
+S098,27,5,4,2,3,4,4,2,3,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,1,19,0,2,0,4.7
+S021,34,0,4,2,3,0,0,2,2,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,0,0,2,0,0
+S053,31,0,1,5,2,3,5,5,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0.6
+S005,28,2,1,1,2,0,0,3,0,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,2,0.5
+S059,21,3,4,1,2,0,5,3,0,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S081,18,0,5,3,1,3,1,0,2,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S055,32,2,2,1,1,0,5,1,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,3.2
+S035,26,3,2,3,5,5,4,5,5,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,33,0,3,1,14.2
+S077,24,3,3,4,5,0,4,3,3,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S057,35,2,0,0,2,1,4,2,0,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,1,3.1
+S052,29,4,3,4,5,1,1,1,1,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,2,0
+S011,25,1,3,3,2,5,5,4,1,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,1
+S042,28,0,0,3,4,4,0,0,4,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,1,24,0,2,3,2.3
+S098,27,5,4,2,3,4,4,2,3,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S098,27,5,4,2,3,4,4,2,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,2,4.1
+S057,35,2,0,0,2,1,4,2,0,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,3
+S082,30,2,1,3,2,2,3,2,3,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,49,0,4,7,18.2
+S043,24,4,2,1,2,0,1,2,2,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,4,0
+S043,24,4,2,1,2,0,1,2,2,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,59,0,5,3,23.1
+S098,27,5,4,2,3,4,4,2,3,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,36,0,3,6,6.8
+S042,28,0,0,3,4,4,0,0,4,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,2,0,2,0,2
+S085,25,1,3,5,0,4,1,3,5,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,66,0,4,11,24
+S080,30,5,1,3,1,4,4,0,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,2.7
+S007,30,0,4,2,5,4,2,4,1,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,1,15,0,3,1,3.3
+S057,35,2,0,0,2,1,4,2,0,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,1,15,0,3,5,2.4
+S091,32,5,1,3,1,5,4,5,2,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,34,0,4,5,1.7
+S012,28,0,1,0,2,3,2,0,1,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0.8
+S060,34,4,5,5,5,5,5,1,2,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,64,0,4,12,24.6
+S066,23,5,0,2,4,5,5,4,2,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S061,31,0,5,2,4,2,5,0,5,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,5,0,3,0,2.5
+S077,24,3,3,4,5,0,4,3,3,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,75,0,3,15,34.5
+S036,33,1,1,2,1,0,4,5,4,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S065,28,3,3,3,5,1,4,3,5,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,1,34,0,3,6,15.9
+S076,24,0,3,3,2,4,3,3,0,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,39,0,3,8,10.8
+S058,21,4,3,2,5,2,3,4,4,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,5,0,4,4,4.3
+S059,21,3,4,1,2,0,5,3,0,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,2,0
+S031,30,5,2,0,1,1,1,4,3,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,4,0
+S053,31,0,1,5,2,3,5,5,1,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,1,6.6
+S049,35,5,3,4,0,0,0,5,1,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,21,0,3,2,3.7
+S013,28,1,5,3,3,5,3,1,2,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S002,35,0,4,3,0,0,0,1,1,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,1,0
+S020,27,5,4,4,1,1,2,1,4,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,4,0
+S044,23,3,4,5,2,4,5,4,0,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,2.4
+S043,24,4,2,1,2,0,1,2,2,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,4,0,3,1,5.3
+S081,18,0,5,3,1,3,1,0,2,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0.6
+S070,31,1,1,5,4,3,0,4,1,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,38,0,3,9,7.7
+S030,31,3,5,0,5,5,5,0,0,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,1.6
+S098,27,5,4,2,3,4,4,2,3,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,41,0,3,8,11.3
+S089,21,4,0,2,4,3,5,2,0,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,28,0,2,6,9.3
+S038,23,0,4,0,1,0,4,0,5,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,1,0,0,4,5,1.4
+S073,33,3,2,1,5,2,4,3,5,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,14,0,2,4,2
+S079,25,3,1,2,3,3,0,3,2,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,40,0,3,11,7.5
+S030,31,3,5,0,5,5,5,0,0,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,65,0,3,14,18.7
+S060,34,4,5,5,5,5,5,1,2,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,1,80,0,5,15,25.7
+S045,35,2,5,0,1,2,0,0,5,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S089,21,4,0,2,4,3,5,2,0,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,1
+S050,35,0,2,4,4,1,3,1,0,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,2.5
+S046,35,1,2,2,4,1,5,2,1,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,4.4
+S003,34,4,0,4,1,5,5,5,4,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,5,0,2,9,3.1
+S078,18,2,2,3,3,4,5,5,4,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S037,19,5,2,0,0,4,3,4,4,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,1,0
+S046,35,1,2,2,4,1,5,2,1,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,2,1.4
+S087,27,0,4,0,2,4,5,3,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S018,35,2,5,2,0,2,3,1,3,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S006,29,2,4,2,0,5,3,4,0,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,36,0,3,7,7.1
+S094,28,0,3,2,1,3,1,2,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,1.2
+S096,20,1,5,3,3,4,1,5,3,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,0,0,3,0,0.2
+S068,25,3,4,0,3,3,5,4,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,1.1
+S033,21,0,5,4,0,0,1,1,3,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,48,0,3,12,13.7
+S015,30,2,1,1,4,3,0,0,0,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,5,0,3,0,2.8
+S087,27,0,4,0,2,4,5,3,3,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,1,1.5
+S072,32,4,5,4,3,4,3,1,5,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,11,1.7
+S034,33,3,1,3,0,1,3,0,3,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,3,2.9
+S096,20,1,5,3,3,4,1,5,3,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,1,0
+S082,30,2,1,3,2,2,3,2,3,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,2,0
+S004,31,1,3,4,2,0,1,5,3,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S079,25,3,1,2,3,3,0,3,2,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,6.9
+S060,34,4,5,5,5,5,5,1,2,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,2.1
+S018,35,2,5,2,0,2,3,1,3,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,9,0,4,0,6
+S015,30,2,1,1,4,3,0,0,0,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S050,35,0,2,4,4,1,3,1,0,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,2
+S090,34,5,2,0,3,3,0,3,2,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0.6
+S020,27,5,4,4,1,1,2,1,4,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S079,25,3,1,2,3,3,0,3,2,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,81,0,4,18,22.3
+S028,33,1,4,1,5,4,4,3,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,32,0,3,4,7.4
+S013,28,1,5,3,3,5,3,1,2,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S083,26,0,3,0,5,4,0,2,1,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,1,2.6
+S016,22,5,1,5,3,4,0,3,3,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,0,0,2,0,0
+S007,30,0,4,2,5,4,2,4,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,15,0,3,8,8.7
+S009,26,3,5,2,1,2,2,1,5,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,2.8
+S030,31,3,5,0,5,5,5,0,0,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,6,3.1
+S077,24,3,3,4,5,0,4,3,3,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S017,32,4,2,4,0,5,5,0,5,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,64,0,3,10,26.9
+S017,32,4,2,4,0,5,5,0,5,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,0
+S076,24,0,3,3,2,4,3,3,0,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S017,32,4,2,4,0,5,5,0,5,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,1,0,0,2,0,0
+S061,31,0,5,2,4,2,5,0,5,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,4,0
+S014,22,1,5,4,4,2,5,4,3,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0.4
+S006,29,2,4,2,0,5,3,4,0,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,4,0
+S067,20,1,5,2,1,1,1,0,0,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,3,0
+S008,20,0,5,1,2,0,1,0,3,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,1.4
+S014,22,1,5,4,4,2,5,4,3,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,45,0,2,7,16
+S049,35,5,3,4,0,0,0,5,1,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,4,0
+S078,18,2,2,3,3,4,5,5,4,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,6,0
+S084,20,5,0,0,1,1,0,4,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,1.8
+S028,33,1,4,1,5,4,4,3,1,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,32,0,3,4,9
+S059,21,3,4,1,2,0,5,3,0,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,1,4,0,4,0,3.3
+S041,28,1,2,3,1,5,5,2,3,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,1,0
+S088,24,0,4,5,5,1,0,5,2,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,2,0.9
+S012,28,0,1,0,2,3,2,0,1,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,2,1.9
+S017,32,4,2,4,0,5,5,0,5,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S072,32,4,5,4,3,4,3,1,5,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,65,0,5,14,32.4
+S093,20,2,3,1,3,4,4,5,3,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,3.8
+S046,35,1,2,2,4,1,5,2,1,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,8,0,4,3,2.2
+S029,33,3,1,0,0,5,3,2,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,3.3
+S015,30,2,1,1,4,3,0,0,0,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,29,0,4,8,12.6
+S072,32,4,5,4,3,4,3,1,5,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,2
+S083,26,0,3,0,5,4,0,2,1,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,1
+S089,21,4,0,2,4,3,5,2,0,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0.3
+S098,27,5,4,2,3,4,4,2,3,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,53,0,4,8,22.2
+S019,18,5,5,2,4,1,4,0,5,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,10,0,2,0,5
+S012,28,0,1,0,2,3,2,0,1,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,2,1.9
+S059,21,3,4,1,2,0,5,3,0,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,1,0
+S042,28,0,0,3,4,4,0,0,4,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0.2
+S007,30,0,4,2,5,4,2,4,1,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,2.9
+S087,27,0,4,0,2,4,5,3,3,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S063,35,1,1,3,5,3,5,5,1,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,1.2
+S097,33,3,0,0,2,1,3,5,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S037,19,5,2,0,0,4,3,4,4,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0.7
+S086,26,2,1,4,4,5,5,0,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S077,24,3,3,4,5,0,4,3,3,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S028,33,1,4,1,5,4,4,3,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S023,35,1,1,5,3,4,1,2,4,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,4,2.6
+S065,28,3,3,3,5,1,4,3,5,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S010,26,5,5,5,0,4,5,1,4,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,1,21,0,2,4,3.3
+S074,25,2,3,0,5,2,1,2,2,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,1,4.6
+S015,30,2,1,1,4,3,0,0,0,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,1.2
+S080,30,5,1,3,1,4,4,0,3,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,2,0
+S068,25,3,4,0,3,3,5,4,1,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,11,0,3,2,3.9
+S029,33,3,1,0,0,5,3,2,3,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,56,0,3,14,34.5
+S045,35,2,5,0,1,2,0,0,5,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,6.6
+S019,18,5,5,2,4,1,4,0,5,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,1,0,3,0,0
+S078,18,2,2,3,3,4,5,5,4,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S023,35,1,1,5,3,4,1,2,4,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0.5
+S073,33,3,2,1,5,2,4,3,5,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,1,5.6
+S073,33,3,2,1,5,2,4,3,5,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,2,0
+S081,18,0,5,3,1,3,1,0,2,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,0,0,4,1,0
+S081,18,0,5,3,1,3,1,0,2,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,5,3.5
+S046,35,1,2,2,4,1,5,2,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S005,28,2,1,1,2,0,0,3,0,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,4,0
+S083,26,0,3,0,5,4,0,2,1,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,3,0
+S060,34,4,5,5,5,5,5,1,2,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S006,29,2,4,2,0,5,3,4,0,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S025,29,3,4,3,0,1,1,0,2,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,1,0
+S008,20,0,5,1,2,0,1,0,3,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0.4
+S044,23,3,4,5,2,4,5,4,0,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,1,2.1
+S006,29,2,4,2,0,5,3,4,0,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S068,25,3,4,0,3,3,5,4,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,3,1
+S037,19,5,2,0,0,4,3,4,4,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,4.7
+S009,26,3,5,2,1,2,2,1,5,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,6.2
+S037,19,5,2,0,0,4,3,4,4,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,5,0
+S019,18,5,5,2,4,1,4,0,5,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,4,0
+S085,25,1,3,5,0,4,1,3,5,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,3.2
+S011,25,1,3,3,2,5,5,4,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S043,24,4,2,1,2,0,1,2,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S095,28,2,4,5,2,4,0,4,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,46,0,4,13,16.3
+S066,23,5,0,2,4,5,5,4,2,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,4,0
+S028,33,1,4,1,5,4,4,3,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,16,0,3,3,9.2
+S018,35,2,5,2,0,2,3,1,3,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S013,28,1,5,3,3,5,3,1,2,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S068,25,3,4,0,3,3,5,4,1,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,2,1.1
+S080,30,5,1,3,1,4,4,0,3,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,19,0,3,2,1.6
+S089,21,4,0,2,4,3,5,2,0,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,2.9
+S093,20,2,3,1,3,4,4,5,3,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,1.5
+S093,20,2,3,1,3,4,4,5,3,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S097,33,3,0,0,2,1,3,5,1,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,1,15,0,3,0,0
+S040,20,3,5,4,4,4,2,2,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,29,0,4,11,6.5
+S060,34,4,5,5,5,5,5,1,2,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,16,0,4,3,3.7
+S021,34,0,4,2,3,0,0,2,2,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,15,0,3,4,6.5
+S007,30,0,4,2,5,4,2,4,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S014,22,1,5,4,4,2,5,4,3,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S037,19,5,2,0,0,4,3,4,4,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,2,0,3,4,5.4
+S056,28,2,0,2,2,5,4,3,5,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,29,0,4,7,7.3
+S045,35,2,5,0,1,2,0,0,5,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,9,3.4
+S048,19,0,2,1,5,2,1,5,3,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,18,0,3,0,0
+S004,31,1,3,4,2,0,1,5,3,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,1,0,3,0,0
+S061,31,0,5,2,4,2,5,0,5,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,5,2.6
+S003,34,4,0,4,1,5,5,5,4,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,1,0,4,0,4.7
+S015,30,2,1,1,4,3,0,0,0,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,1,0
+S007,30,0,4,2,5,4,2,4,1,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S077,24,3,3,4,5,0,4,3,3,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,5,0
+S031,30,5,2,0,1,1,1,4,3,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,1,0
+S079,25,3,1,2,3,3,0,3,2,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S086,26,2,1,4,4,5,5,0,1,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0.1
+S009,26,3,5,2,1,2,2,1,5,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.8
+S006,29,2,4,2,0,5,3,4,0,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S096,20,1,5,3,3,4,1,5,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,34,0,3,8,9
+S094,28,0,3,2,1,3,1,2,2,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,2.3
+S095,28,2,4,5,2,4,0,4,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,0,0,3,1,0
+S083,26,0,3,0,5,4,0,2,1,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,1,0
+S090,34,5,2,0,3,3,0,3,2,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S009,26,3,5,2,1,2,2,1,5,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0.8
+S038,23,0,4,0,1,0,4,0,5,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,1.9
+S006,29,2,4,2,0,5,3,4,0,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S070,31,1,1,5,4,3,0,4,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S025,29,3,4,3,0,1,1,0,2,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S056,28,2,0,2,2,5,4,3,5,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,2.5
+S050,35,0,2,4,4,1,3,1,0,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,1.6
+S064,27,3,4,0,2,2,1,3,4,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,4,0
+S011,25,1,3,3,2,5,5,4,1,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,1.7
+S024,31,1,4,5,5,1,5,2,3,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,19,0,3,4,5.8
+S085,25,1,3,5,0,4,1,3,5,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S055,32,2,2,1,1,0,5,1,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,3,0.8
+S036,33,1,1,2,1,0,4,5,4,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,1.2
+S010,26,5,5,5,0,4,5,1,4,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0.9
+S005,28,2,1,1,2,0,0,3,0,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,3,0
+S047,26,4,3,2,0,0,5,3,2,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S048,19,0,2,1,5,2,1,5,3,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,5
+S068,25,3,4,0,3,3,5,4,1,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S032,22,3,1,2,3,1,0,3,4,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,27,0,4,0,12.9
+S072,32,4,5,4,3,4,3,1,5,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,60,0,5,7,30.4
+S028,33,1,4,1,5,4,4,3,1,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,1,0
+S063,35,1,1,3,5,3,5,5,1,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,1,6.8
+S058,21,4,3,2,5,2,3,4,4,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0.7
+S012,28,0,1,0,2,3,2,0,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S086,26,2,1,4,4,5,5,0,1,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,2,0
+S038,23,0,4,0,1,0,4,0,5,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S090,34,5,2,0,3,3,0,3,2,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,1,1
+S029,33,3,1,0,0,5,3,2,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,3,0
+S031,30,5,2,0,1,1,1,4,3,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S048,19,0,2,1,5,2,1,5,3,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,1.1
+S079,25,3,1,2,3,3,0,3,2,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,2,0
+S092,35,3,3,3,5,4,2,2,1,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,1,62,0,5,16,32.2
+S074,25,2,3,0,5,2,1,2,2,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,5,0
+S010,26,5,5,5,0,4,5,1,4,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S017,32,4,2,4,0,5,5,0,5,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,4,2
+S099,35,2,2,5,3,2,2,2,1,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.8
+S008,20,0,5,1,2,0,1,0,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,7.3
+S021,34,0,4,2,3,0,0,2,2,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,32,0,3,6,12.4
+S011,25,1,3,3,2,5,5,4,1,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,1,0.7
+S036,33,1,1,2,1,0,4,5,4,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,1.4
+S012,28,0,1,0,2,3,2,0,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,5,4
+S075,28,4,0,1,1,1,3,5,1,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,4,0
+S078,18,2,2,3,3,4,5,5,4,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S004,31,1,3,4,2,0,1,5,3,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,3.3
+S074,25,2,3,0,5,2,1,2,2,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,4.6
+S054,26,1,5,0,3,0,3,1,1,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S081,18,0,5,3,1,3,1,0,2,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S062,27,4,2,5,3,2,3,5,2,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,2,0.2
+S039,25,3,0,4,1,4,4,0,4,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,0,0,4,0,0
+S054,26,1,5,0,3,0,3,1,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,5,0
+S019,18,5,5,2,4,1,4,0,5,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,19,0,3,3,5.3
+S052,29,4,3,4,5,1,1,1,1,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S014,22,1,5,4,4,2,5,4,3,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,15,0,4,5,10.3
+S032,22,3,1,2,3,1,0,3,4,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,3,0
+S050,35,0,2,4,4,1,3,1,0,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,7.7
+S025,29,3,4,3,0,1,1,0,2,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0.6
+S060,34,4,5,5,5,5,5,1,2,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,69,0,3,12,22.5
+S051,27,2,0,2,1,5,1,5,0,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,34,0,3,5,13.2
+S007,30,0,4,2,5,4,2,4,1,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,4,0
+S014,22,1,5,4,4,2,5,4,3,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,40,0,3,11,5.8
+S098,27,5,4,2,3,4,4,2,3,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S073,33,3,2,1,5,2,4,3,5,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S010,26,5,5,5,0,4,5,1,4,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,5.3
+S036,33,1,1,2,1,0,4,5,4,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,1,24,0,2,8,7
+S051,27,2,0,2,1,5,1,5,0,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S047,26,4,3,2,0,0,5,3,2,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,1,0
+S052,29,4,3,4,5,1,1,1,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,38,0,3,6,16
+S061,31,0,5,2,4,2,5,0,5,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,2,1.3
+S066,23,5,0,2,4,5,5,4,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,3.5
+S021,34,0,4,2,3,0,0,2,2,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,1.8
+S039,25,3,0,4,1,4,4,0,4,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,1,0
+S069,30,3,3,1,1,5,5,0,0,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,51,0,3,6,20.6
+S048,19,0,2,1,5,2,1,5,3,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S075,28,4,0,1,1,1,3,5,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,3,0
+S089,21,4,0,2,4,3,5,2,0,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,33,0,2,2,13.5
+S075,28,4,0,1,1,1,3,5,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,5.1
+S080,30,5,1,3,1,4,4,0,3,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,39,0,3,7,8.1
+S005,28,2,1,1,2,0,0,3,0,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,28,0,2,5,7.5
+S057,35,2,0,0,2,1,4,2,0,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0.5
+S027,19,1,0,0,2,0,4,1,2,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S061,31,0,5,2,4,2,5,0,5,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S067,20,1,5,2,1,1,1,0,0,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,2.2
+S062,27,4,2,5,3,2,3,5,2,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S059,21,3,4,1,2,0,5,3,0,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,1
+S099,35,2,2,5,3,2,2,2,1,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S034,33,3,1,3,0,1,3,0,3,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S036,33,1,1,2,1,0,4,5,4,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,1,0
+S039,25,3,0,4,1,4,4,0,4,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,32,0,4,7,8.8
+S041,28,1,2,3,1,5,5,2,3,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,2,5
+S093,20,2,3,1,3,4,4,5,3,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,3,0
+S070,31,1,1,5,4,3,0,4,1,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,6,0,3,0,1.6
+S099,35,2,2,5,3,2,2,2,1,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,38,0,2,5,15.8
+S045,35,2,5,0,1,2,0,0,5,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S028,33,1,4,1,5,4,4,3,1,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,8,0,3,0,0
+S018,35,2,5,2,0,2,3,1,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,3.2
+S032,22,3,1,2,3,1,0,3,4,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,7.9
+S082,30,2,1,3,2,2,3,2,3,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,1,0.6
+S092,35,3,3,3,5,4,2,2,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,2.1
+S001,21,0,5,2,1,1,1,5,0,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,22,0,4,4,11.6
+S062,27,4,2,5,3,2,3,5,2,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,3.4
+S042,28,0,0,3,4,4,0,0,4,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S012,28,0,1,0,2,3,2,0,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,5,0
+S093,20,2,3,1,3,4,4,5,3,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,79,0,4,17,22
+S005,28,2,1,1,2,0,0,3,0,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,1,31,0,3,9,8.1
+S005,28,2,1,1,2,0,0,3,0,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S043,24,4,2,1,2,0,1,2,2,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S068,25,3,4,0,3,3,5,4,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,52,0,5,10,14.2
+S035,26,3,2,3,5,5,4,5,5,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,52,0,5,12,16.2
+S083,26,0,3,0,5,4,0,2,1,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,51,0,4,12,9
+S038,23,0,4,0,1,0,4,0,5,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,10,0,4,0,2.8
+S055,32,2,2,1,1,0,5,1,3,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0.8
+S013,28,1,5,3,3,5,3,1,2,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,1,21,0,3,0,6.3
+S001,21,0,5,2,1,1,1,5,0,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,2
+S035,26,3,2,3,5,5,4,5,5,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0.1
+S002,35,0,4,3,0,0,0,1,1,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,2,0
+S008,20,0,5,1,2,0,1,0,3,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S052,29,4,3,4,5,1,1,1,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S091,32,5,1,3,1,5,4,5,2,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,24,0,3,3,9.8
+S048,19,0,2,1,5,2,1,5,3,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S062,27,4,2,5,3,2,3,5,2,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,4.3
+S048,19,0,2,1,5,2,1,5,3,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,3.1
+S097,33,3,0,0,2,1,3,5,1,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0.8
+S098,27,5,4,2,3,4,4,2,3,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,2,0.2
+S011,25,1,3,3,2,5,5,4,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,3,0
+S010,26,5,5,5,0,4,5,1,4,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,4,6.9
+S065,28,3,3,3,5,1,4,3,5,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,15,0,3,1,8.6
+S067,20,1,5,2,1,1,1,0,0,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,45,0,4,7,5.5
+S066,23,5,0,2,4,5,5,4,2,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,16,0,4,0,5.5
+S087,27,0,4,0,2,4,5,3,3,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,4.7
+S001,21,0,5,2,1,1,1,5,0,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,1,0,0,4,2,0
+S045,35,2,5,0,1,2,0,0,5,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,2
+S009,26,3,5,2,1,2,2,1,5,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,1.1
+S083,26,0,3,0,5,4,0,2,1,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,7.4
+S058,21,4,3,2,5,2,3,4,4,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S016,22,5,1,5,3,4,0,3,3,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,1,35,0,3,10,9.5
+S094,28,0,3,2,1,3,1,2,2,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S069,30,3,3,1,1,5,5,0,0,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,41,0,3,8,5.7
+S020,27,5,4,4,1,1,2,1,4,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,4,5.4
+S098,27,5,4,2,3,4,4,2,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S079,25,3,1,2,3,3,0,3,2,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,1
+S031,30,5,2,0,1,1,1,4,3,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,1,6
+S058,21,4,3,2,5,2,3,4,4,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0
+S032,22,3,1,2,3,1,0,3,4,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S070,31,1,1,5,4,3,0,4,1,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,5.4
+S018,35,2,5,2,0,2,3,1,3,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,32,0,3,7,14.4
+S074,25,2,3,0,5,2,1,2,2,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,3,7.6
+S031,30,5,2,0,1,1,1,4,3,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S067,20,1,5,2,1,1,1,0,0,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,2
+S072,32,4,5,4,3,4,3,1,5,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,5,1.8
+S081,18,0,5,3,1,3,1,0,2,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,1.8
+S045,35,2,5,0,1,2,0,0,5,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,3,2.5
+S041,28,1,2,3,1,5,5,2,3,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,1,20,0,4,7,9.5
+S024,31,1,4,5,5,1,5,2,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,54,0,4,12,15.7
+S039,25,3,0,4,1,4,4,0,4,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,3.6
+S008,20,0,5,1,2,0,1,0,3,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,1.1
+S068,25,3,4,0,3,3,5,4,1,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,8,0,3,1,5.8
+S012,28,0,1,0,2,3,2,0,1,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,0,0,3,2,1.9
+S049,35,5,3,4,0,0,0,5,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,61,0,3,11,22
+S028,33,1,4,1,5,4,4,3,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0.8
+S039,25,3,0,4,1,4,4,0,4,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,1,22,0,2,4,3.1
+S096,20,1,5,3,3,4,1,5,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,26,0,3,8,4.7
+S051,27,2,0,2,1,5,1,5,0,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S049,35,5,3,4,0,0,0,5,1,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,3,0
+S034,33,3,1,3,0,1,3,0,3,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,1.1
+S013,28,1,5,3,3,5,3,1,2,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,4,0
+S027,19,1,0,0,2,0,4,1,2,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,1,0,0,3,5,0
+S095,28,2,4,5,2,4,0,4,1,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,1.3
+S075,28,4,0,1,1,1,3,5,1,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,9,0,3,0,4.6
+S043,24,4,2,1,2,0,1,2,2,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S064,27,3,4,0,2,2,1,3,4,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,2.6
+S033,21,0,5,4,0,0,1,1,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,1,0
+S083,26,0,3,0,5,4,0,2,1,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,1,48,0,3,6,0.2
+S022,25,0,1,4,0,0,5,3,0,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S070,31,1,1,5,4,3,0,4,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S081,18,0,5,3,1,3,1,0,2,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,1,1,0,3,3,1.2
+S065,28,3,3,3,5,1,4,3,5,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,1,1.7
+S086,26,2,1,4,4,5,5,0,1,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,1,1.9
+S003,34,4,0,4,1,5,5,5,4,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,3,0.6
+S003,34,4,0,4,1,5,5,5,4,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,2,0
+S037,19,5,2,0,0,4,3,4,4,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,4,0
+S056,28,2,0,2,2,5,4,3,5,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,1,50,0,4,9,3.2
+S031,30,5,2,0,1,1,1,4,3,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,21,0,3,2,8.4
+S035,26,3,2,3,5,5,4,5,5,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S059,21,3,4,1,2,0,5,3,0,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S039,25,3,0,4,1,4,4,0,4,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,0,0,2,0,2.3
+S012,28,0,1,0,2,3,2,0,1,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,1.3
+S008,20,0,5,1,2,0,1,0,3,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S064,27,3,4,0,2,2,1,3,4,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,30,0,2,2,13.5
+S089,21,4,0,2,4,3,5,2,0,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,23,0,2,5,0
+S088,24,0,4,5,5,1,0,5,2,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S005,28,2,1,1,2,0,0,3,0,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S027,19,1,0,0,2,0,4,1,2,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,5,1.9
+S051,27,2,0,2,1,5,1,5,0,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,1.7
+S073,33,3,2,1,5,2,4,3,5,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,4,2.8
+S050,35,0,2,4,4,1,3,1,0,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S089,21,4,0,2,4,3,5,2,0,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,2,1.2
+S045,35,2,5,0,1,2,0,0,5,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,1,33,0,2,8,8.1
+S044,23,3,4,5,2,4,5,4,0,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,4
+S051,27,2,0,2,1,5,1,5,0,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,6.2
+S058,21,4,3,2,5,2,3,4,4,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,5.2
+S049,35,5,3,4,0,0,0,5,1,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0
+S049,35,5,3,4,0,0,0,5,1,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,17,0,3,2,5
+S092,35,3,3,3,5,4,2,2,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,33,0,3,4,8.2
+S095,28,2,4,5,2,4,0,4,1,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,58,0,3,16,15.8
+S040,20,3,5,4,4,4,2,2,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,34,0,3,7,6.9
+S012,28,0,1,0,2,3,2,0,1,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S077,24,3,3,4,5,0,4,3,3,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,4.7
+S002,35,0,4,3,0,0,0,1,1,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S093,20,2,3,1,3,4,4,5,3,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,3.1
+S074,25,2,3,0,5,2,1,2,2,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,5,0
+S018,35,2,5,2,0,2,3,1,3,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,3,0
+S009,26,3,5,2,1,2,2,1,5,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,2.7
+S062,27,4,2,5,3,2,3,5,2,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,1,0
+S093,20,2,3,1,3,4,4,5,3,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,4,4.1
+S059,21,3,4,1,2,0,5,3,0,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,0,0,4,1,1.5
+S043,24,4,2,1,2,0,1,2,2,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S057,35,2,0,0,2,1,4,2,0,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,3,1.6
+S089,21,4,0,2,4,3,5,2,0,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,15,0,4,5,0
+S041,28,1,2,3,1,5,5,2,3,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,3,0
+S074,25,2,3,0,5,2,1,2,2,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,16,0,4,0,0.1
+S047,26,4,3,2,0,0,5,3,2,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,62,0,4,10,28.9
+S088,24,0,4,5,5,1,0,5,2,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,1.4
+S060,34,4,5,5,5,5,5,1,2,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S089,21,4,0,2,4,3,5,2,0,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,2,0
+S053,31,0,1,5,2,3,5,5,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S031,30,5,2,0,1,1,1,4,3,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,4,2.6
+S049,35,5,3,4,0,0,0,5,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S075,28,4,0,1,1,1,3,5,1,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,6.2
+S089,21,4,0,2,4,3,5,2,0,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,1,1.3
+S047,26,4,3,2,0,0,5,3,2,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,3,0.7
+S082,30,2,1,3,2,2,3,2,3,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S097,33,3,0,0,2,1,3,5,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,2,0
+S002,35,0,4,3,0,0,0,1,1,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S067,20,1,5,2,1,1,1,0,0,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,2,1
+S058,21,4,3,2,5,2,3,4,4,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,2,0
+S076,24,0,3,3,2,4,3,3,0,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,6,0
+S004,31,1,3,4,2,0,1,5,3,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,3,0
+S011,25,1,3,3,2,5,5,4,1,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,1,0
+S045,35,2,5,0,1,2,0,0,5,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,5.7
+S067,20,1,5,2,1,1,1,0,0,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,18,0,4,4,6.6
+S041,28,1,2,3,1,5,5,2,3,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,1,0.5
+S015,30,2,1,1,4,3,0,0,0,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,1,7.2
+S087,27,0,4,0,2,4,5,3,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0.6
+S067,20,1,5,2,1,1,1,0,0,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,3,3.3
+S055,32,2,2,1,1,0,5,1,3,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,3,1.9
+S024,31,1,4,5,5,1,5,2,3,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,4.9
+S004,31,1,3,4,2,0,1,5,3,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,1,0,0,4,0,0
+S050,35,0,2,4,4,1,3,1,0,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,1,11,0,2,3,3.2
+S074,25,2,3,0,5,2,1,2,2,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,1,4.8
+S047,26,4,3,2,0,0,5,3,2,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,16,0,4,2,8
+S068,25,3,4,0,3,3,5,4,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,3,0
+S051,27,2,0,2,1,5,1,5,0,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,1,2.1
+S059,21,3,4,1,2,0,5,3,0,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,4.1
+S039,25,3,0,4,1,4,4,0,4,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0.4
+S041,28,1,2,3,1,5,5,2,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,26,0,3,5,8.4
+S089,21,4,0,2,4,3,5,2,0,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,4.8
+S018,35,2,5,2,0,2,3,1,3,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,1,0,3,0,0
+S072,32,4,5,4,3,4,3,1,5,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,37,0,3,3,11.6
+S058,21,4,3,2,5,2,3,4,4,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,0
+S002,35,0,4,3,0,0,0,1,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,6,2.9
+S072,32,4,5,4,3,4,3,1,5,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,50,0,5,2,29.4
+S054,26,1,5,0,3,0,3,1,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S011,25,1,3,3,2,5,5,4,1,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,3,7.3
+S038,23,0,4,0,1,0,4,0,5,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,4,1.7
+S022,25,0,1,4,0,0,5,3,0,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,1,2.6
+S099,35,2,2,5,3,2,2,2,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,54,0,3,11,19.2
+S035,26,3,2,3,5,5,4,5,5,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S070,31,1,1,5,4,3,0,4,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S039,25,3,0,4,1,4,4,0,4,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,39,0,2,11,14.5
+S091,32,5,1,3,1,5,4,5,2,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,1,5,0,3,0,2.7
+S027,19,1,0,0,2,0,4,1,2,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0.3
+S069,30,3,3,1,1,5,5,0,0,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,1,0,0,3,0,1
+S087,27,0,4,0,2,4,5,3,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,1.7
+S053,31,0,1,5,2,3,5,5,1,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,4.1
+S017,32,4,2,4,0,5,5,0,5,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,1,30,0,3,4,9.4
+S032,22,3,1,2,3,1,0,3,4,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,1,0.1
+S049,35,5,3,4,0,0,0,5,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S099,35,2,2,5,3,2,2,2,1,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,5,0
+S089,21,4,0,2,4,3,5,2,0,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S075,28,4,0,1,1,1,3,5,1,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,0
+S012,28,0,1,0,2,3,2,0,1,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,3,0
+S090,34,5,2,0,3,3,0,3,2,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S051,27,2,0,2,1,5,1,5,0,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,6,0
+S064,27,3,4,0,2,2,1,3,4,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,1.9
+S071,21,3,1,3,5,4,4,4,2,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,1,0
+S044,23,3,4,5,2,4,5,4,0,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,27,0,4,5,9
+S003,34,4,0,4,1,5,5,5,4,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,84,0,5,23,36.1
+S001,21,0,5,2,1,1,1,5,0,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0
+S017,32,4,2,4,0,5,5,0,5,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,7,0
+S036,33,1,1,2,1,0,4,5,4,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,4,5
+S048,19,0,2,1,5,2,1,5,3,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,22,0,4,6,10.4
+S055,32,2,2,1,1,0,5,1,3,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,1,0,0,3,0,0
+S002,35,0,4,3,0,0,0,1,1,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S055,32,2,2,1,1,0,5,1,3,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,1,6,0,4,3,0
+S039,25,3,0,4,1,4,4,0,4,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,5,1.3
+S018,35,2,5,2,0,2,3,1,3,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,1,2,0,2,0,2
+S079,25,3,1,2,3,3,0,3,2,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,1.6
+S028,33,1,4,1,5,4,4,3,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0.5
+S079,25,3,1,2,3,3,0,3,2,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,0,0,2,0,0
+S018,35,2,5,2,0,2,3,1,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,3.7
+S045,35,2,5,0,1,2,0,0,5,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,40,0,3,9,8.7
+S093,20,2,3,1,3,4,4,5,3,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,7
+S004,31,1,3,4,2,0,1,5,3,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,28,0,3,6,6.1
+S096,20,1,5,3,3,4,1,5,3,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,1,13,0,3,2,4.7
+S064,27,3,4,0,2,2,1,3,4,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,2,0
+S077,24,3,3,4,5,0,4,3,3,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S073,33,3,2,1,5,2,4,3,5,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,1.2
+S098,27,5,4,2,3,4,4,2,3,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,7,0
+S003,34,4,0,4,1,5,5,5,4,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,39,0,2,8,10.6
+S008,20,0,5,1,2,0,1,0,3,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,0
+S065,28,3,3,3,5,1,4,3,5,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,1
+S011,25,1,3,3,2,5,5,4,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,3
+S027,19,1,0,0,2,0,4,1,2,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,1,0
+S009,26,3,5,2,1,2,2,1,5,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,3,1.4
+S031,30,5,2,0,1,1,1,4,3,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,2.5
+S016,22,5,1,5,3,4,0,3,3,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S021,34,0,4,2,3,0,0,2,2,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S093,20,2,3,1,3,4,4,5,3,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,1,0,3,0,1.7
+S094,28,0,3,2,1,3,1,2,2,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,29,0,4,7,13.2
+S035,26,3,2,3,5,5,4,5,5,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S074,25,2,3,0,5,2,1,2,2,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S047,26,4,3,2,0,0,5,3,2,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,1,4.6
+S048,19,0,2,1,5,2,1,5,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,31,0,2,5,10.1
+S032,22,3,1,2,3,1,0,3,4,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0
+S020,27,5,4,4,1,1,2,1,4,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0.5
+S071,21,3,1,3,5,4,4,4,2,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,43,0,3,9,17.3
+S032,22,3,1,2,3,1,0,3,4,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,53,0,3,6,10.9
+S074,25,2,3,0,5,2,1,2,2,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,2,0
+S007,30,0,4,2,5,4,2,4,1,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S006,29,2,4,2,0,5,3,4,0,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,1.6
+S002,35,0,4,3,0,0,0,1,1,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,1.2
+S039,25,3,0,4,1,4,4,0,4,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0.6
+S076,24,0,3,3,2,4,3,3,0,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,1.7
+S094,28,0,3,2,1,3,1,2,2,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,30,0,2,3,15.6
+S053,31,0,1,5,2,3,5,5,1,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S089,21,4,0,2,4,3,5,2,0,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,1,18,0,4,2,0.9
+S095,28,2,4,5,2,4,0,4,1,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,1,25,0,3,10,8.4
+S054,26,1,5,0,3,0,3,1,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,4.4
+S019,18,5,5,2,4,1,4,0,5,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,27,0,3,3,11.8
+S067,20,1,5,2,1,1,1,0,0,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,5.5
+S096,20,1,5,3,3,4,1,5,3,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,2,0
+S082,30,2,1,3,2,2,3,2,3,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,6,0
+S056,28,2,0,2,2,5,4,3,5,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,43,0,3,9,14.7
+S041,28,1,2,3,1,5,5,2,3,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,4,0.1
+S041,28,1,2,3,1,5,5,2,3,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,5,0,3,2,0
+S018,35,2,5,2,0,2,3,1,3,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,61,0,3,12,14.2
+S022,25,0,1,4,0,0,5,3,0,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S069,30,3,3,1,1,5,5,0,0,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,1,1,0,3,3,0
+S060,34,4,5,5,5,5,5,1,2,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,13,0,3,4,5.5
+S091,32,5,1,3,1,5,4,5,2,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,1,39,0,3,10,9.4
+S019,18,5,5,2,4,1,4,0,5,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,4.5
+S004,31,1,3,4,2,0,1,5,3,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,1,1.4
+S071,21,3,1,3,5,4,4,4,2,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,63,0,4,10,18.5
+S029,33,3,1,0,0,5,3,2,3,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,4,1.5
+S088,24,0,4,5,5,1,0,5,2,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,48,0,3,12,10.9
+S010,26,5,5,5,0,4,5,1,4,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,36,0,4,4,6.7
+S017,32,4,2,4,0,5,5,0,5,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,6,0
+S043,24,4,2,1,2,0,1,2,2,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S022,25,0,1,4,0,0,5,3,0,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,2.4
+S064,27,3,4,0,2,2,1,3,4,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,2,0
+S046,35,1,2,2,4,1,5,2,1,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,1,13,0,4,3,0.8
+S020,27,5,4,4,1,1,2,1,4,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,4,1.5
+S083,26,0,3,0,5,4,0,2,1,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,2,2
+S062,27,4,2,5,3,2,3,5,2,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,3,0.5
+S054,26,1,5,0,3,0,3,1,1,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,1.2
+S032,22,3,1,2,3,1,0,3,4,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S003,34,4,0,4,1,5,5,5,4,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,42,0,4,12,10.6
+S045,35,2,5,0,1,2,0,0,5,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,5.1
+S024,31,1,4,5,5,1,5,2,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,24,0,3,12,10.1
+S030,31,3,5,0,5,5,5,0,0,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,1,3.9
+S035,26,3,2,3,5,5,4,5,5,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,2,0
+S008,20,0,5,1,2,0,1,0,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,4,0,4,0,0
+S046,35,1,2,2,4,1,5,2,1,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,1.8
+S095,28,2,4,5,2,4,0,4,1,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,5,1.2
+S064,27,3,4,0,2,2,1,3,4,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S012,28,0,1,0,2,3,2,0,1,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,1.9
+S068,25,3,4,0,3,3,5,4,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,1.3
+S026,18,4,4,1,4,1,0,0,5,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,0,0,3,0,2.2
+S008,20,0,5,1,2,0,1,0,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,5.2
+S019,18,5,5,2,4,1,4,0,5,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0.7
+S047,26,4,3,2,0,0,5,3,2,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,2,0
+S018,35,2,5,2,0,2,3,1,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,63,0,5,10,19
+S084,20,5,0,0,1,1,0,4,1,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0.6
+S089,21,4,0,2,4,3,5,2,0,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,1,51,0,4,16,16.4
+S049,35,5,3,4,0,0,0,5,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,46,0,3,12,15.6
+S094,28,0,3,2,1,3,1,2,2,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,0
+S019,18,5,5,2,4,1,4,0,5,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,53,0,4,15,23.1
+S022,25,0,1,4,0,0,5,3,0,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,8,0,3,0,0
+S058,21,4,3,2,5,2,3,4,4,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,1,16,0,2,2,7.7
+S045,35,2,5,0,1,2,0,0,5,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,1,0
+S007,30,0,4,2,5,4,2,4,1,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,5,3.7
+S022,25,0,1,4,0,0,5,3,0,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,1,0
+S074,25,2,3,0,5,2,1,2,2,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,1,51,0,5,15,12.3
+S010,26,5,5,5,0,4,5,1,4,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,40,0,2,4,12.4
+S010,26,5,5,5,0,4,5,1,4,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,0,0,2,0,0
+S071,21,3,1,3,5,4,4,4,2,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S062,27,4,2,5,3,2,3,5,2,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,1,0
+S022,25,0,1,4,0,0,5,3,0,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,1,0,0,2,0,0
+S043,24,4,2,1,2,0,1,2,2,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,5,5
+S071,21,3,1,3,5,4,4,4,2,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,1,46,0,3,7,24.4
+S039,25,3,0,4,1,4,4,0,4,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0.9
+S071,21,3,1,3,5,4,4,4,2,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,44,0,4,12,15.1
+S012,28,0,1,0,2,3,2,0,1,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S062,27,4,2,5,3,2,3,5,2,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,0,0,3,0,1.1
+S011,25,1,3,3,2,5,5,4,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,61,0,5,9,17.9
+S061,31,0,5,2,4,2,5,0,5,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,30,0,4,5,8.3
+S024,31,1,4,5,5,1,5,2,3,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,1,0,0,4,2,2.2
+S006,29,2,4,2,0,5,3,4,0,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0.2
+S035,26,3,2,3,5,5,4,5,5,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,1,0
+S086,26,2,1,4,4,5,5,0,1,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,20,0,4,6,3.2
+S097,33,3,0,0,2,1,3,5,1,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,6,0,4,0,3.1
+S061,31,0,5,2,4,2,5,0,5,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,3,0
+S011,25,1,3,3,2,5,5,4,1,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0.6
+S065,28,3,3,3,5,1,4,3,5,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,3,0
+S087,27,0,4,0,2,4,5,3,3,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,1.3
+S025,29,3,4,3,0,1,1,0,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,0,0,4,0,0
+S026,18,4,4,1,4,1,0,0,5,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,1.3
+S041,28,1,2,3,1,5,5,2,3,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,1,53,0,5,3,23.5
+S072,32,4,5,4,3,4,3,1,5,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,1,6.2
+S067,20,1,5,2,1,1,1,0,0,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,40,0,4,5,9.5
+S015,30,2,1,1,4,3,0,0,0,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,4,0
+S075,28,4,0,1,1,1,3,5,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,11,0,2,0,0.4
+S073,33,3,2,1,5,2,4,3,5,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,4.9
+S019,18,5,5,2,4,1,4,0,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,9.6
+S048,19,0,2,1,5,2,1,5,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S040,20,3,5,4,4,4,2,2,1,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,2,0
+S088,24,0,4,5,5,1,0,5,2,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,82,0,4,19,27.4
+S096,20,1,5,3,3,4,1,5,3,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,69,0,5,14,12.9
+S078,18,2,2,3,3,4,5,5,4,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,1,0
+S053,31,0,1,5,2,3,5,5,1,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,3.1
+S048,19,0,2,1,5,2,1,5,3,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,1,8,0,3,0,0
+S091,32,5,1,3,1,5,4,5,2,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,1,6.2
+S068,25,3,4,0,3,3,5,4,1,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,0,0,3,0,4.2
+S008,20,0,5,1,2,0,1,0,3,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,0,0,3,1,0
+S091,32,5,1,3,1,5,4,5,2,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,1,0
+S065,28,3,3,3,5,1,4,3,5,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,1,43,0,2,12,16.4
+S031,30,5,2,0,1,1,1,4,3,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,1,1
+S061,31,0,5,2,4,2,5,0,5,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S034,33,3,1,3,0,1,3,0,3,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,1,21,0,2,3,2.6
+S050,35,0,2,4,4,1,3,1,0,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,3,0
+S028,33,1,4,1,5,4,4,3,1,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,4
+S035,26,3,2,3,5,5,4,5,5,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,1,18,0,2,0,0.9
+S061,31,0,5,2,4,2,5,0,5,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,3,0
+S002,35,0,4,3,0,0,0,1,1,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S040,20,3,5,4,4,4,2,2,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,2,1.6
+S055,32,2,2,1,1,0,5,1,3,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S028,33,1,4,1,5,4,4,3,1,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S080,30,5,1,3,1,4,4,0,3,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,1,62,0,4,11,16.1
+S072,32,4,5,4,3,4,3,1,5,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,1,48,0,2,12,5.9
+S036,33,1,1,2,1,0,4,5,4,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,3,0
+S077,24,3,3,4,5,0,4,3,3,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,1.8
+S093,20,2,3,1,3,4,4,5,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,2.6
+S034,33,3,1,3,0,1,3,0,3,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0.4
+S075,28,4,0,1,1,1,3,5,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,5,0
+S044,23,3,4,5,2,4,5,4,0,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,1.5
+S082,30,2,1,3,2,2,3,2,3,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,1.1
+S065,28,3,3,3,5,1,4,3,5,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,1,1.9
+S072,32,4,5,4,3,4,3,1,5,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,3,1.2
+S095,28,2,4,5,2,4,0,4,1,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,2
+S024,31,1,4,5,5,1,5,2,3,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,5,0
+S029,33,3,1,0,0,5,3,2,3,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,3.3
+S054,26,1,5,0,3,0,3,1,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S065,28,3,3,3,5,1,4,3,5,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,55,0,4,9,26.3
+S044,23,3,4,5,2,4,5,4,0,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,3.3
+S059,21,3,4,1,2,0,5,3,0,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,2.4
+S100,21,5,1,2,0,5,4,5,1,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,1,5.5
+S023,35,1,1,5,3,4,1,2,4,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,22,0,3,3,7
+S027,19,1,0,0,2,0,4,1,2,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,2.4
+S017,32,4,2,4,0,5,5,0,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,2.9
+S055,32,2,2,1,1,0,5,1,3,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,41,0,3,7,8.5
+S094,28,0,3,2,1,3,1,2,2,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,3.5
+S097,33,3,0,0,2,1,3,5,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.7
+S081,18,0,5,3,1,3,1,0,2,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,2,1.5
+S076,24,0,3,3,2,4,3,3,0,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,2
+S039,25,3,0,4,1,4,4,0,4,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S068,25,3,4,0,3,3,5,4,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,1,4.1
+S018,35,2,5,2,0,2,3,1,3,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,2.9
+S097,33,3,0,0,2,1,3,5,1,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,4,3.9
+S052,29,4,3,4,5,1,1,1,1,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,4,2.2
+S017,32,4,2,4,0,5,5,0,5,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0
+S022,25,0,1,4,0,0,5,3,0,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S005,28,2,1,1,2,0,0,3,0,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,67,0,3,12,17.1
+S003,34,4,0,4,1,5,5,5,4,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,5,0
+S049,35,5,3,4,0,0,0,5,1,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S020,27,5,4,4,1,1,2,1,4,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0
+S039,25,3,0,4,1,4,4,0,4,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S035,26,3,2,3,5,5,4,5,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,1,10,0,2,0,1.8
+S066,23,5,0,2,4,5,5,4,2,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,1,16,0,2,5,8.2
+S064,27,3,4,0,2,2,1,3,4,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S067,20,1,5,2,1,1,1,0,0,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,1
+S021,34,0,4,2,3,0,0,2,2,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,4,0
+S089,21,4,0,2,4,3,5,2,0,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,14,0,2,2,5.1
+S015,30,2,1,1,4,3,0,0,0,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,28,0,2,3,3.2
+S100,21,5,1,2,0,5,4,5,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,3.2
+S033,21,0,5,4,0,0,1,1,3,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,5.7
+S038,23,0,4,0,1,0,4,0,5,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,1,0,3,0,0
+S006,29,2,4,2,0,5,3,4,0,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S055,32,2,2,1,1,0,5,1,3,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,1.5
+S006,29,2,4,2,0,5,3,4,0,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,2.7
+S022,25,0,1,4,0,0,5,3,0,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0.4
+S080,30,5,1,3,1,4,4,0,3,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,1,58,0,4,14,13.7
+S024,31,1,4,5,5,1,5,2,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S035,26,3,2,3,5,5,4,5,5,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S054,26,1,5,0,3,0,3,1,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,1,3,0,3,0,0.7
+S090,34,5,2,0,3,3,0,3,2,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S021,34,0,4,2,3,0,0,2,2,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,1.3
+S100,21,5,1,2,0,5,4,5,1,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0.1
+S041,28,1,2,3,1,5,5,2,3,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,1.1
+S099,35,2,2,5,3,2,2,2,1,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0.3
+S086,26,2,1,4,4,5,5,0,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S080,30,5,1,3,1,4,4,0,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S062,27,4,2,5,3,2,3,5,2,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0.3
+S020,27,5,4,4,1,1,2,1,4,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S002,35,0,4,3,0,0,0,1,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,3,0
+S042,28,0,0,3,4,4,0,0,4,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,52,0,4,6,15.8
+S071,21,3,1,3,5,4,4,4,2,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,3,0
+S011,25,1,3,3,2,5,5,4,1,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,4,0
+S012,28,0,1,0,2,3,2,0,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,17,0,4,4,5.5
+S096,20,1,5,3,3,4,1,5,3,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,2,2.4
+S005,28,2,1,1,2,0,0,3,0,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,3.9
+S078,18,2,2,3,3,4,5,5,4,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,3.1
+S072,32,4,5,4,3,4,3,1,5,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,3,0
+S044,23,3,4,5,2,4,5,4,0,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S061,31,0,5,2,4,2,5,0,5,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,2,3.9
+S046,35,1,2,2,4,1,5,2,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,1,0,3,0,3.1
+S090,34,5,2,0,3,3,0,3,2,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,49,0,3,6,15.4
+S092,35,3,3,3,5,4,2,2,1,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,1,22,0,3,5,0
+S025,29,3,4,3,0,1,1,0,2,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,52,0,5,8,23.4
+S025,29,3,4,3,0,1,1,0,2,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,1,0
+S099,35,2,2,5,3,2,2,2,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S065,28,3,3,3,5,1,4,3,5,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,31,0,2,10,9.4
+S071,21,3,1,3,5,4,4,4,2,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,41,0,3,10,11.3
+S089,21,4,0,2,4,3,5,2,0,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,3,1.1
+S014,22,1,5,4,4,2,5,4,3,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,1.3
+S042,28,0,0,3,4,4,0,0,4,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,8,0,3,0,0
+S036,33,1,1,2,1,0,4,5,4,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,5.2
+S058,21,4,3,2,5,2,3,4,4,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,6,1.9
+S096,20,1,5,3,3,4,1,5,3,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,1,0
+S041,28,1,2,3,1,5,5,2,3,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S088,24,0,4,5,5,1,0,5,2,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,1,15,0,3,0,3.7
+S065,28,3,3,3,5,1,4,3,5,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,11,0,2,2,10.6
+S098,27,5,4,2,3,4,4,2,3,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S086,26,2,1,4,4,5,5,0,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,3.3
+S069,30,3,3,1,1,5,5,0,0,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,5,0
+S002,35,0,4,3,0,0,0,1,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,1,0
+S007,30,0,4,2,5,4,2,4,1,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,7.9
+S021,34,0,4,2,3,0,0,2,2,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,1,0,0,2,0,1.4
+S089,21,4,0,2,4,3,5,2,0,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,3,0.3
+S046,35,1,2,2,4,1,5,2,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S095,28,2,4,5,2,4,0,4,1,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S072,32,4,5,4,3,4,3,1,5,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,1,0
+S090,34,5,2,0,3,3,0,3,2,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,1,39,0,4,7,17
+S050,35,0,2,4,4,1,3,1,0,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S041,28,1,2,3,1,5,5,2,3,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,3,0
+S026,18,4,4,1,4,1,0,0,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S057,35,2,0,0,2,1,4,2,0,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,4,0
+S083,26,0,3,0,5,4,0,2,1,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,9,3.2
+S078,18,2,2,3,3,4,5,5,4,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S038,23,0,4,0,1,0,4,0,5,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,1.6
+S055,32,2,2,1,1,0,5,1,3,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,1,4,0,3,0,0.4
+S001,21,0,5,2,1,1,1,5,0,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,3,1.8
+S006,29,2,4,2,0,5,3,4,0,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,2
+S100,21,5,1,2,0,5,4,5,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S063,35,1,1,3,5,3,5,5,1,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,12,0,3,5,4.6
+S068,25,3,4,0,3,3,5,4,1,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,1.2
+S065,28,3,3,3,5,1,4,3,5,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S012,28,0,1,0,2,3,2,0,1,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,2.6
+S043,24,4,2,1,2,0,1,2,2,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,40,0,4,9,22.2
+S072,32,4,5,4,3,4,3,1,5,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,55,0,4,9,17.8
+S058,21,4,3,2,5,2,3,4,4,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,2,2.3
+S080,30,5,1,3,1,4,4,0,3,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,3,2.1
+S042,28,0,0,3,4,4,0,0,4,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,1,3.2
+S050,35,0,2,4,4,1,3,1,0,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,17,0,3,0,2.1
+S066,23,5,0,2,4,5,5,4,2,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,31,0,3,4,13.5
+S081,18,0,5,3,1,3,1,0,2,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S028,33,1,4,1,5,4,4,3,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,7,0,4,3,5.3
+S083,26,0,3,0,5,4,0,2,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,3,0,4,0,0
+S092,35,3,3,3,5,4,2,2,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,12,0,3,4,5.4
+S033,21,0,5,4,0,0,1,1,3,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S056,28,2,0,2,2,5,4,3,5,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0.8
+S069,30,3,3,1,1,5,5,0,0,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,4,0
+S010,26,5,5,5,0,4,5,1,4,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,1,56,0,4,14,6.2
+S078,18,2,2,3,3,4,5,5,4,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,2.4
+S049,35,5,3,4,0,0,0,5,1,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,1,12,0,3,3,3.9
+S069,30,3,3,1,1,5,5,0,0,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,8.3
+S070,31,1,1,5,4,3,0,4,1,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,1,46,0,3,7,16
+S002,35,0,4,3,0,0,0,1,1,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,0,0,2,0,0
+S001,21,0,5,2,1,1,1,5,0,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0.5
+S093,20,2,3,1,3,4,4,5,3,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S066,23,5,0,2,4,5,5,4,2,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,23,0,3,5,11.7
+S007,30,0,4,2,5,4,2,4,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S060,34,4,5,5,5,5,5,1,2,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,1,9,0,2,0,4
+S033,21,0,5,4,0,0,1,1,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0.6
+S043,24,4,2,1,2,0,1,2,2,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,2,0
+S013,28,1,5,3,3,5,3,1,2,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,1,0
+S041,28,1,2,3,1,5,5,2,3,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S040,20,3,5,4,4,4,2,2,1,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S032,22,3,1,2,3,1,0,3,4,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,0.3
+S036,33,1,1,2,1,0,4,5,4,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S062,27,4,2,5,3,2,3,5,2,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,1.8
+S063,35,1,1,3,5,3,5,5,1,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,3,0
+S011,25,1,3,3,2,5,5,4,1,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,1,15,0,3,3,5.6
+S034,33,3,1,3,0,1,3,0,3,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,1,0,0,2,0,0
+S003,34,4,0,4,1,5,5,5,4,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S071,21,3,1,3,5,4,4,4,2,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0.9
+S061,31,0,5,2,4,2,5,0,5,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,1,0
+S029,33,3,1,0,0,5,3,2,3,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,3,0
+S018,35,2,5,2,0,2,3,1,3,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,46,0,3,5,6.8
+S065,28,3,3,3,5,1,4,3,5,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,1.1
+S058,21,4,3,2,5,2,3,4,4,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,3,0
+S085,25,1,3,5,0,4,1,3,5,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,78,0,4,12,33.1
+S006,29,2,4,2,0,5,3,4,0,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,1,24,0,3,6,3.2
+S048,19,0,2,1,5,2,1,5,3,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0.1
+S047,26,4,3,2,0,0,5,3,2,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,2.2
+S006,29,2,4,2,0,5,3,4,0,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,43,0,3,7,9.9
+S049,35,5,3,4,0,0,0,5,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,7,2.4
+S010,26,5,5,5,0,4,5,1,4,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S029,33,3,1,0,0,5,3,2,3,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,1.6
+S045,35,2,5,0,1,2,0,0,5,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,3.3
+S001,21,0,5,2,1,1,1,5,0,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,2,2.2
+S030,31,3,5,0,5,5,5,0,0,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,51,0,4,10,14.8
+S024,31,1,4,5,5,1,5,2,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,1,0
+S016,22,5,1,5,3,4,0,3,3,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0.3
+S093,20,2,3,1,3,4,4,5,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,4,0
+S003,34,4,0,4,1,5,5,5,4,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0.5
+S021,34,0,4,2,3,0,0,2,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,18,0,3,2,9
+S008,20,0,5,1,2,0,1,0,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,0,0,4,0,0
+S077,24,3,3,4,5,0,4,3,3,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S062,27,4,2,5,3,2,3,5,2,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S019,18,5,5,2,4,1,4,0,5,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,28,0,3,9,9.5
+S022,25,0,1,4,0,0,5,3,0,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0.7
+S077,24,3,3,4,5,0,4,3,3,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,1,3.4
+S017,32,4,2,4,0,5,5,0,5,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,4,0
+S065,28,3,3,3,5,1,4,3,5,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,11,0,2,0,3.1
+S023,35,1,1,5,3,4,1,2,4,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,1,3
+S069,30,3,3,1,1,5,5,0,0,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,44,0,3,7,20.3
+S078,18,2,2,3,3,4,5,5,4,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,6.3
+S100,21,5,1,2,0,5,4,5,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0.6
+S048,19,0,2,1,5,2,1,5,3,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,6,0
+S062,27,4,2,5,3,2,3,5,2,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S055,32,2,2,1,1,0,5,1,3,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,4.6
+S011,25,1,3,3,2,5,5,4,1,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S033,21,0,5,4,0,0,1,1,3,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,1.8
+S053,31,0,1,5,2,3,5,5,1,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S075,28,4,0,1,1,1,3,5,1,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,1,0.1
+S073,33,3,2,1,5,2,4,3,5,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,1.5
+S051,27,2,0,2,1,5,1,5,0,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,5,0
+S072,32,4,5,4,3,4,3,1,5,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,2,0
+S062,27,4,2,5,3,2,3,5,2,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,1.4
+S100,21,5,1,2,0,5,4,5,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,49,0,2,10,14.7
+S096,20,1,5,3,3,4,1,5,3,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S044,23,3,4,5,2,4,5,4,0,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S007,30,0,4,2,5,4,2,4,1,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S012,28,0,1,0,2,3,2,0,1,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,6.3
+S012,28,0,1,0,2,3,2,0,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S078,18,2,2,3,3,4,5,5,4,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,2.2
+S052,29,4,3,4,5,1,1,1,1,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S025,29,3,4,3,0,1,1,0,2,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,2.4
+S090,34,5,2,0,3,3,0,3,2,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,2.7
+S047,26,4,3,2,0,0,5,3,2,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,2.2
+S012,28,0,1,0,2,3,2,0,1,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S051,27,2,0,2,1,5,1,5,0,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,2.1
+S095,28,2,4,5,2,4,0,4,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,13,0,3,4,10.1
+S029,33,3,1,0,0,5,3,2,3,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0
+S052,29,4,3,4,5,1,1,1,1,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,2,0,2,3,0
+S072,32,4,5,4,3,4,3,1,5,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,75,0,3,10,18.7
+S066,23,5,0,2,4,5,5,4,2,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,1.1
+S073,33,3,2,1,5,2,4,3,5,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0.6
+S100,21,5,1,2,0,5,4,5,1,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,1,1.2
+S087,27,0,4,0,2,4,5,3,3,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,3,0
+S046,35,1,2,2,4,1,5,2,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S034,33,3,1,3,0,1,3,0,3,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,1
+S096,20,1,5,3,3,4,1,5,3,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S061,31,0,5,2,4,2,5,0,5,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S035,26,3,2,3,5,5,4,5,5,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,2
+S025,29,3,4,3,0,1,1,0,2,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,16,0,3,5,7
+S034,33,3,1,3,0,1,3,0,3,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0
+S080,30,5,1,3,1,4,4,0,3,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,1,23,0,2,1,0.9
+S087,27,0,4,0,2,4,5,3,3,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,20,0,2,6,4.2
+S062,27,4,2,5,3,2,3,5,2,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,4.3
+S074,25,2,3,0,5,2,1,2,2,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,5,2.9
+S066,23,5,0,2,4,5,5,4,2,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S017,32,4,2,4,0,5,5,0,5,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,1.6
+S090,34,5,2,0,3,3,0,3,2,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,3,0
+S002,35,0,4,3,0,0,0,1,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0.8
+S042,28,0,0,3,4,4,0,0,4,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,1,58,0,4,20,19.2
+S031,30,5,2,0,1,1,1,4,3,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,1.6
+S047,26,4,3,2,0,0,5,3,2,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,1,33,0,3,5,10.3
+S047,26,4,3,2,0,0,5,3,2,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,1,16,0,3,4,5.2
+S074,25,2,3,0,5,2,1,2,2,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,26,0,3,7,7.2
+S031,30,5,2,0,1,1,1,4,3,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S019,18,5,5,2,4,1,4,0,5,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,1,2.3
+S023,35,1,1,5,3,4,1,2,4,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,1,5
+S081,18,0,5,3,1,3,1,0,2,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,1,24,0,4,6,2.7
+S039,25,3,0,4,1,4,4,0,4,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,2.1
+S051,27,2,0,2,1,5,1,5,0,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,57,0,4,10,19.7
+S061,31,0,5,2,4,2,5,0,5,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S033,21,0,5,4,0,0,1,1,3,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,1,10,0,3,2,1
+S074,25,2,3,0,5,2,1,2,2,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,2.1
+S100,21,5,1,2,0,5,4,5,1,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,1,1.5
+S063,35,1,1,3,5,3,5,5,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S049,35,5,3,4,0,0,0,5,1,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,0
+S019,18,5,5,2,4,1,4,0,5,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,2.1
+S054,26,1,5,0,3,0,3,1,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,3.2
+S010,26,5,5,5,0,4,5,1,4,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,43,0,3,10,5.4
+S084,20,5,0,0,1,1,0,4,1,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,3,0.8
+S051,27,2,0,2,1,5,1,5,0,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0.4
+S047,26,4,3,2,0,0,5,3,2,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,1.2
+S053,31,0,1,5,2,3,5,5,1,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,0,0,3,0,0
+S085,25,1,3,5,0,4,1,3,5,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,3,0
+S011,25,1,3,3,2,5,5,4,1,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,1,39,0,2,6,0
+S061,31,0,5,2,4,2,5,0,5,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,3.7
+S068,25,3,4,0,3,3,5,4,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,34,0,3,5,10.7
+S011,25,1,3,3,2,5,5,4,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,1,3.4
+S030,31,3,5,0,5,5,5,0,0,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,72,0,4,13,14
+S017,32,4,2,4,0,5,5,0,5,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,1,41,0,3,8,7.4
+S042,28,0,0,3,4,4,0,0,4,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,1
+S035,26,3,2,3,5,5,4,5,5,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0.1
+S081,18,0,5,3,1,3,1,0,2,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,2.7
+S062,27,4,2,5,3,2,3,5,2,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,2,0,3,0,0.5
+S047,26,4,3,2,0,0,5,3,2,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S001,21,0,5,2,1,1,1,5,0,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.6
+S045,35,2,5,0,1,2,0,0,5,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,1,10,0,4,0,4
+S097,33,3,0,0,2,1,3,5,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S038,23,0,4,0,1,0,4,0,5,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,1,33,0,3,10,0.1
+S025,29,3,4,3,0,1,1,0,2,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,2,2.4
+S032,22,3,1,2,3,1,0,3,4,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,2.5
+S049,35,5,3,4,0,0,0,5,1,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,4,0
+S031,30,5,2,0,1,1,1,4,3,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,3.1
+S089,21,4,0,2,4,3,5,2,0,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,1.7
+S024,31,1,4,5,5,1,5,2,3,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,3.1
+S080,30,5,1,3,1,4,4,0,3,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,3,0
+S024,31,1,4,5,5,1,5,2,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,38,0,4,7,16.7
+S064,27,3,4,0,2,2,1,3,4,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0
+S043,24,4,2,1,2,0,1,2,2,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S008,20,0,5,1,2,0,1,0,3,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,1,32,0,4,5,3.2
+S024,31,1,4,5,5,1,5,2,3,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,70,0,5,18,15.7
+S002,35,0,4,3,0,0,0,1,1,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,2,0
+S050,35,0,2,4,4,1,3,1,0,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,34,0,2,7,7.8
+S026,18,4,4,1,4,1,0,0,5,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,16,0,3,1,1.3
+S061,31,0,5,2,4,2,5,0,5,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,5,0,3,0,0
+S021,34,0,4,2,3,0,0,2,2,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,2,4.5
+S071,21,3,1,3,5,4,4,4,2,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.7
+S039,25,3,0,4,1,4,4,0,4,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,36,0,3,8,10.3
+S015,30,2,1,1,4,3,0,0,0,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,43,0,3,10,7
+S036,33,1,1,2,1,0,4,5,4,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,2,2.7
+S002,35,0,4,3,0,0,0,1,1,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0.1
+S089,21,4,0,2,4,3,5,2,0,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,2,0
+S044,23,3,4,5,2,4,5,4,0,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,13,0,3,0,4.8
+S057,35,2,0,0,2,1,4,2,0,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,5.2
+S046,35,1,2,2,4,1,5,2,1,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,5,0
+S063,35,1,1,3,5,3,5,5,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,15,0,4,5,3.6
+S025,29,3,4,3,0,1,1,0,2,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0.1
+S094,28,0,3,2,1,3,1,2,2,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S071,21,3,1,3,5,4,4,4,2,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,8,0,3,0,5.8
+S094,28,0,3,2,1,3,1,2,2,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,2.4
+S047,26,4,3,2,0,0,5,3,2,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,1,1.7
+S009,26,3,5,2,1,2,2,1,5,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,2,0
+S025,29,3,4,3,0,1,1,0,2,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S020,27,5,4,4,1,1,2,1,4,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,8.8
+S006,29,2,4,2,0,5,3,4,0,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,0,0,2,1,1.6
+S050,35,0,2,4,4,1,3,1,0,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,1
+S076,24,0,3,3,2,4,3,3,0,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,9
+S060,34,4,5,5,5,5,5,1,2,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,1,0
+S054,26,1,5,0,3,0,3,1,1,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,1,44,0,3,10,14.5
+S010,26,5,5,5,0,4,5,1,4,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,1,7,0,3,2,0
+S032,22,3,1,2,3,1,0,3,4,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,9,0,4,0,4.3
+S096,20,1,5,3,3,4,1,5,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,2,0
+S087,27,0,4,0,2,4,5,3,3,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,39,0,2,5,6
+S022,25,0,1,4,0,0,5,3,0,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S085,25,1,3,5,0,4,1,3,5,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,7,1.3
+S046,35,1,2,2,4,1,5,2,1,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S093,20,2,3,1,3,4,4,5,3,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S028,33,1,4,1,5,4,4,3,1,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,5,1.2
+S033,21,0,5,4,0,0,1,1,3,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,1.6
+S051,27,2,0,2,1,5,1,5,0,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S077,24,3,3,4,5,0,4,3,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,2.8
+S003,34,4,0,4,1,5,5,5,4,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S074,25,2,3,0,5,2,1,2,2,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,1,2.6
+S020,27,5,4,4,1,1,2,1,4,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.1
+S077,24,3,3,4,5,0,4,3,3,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,5,1.1
+S074,25,2,3,0,5,2,1,2,2,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,17,0,3,3,7.9
+S099,35,2,2,5,3,2,2,2,1,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S002,35,0,4,3,0,0,0,1,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S040,20,3,5,4,4,4,2,2,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,3,0
+S020,27,5,4,4,1,1,2,1,4,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,26,0,2,5,10.9
+S097,33,3,0,0,2,1,3,5,1,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,1,9,0,4,5,0
+S038,23,0,4,0,1,0,4,0,5,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,1.9
+S034,33,3,1,3,0,1,3,0,3,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S090,34,5,2,0,3,3,0,3,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S026,18,4,4,1,4,1,0,0,5,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,2,3.8
+S072,32,4,5,4,3,4,3,1,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,1,0
+S032,22,3,1,2,3,1,0,3,4,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S088,24,0,4,5,5,1,0,5,2,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,1,2
+S055,32,2,2,1,1,0,5,1,3,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0.2
+S045,35,2,5,0,1,2,0,0,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,2,2.4
+S080,30,5,1,3,1,4,4,0,3,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,4.2
+S030,31,3,5,0,5,5,5,0,0,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,46,0,2,6,17.1
+S015,30,2,1,1,4,3,0,0,0,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,2,0
+S019,18,5,5,2,4,1,4,0,5,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0.9
+S015,30,2,1,1,4,3,0,0,0,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,31,0,3,6,10.2
+S095,28,2,4,5,2,4,0,4,1,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,5,3.2
+S097,33,3,0,0,2,1,3,5,1,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,2.8
+S019,18,5,5,2,4,1,4,0,5,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,1,15,0,2,4,9.9
+S033,21,0,5,4,0,0,1,1,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S090,34,5,2,0,3,3,0,3,2,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S002,35,0,4,3,0,0,0,1,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,1,0,3,0,0
+S014,22,1,5,4,4,2,5,4,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,2.7
+S050,35,0,2,4,4,1,3,1,0,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,4.6
+S091,32,5,1,3,1,5,4,5,2,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,71,0,3,17,22.9
+S092,35,3,3,3,5,4,2,2,1,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,2,0.5
+S040,20,3,5,4,4,4,2,2,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,1,0
+S003,34,4,0,4,1,5,5,5,4,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,1.8
+S036,33,1,1,2,1,0,4,5,4,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,2.5
+S004,31,1,3,4,2,0,1,5,3,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,6,0,3,2,3
+S051,27,2,0,2,1,5,1,5,0,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,1.7
+S067,20,1,5,2,1,1,1,0,0,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S030,31,3,5,0,5,5,5,0,0,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,4,0,3,0,2.4
+S075,28,4,0,1,1,1,3,5,1,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,39,0,3,6,14.6
+S018,35,2,5,2,0,2,3,1,3,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,1.4
+S019,18,5,5,2,4,1,4,0,5,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,2.3
+S094,28,0,3,2,1,3,1,2,2,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,1
+S053,31,0,1,5,2,3,5,5,1,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,4,3.2
+S082,30,2,1,3,2,2,3,2,3,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,1.9
+S014,22,1,5,4,4,2,5,4,3,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,3,1.2
+S079,25,3,1,2,3,3,0,3,2,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,6
+S030,31,3,5,0,5,5,5,0,0,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,3,0.7
+S046,35,1,2,2,4,1,5,2,1,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,3,0.4
+S065,28,3,3,3,5,1,4,3,5,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0
+S024,31,1,4,5,5,1,5,2,3,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,54,0,4,8,18.1
+S029,33,3,1,0,0,5,3,2,3,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,1,0
+S035,26,3,2,3,5,5,4,5,5,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,1,0
+S026,18,4,4,1,4,1,0,0,5,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,30,0,4,8,7.2
+S079,25,3,1,2,3,3,0,3,2,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,5.9
+S032,22,3,1,2,3,1,0,3,4,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,9,0,4,0,7.1
+S091,32,5,1,3,1,5,4,5,2,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,34,0,2,5,13.9
+S032,22,3,1,2,3,1,0,3,4,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,5,1.7
+S006,29,2,4,2,0,5,3,4,0,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,6
+S007,30,0,4,2,5,4,2,4,1,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S055,32,2,2,1,1,0,5,1,3,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,1,30,0,3,7,11.9
+S015,30,2,1,1,4,3,0,0,0,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S058,21,4,3,2,5,2,3,4,4,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,1,0
+S092,35,3,3,3,5,4,2,2,1,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,79,0,4,20,20.7
+S089,21,4,0,2,4,3,5,2,0,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S094,28,0,3,2,1,3,1,2,2,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,38,0,4,5,19.8
+S006,29,2,4,2,0,5,3,4,0,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0.8
+S054,26,1,5,0,3,0,3,1,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S058,21,4,3,2,5,2,3,4,4,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,1,32,0,3,4,10.7
+S026,18,4,4,1,4,1,0,0,5,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,1,0,0,4,0,0
+S064,27,3,4,0,2,2,1,3,4,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,20,0,4,3,6.8
+S032,22,3,1,2,3,1,0,3,4,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S027,19,1,0,0,2,0,4,1,2,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,1,0,0,3,0,0
+S005,28,2,1,1,2,0,0,3,0,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0.5
+S078,18,2,2,3,3,4,5,5,4,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,29,0,2,4,7.5
+S054,26,1,5,0,3,0,3,1,1,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S085,25,1,3,5,0,4,1,3,5,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,1.7
+S047,26,4,3,2,0,0,5,3,2,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0.6
+S048,19,0,2,1,5,2,1,5,3,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,8,1
+S071,21,3,1,3,5,4,4,4,2,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,0,0,3,0,0
+S043,24,4,2,1,2,0,1,2,2,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,1,10,0,3,0,5.2
+S079,25,3,1,2,3,3,0,3,2,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S037,19,5,2,0,0,4,3,4,4,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,58,0,4,13,18.5
+S081,18,0,5,3,1,3,1,0,2,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,26,0,3,7,9
+S091,32,5,1,3,1,5,4,5,2,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,1,8,0,2,1,7.9
+S027,19,1,0,0,2,0,4,1,2,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,2,0
+S099,35,2,2,5,3,2,2,2,1,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,5,4.9
+S051,27,2,0,2,1,5,1,5,0,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,6,0
+S023,35,1,1,5,3,4,1,2,4,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,32,0,4,1,13.4
+S061,31,0,5,2,4,2,5,0,5,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0.7
+S081,18,0,5,3,1,3,1,0,2,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,26,0,3,3,4
+S060,34,4,5,5,5,5,5,1,2,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,44,0,3,7,13.8
+S073,33,3,2,1,5,2,4,3,5,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,2,0
+S003,34,4,0,4,1,5,5,5,4,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,3.7
+S046,35,1,2,2,4,1,5,2,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,19,0,2,1,4.1
+S044,23,3,4,5,2,4,5,4,0,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,3,0.6
+S097,33,3,0,0,2,1,3,5,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,0,0,2,2,1.2
+S023,35,1,1,5,3,4,1,2,4,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,24,0,3,6,4.5
+S012,28,0,1,0,2,3,2,0,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S065,28,3,3,3,5,1,4,3,5,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S094,28,0,3,2,1,3,1,2,2,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.9
+S099,35,2,2,5,3,2,2,2,1,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S087,27,0,4,0,2,4,5,3,3,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,0,0,4,0,1.4
+S092,35,3,3,3,5,4,2,2,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,1,0,0,2,0,0
+S088,24,0,4,5,5,1,0,5,2,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,4,0
+S006,29,2,4,2,0,5,3,4,0,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,1,0.4
+S040,20,3,5,4,4,4,2,2,1,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,0,0,3,2,0.6
+S042,28,0,0,3,4,4,0,0,4,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,1,11.8
+S041,28,1,2,3,1,5,5,2,3,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,0,0,3,5,0
+S021,34,0,4,2,3,0,0,2,2,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S071,21,3,1,3,5,4,4,4,2,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S037,19,5,2,0,0,4,3,4,4,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,38,0,3,6,2.3
+S070,31,1,1,5,4,3,0,4,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,0,0,2,3,0
+S023,35,1,1,5,3,4,1,2,4,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,2,2.1
+S089,21,4,0,2,4,3,5,2,0,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,1,64,0,4,12,21.2
+S026,18,4,4,1,4,1,0,0,5,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,3.9
+S011,25,1,3,3,2,5,5,4,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,2.2
+S012,28,0,1,0,2,3,2,0,1,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S088,24,0,4,5,5,1,0,5,2,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0.8
+S030,31,3,5,0,5,5,5,0,0,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0.6
+S059,21,3,4,1,2,0,5,3,0,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,2.9
+S045,35,2,5,0,1,2,0,0,5,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,45,0,3,13,8.1
+S078,18,2,2,3,3,4,5,5,4,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,10,0,2,0,0.3
+S042,28,0,0,3,4,4,0,0,4,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,2,0
+S069,30,3,3,1,1,5,5,0,0,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,45,0,3,8,12.2
+S027,19,1,0,0,2,0,4,1,2,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S056,28,2,0,2,2,5,4,3,5,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,3,2.3
+S031,30,5,2,0,1,1,1,4,3,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,1,33,0,4,11,2.1
+S015,30,2,1,1,4,3,0,0,0,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,57,0,3,14,15.3
+S057,35,2,0,0,2,1,4,2,0,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,3,0
+S077,24,3,3,4,5,0,4,3,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S049,35,5,3,4,0,0,0,5,1,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S012,28,0,1,0,2,3,2,0,1,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,3,0
+S097,33,3,0,0,2,1,3,5,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,1,0
+S026,18,4,4,1,4,1,0,0,5,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0
+S056,28,2,0,2,2,5,4,3,5,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,36,0,2,10,9
+S017,32,4,2,4,0,5,5,0,5,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,3.8
+S007,30,0,4,2,5,4,2,4,1,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,0.9
+S046,35,1,2,2,4,1,5,2,1,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S031,30,5,2,0,1,1,1,4,3,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,30,0,3,6,5.6
+S092,35,3,3,3,5,4,2,2,1,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,7,4.5
+S028,33,1,4,1,5,4,4,3,1,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,27,0,4,5,6.1
+S086,26,2,1,4,4,5,5,0,1,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,28,0,2,1,8
+S019,18,5,5,2,4,1,4,0,5,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S018,35,2,5,2,0,2,3,1,3,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S059,21,3,4,1,2,0,5,3,0,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,5,1.7
+S024,31,1,4,5,5,1,5,2,3,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,1.5
+S074,25,2,3,0,5,2,1,2,2,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,27,0,3,9,5.6
+S053,31,0,1,5,2,3,5,5,1,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,4,0,2,0,4.7
+S089,21,4,0,2,4,3,5,2,0,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,1,3.6
+S097,33,3,0,0,2,1,3,5,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S067,20,1,5,2,1,1,1,0,0,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,0
+S095,28,2,4,5,2,4,0,4,1,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,20,0,3,4,6.3
+S002,35,0,4,3,0,0,0,1,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S074,25,2,3,0,5,2,1,2,2,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,1,38,0,3,4,19.2
+S038,23,0,4,0,1,0,4,0,5,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,1,0
+S096,20,1,5,3,3,4,1,5,3,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S037,19,5,2,0,0,4,3,4,4,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,2,0
+S033,21,0,5,4,0,0,1,1,3,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,1,3.6
+S076,24,0,3,3,2,4,3,3,0,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S023,35,1,1,5,3,4,1,2,4,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,17,0,3,1,7.8
+S077,24,3,3,4,5,0,4,3,3,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S053,31,0,1,5,2,3,5,5,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S015,30,2,1,1,4,3,0,0,0,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,5,0.1
+S039,25,3,0,4,1,4,4,0,4,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,2.1
+S061,31,0,5,2,4,2,5,0,5,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,4.9
+S087,27,0,4,0,2,4,5,3,3,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,2,1.7
+S056,28,2,0,2,2,5,4,3,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,0.4
+S043,24,4,2,1,2,0,1,2,2,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,1,0,0,4,0,0
+S067,20,1,5,2,1,1,1,0,0,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0.4
+S002,35,0,4,3,0,0,0,1,1,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,8,0,4,0,6.6
+S045,35,2,5,0,1,2,0,0,5,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,1,39,0,2,9,7.4
+S085,25,1,3,5,0,4,1,3,5,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,2,4.9
+S091,32,5,1,3,1,5,4,5,2,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,3,0
+S049,35,5,3,4,0,0,0,5,1,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,1,0
+S085,25,1,3,5,0,4,1,3,5,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S099,35,2,2,5,3,2,2,2,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,23,0,2,5,5.2
+S008,20,0,5,1,2,0,1,0,3,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,54,0,5,9,6.3
+S009,26,3,5,2,1,2,2,1,5,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,57,0,5,10,19.5
+S023,35,1,1,5,3,4,1,2,4,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,1,29,0,4,0,8.3
+S092,35,3,3,3,5,4,2,2,1,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,9,0,3,1,0
+S100,21,5,1,2,0,5,4,5,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,4,0.1
+S084,20,5,0,0,1,1,0,4,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,8,0,4,4,0
+S074,25,2,3,0,5,2,1,2,2,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,0
+S063,35,1,1,3,5,3,5,5,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S100,21,5,1,2,0,5,4,5,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,41,0,4,9,8.1
+S016,22,5,1,5,3,4,0,3,3,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S047,26,4,3,2,0,0,5,3,2,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,0,0,4,0,0
+S098,27,5,4,2,3,4,4,2,3,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,0,0,2,0,0.3
+S014,22,1,5,4,4,2,5,4,3,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,1.4
+S081,18,0,5,3,1,3,1,0,2,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,29,0,3,3,0.9
+S004,31,1,3,4,2,0,1,5,3,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,1,2,0,4,0,1.5
+S009,26,3,5,2,1,2,2,1,5,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S052,29,4,3,4,5,1,1,1,1,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,2,0
+S069,30,3,3,1,1,5,5,0,0,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,29,0,2,8,13.1
+S005,28,2,1,1,2,0,0,3,0,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,2,1.6
+S061,31,0,5,2,4,2,5,0,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S013,28,1,5,3,3,5,3,1,2,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,2,2.7
+S009,26,3,5,2,1,2,2,1,5,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,5,0
+S044,23,3,4,5,2,4,5,4,0,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S028,33,1,4,1,5,4,4,3,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,0,0,2,0,1.3
+S016,22,5,1,5,3,4,0,3,3,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,1.3
+S090,34,5,2,0,3,3,0,3,2,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,3.8
+S075,28,4,0,1,1,1,3,5,1,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0
+S081,18,0,5,3,1,3,1,0,2,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,1,0,0,4,2,2.7
+S011,25,1,3,3,2,5,5,4,1,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,1,3.6
+S091,32,5,1,3,1,5,4,5,2,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,5
+S082,30,2,1,3,2,2,3,2,3,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S023,35,1,1,5,3,4,1,2,4,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,2.2
+S092,35,3,3,3,5,4,2,2,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,24,0,3,7,12.5
+S045,35,2,5,0,1,2,0,0,5,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,2,0.9
+S016,22,5,1,5,3,4,0,3,3,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S098,27,5,4,2,3,4,4,2,3,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,65,0,4,15,25.9
+S023,35,1,1,5,3,4,1,2,4,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,3.2
+S030,31,3,5,0,5,5,5,0,0,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,0,0,3,1,0.9
+S095,28,2,4,5,2,4,0,4,1,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,52,0,4,13,19.3
+S010,26,5,5,5,0,4,5,1,4,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,46,0,4,6,8
+S019,18,5,5,2,4,1,4,0,5,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,3,4.3
+S050,35,0,2,4,4,1,3,1,0,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0.1
+S081,18,0,5,3,1,3,1,0,2,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,1,0,0,3,3,2
+S005,28,2,1,1,2,0,0,3,0,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,5,0
+S029,33,3,1,0,0,5,3,2,3,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S082,30,2,1,3,2,2,3,2,3,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,2,2.2
+S071,21,3,1,3,5,4,4,4,2,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,4.1
+S063,35,1,1,3,5,3,5,5,1,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,3,0.4
+S036,33,1,1,2,1,0,4,5,4,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,1.7
+S032,22,3,1,2,3,1,0,3,4,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0.1
+S076,24,0,3,3,2,4,3,3,0,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,2.6
+S054,26,1,5,0,3,0,3,1,1,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,4.5
+S099,35,2,2,5,3,2,2,2,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S062,27,4,2,5,3,2,3,5,2,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S031,30,5,2,0,1,1,1,4,3,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,46,0,4,1,14
+S028,33,1,4,1,5,4,4,3,1,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,24,0,2,1,2.8
+S003,34,4,0,4,1,5,5,5,4,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,61,0,5,9,10
+S074,25,2,3,0,5,2,1,2,2,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,3,1
+S001,21,0,5,2,1,1,1,5,0,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,3,1.6
+S035,26,3,2,3,5,5,4,5,5,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S027,19,1,0,0,2,0,4,1,2,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,1,6.3
+S095,28,2,4,5,2,4,0,4,1,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S080,30,5,1,3,1,4,4,0,3,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,21,0,2,7,13.3
+S072,32,4,5,4,3,4,3,1,5,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,47,0,3,6,10.4
+S031,30,5,2,0,1,1,1,4,3,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,3.3
+S035,26,3,2,3,5,5,4,5,5,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,67,0,3,16,25.5
+S048,19,0,2,1,5,2,1,5,3,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,4,1.7
+S016,22,5,1,5,3,4,0,3,3,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,4,0
+S009,26,3,5,2,1,2,2,1,5,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,2,0
+S014,22,1,5,4,4,2,5,4,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,4,0
+S064,27,3,4,0,2,2,1,3,4,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,4,2
+S081,18,0,5,3,1,3,1,0,2,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S070,31,1,1,5,4,3,0,4,1,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,1.3
+S095,28,2,4,5,2,4,0,4,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S003,34,4,0,4,1,5,5,5,4,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0.2
+S042,28,0,0,3,4,4,0,0,4,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S071,21,3,1,3,5,4,4,4,2,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S040,20,3,5,4,4,4,2,2,1,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,27,0,3,3,10.7
+S059,21,3,4,1,2,0,5,3,0,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,29,0,3,5,1.6
+S086,26,2,1,4,4,5,5,0,1,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,0,0,3,0,0
+S074,25,2,3,0,5,2,1,2,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,1.5
+S027,19,1,0,0,2,0,4,1,2,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,6.5
+S045,35,2,5,0,1,2,0,0,5,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,3,0.6
+S021,34,0,4,2,3,0,0,2,2,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,3,3.3
+S052,29,4,3,4,5,1,1,1,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S041,28,1,2,3,1,5,5,2,3,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,2.6
+S065,28,3,3,3,5,1,4,3,5,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,47,0,3,4,21.1
+S097,33,3,0,0,2,1,3,5,1,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S094,28,0,3,2,1,3,1,2,2,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,57,0,5,7,10.1
+S012,28,0,1,0,2,3,2,0,1,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S075,28,4,0,1,1,1,3,5,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,1,0
+S036,33,1,1,2,1,0,4,5,4,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,2,0.4
+S058,21,4,3,2,5,2,3,4,4,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,33,0,4,12,9.5
+S054,26,1,5,0,3,0,3,1,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,1,1.3
+S055,32,2,2,1,1,0,5,1,3,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,1,0,0,2,3,0.8
+S097,33,3,0,0,2,1,3,5,1,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,4,1.6
+S038,23,0,4,0,1,0,4,0,5,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0.9
+S060,34,4,5,5,5,5,5,1,2,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,1,12,0,3,7,4.5
+S039,25,3,0,4,1,4,4,0,4,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S063,35,1,1,3,5,3,5,5,1,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,1,23,0,3,3,3.1
+S064,27,3,4,0,2,2,1,3,4,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,26,0,4,3,0
+S073,33,3,2,1,5,2,4,3,5,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,6,3.3
+S034,33,3,1,3,0,1,3,0,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,59,0,5,17,11.1
+S089,21,4,0,2,4,3,5,2,0,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,41,0,3,8,6.2
+S038,23,0,4,0,1,0,4,0,5,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,1,2,0,3,0,0.3
+S099,35,2,2,5,3,2,2,2,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,11,0,3,0,0.6
+S070,31,1,1,5,4,3,0,4,1,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,2.9
+S088,24,0,4,5,5,1,0,5,2,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,3.5
+S047,26,4,3,2,0,0,5,3,2,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,54,0,4,9,11.1
+S002,35,0,4,3,0,0,0,1,1,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S063,35,1,1,3,5,3,5,5,1,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S014,22,1,5,4,4,2,5,4,3,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,4,2
+S025,29,3,4,3,0,1,1,0,2,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S068,25,3,4,0,3,3,5,4,1,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S018,35,2,5,2,0,2,3,1,3,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S098,27,5,4,2,3,4,4,2,3,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,27,0,2,8,11.6
+S040,20,3,5,4,4,4,2,2,1,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,1
+S100,21,5,1,2,0,5,4,5,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,57,0,3,8,17.7
+S005,28,2,1,1,2,0,0,3,0,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,0,0,2,1,1.4
+S033,21,0,5,4,0,0,1,1,3,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,1.3
+S097,33,3,0,0,2,1,3,5,1,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,3,0
+S098,27,5,4,2,3,4,4,2,3,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,4,5.6
+S037,19,5,2,0,0,4,3,4,4,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,50,0,3,6,15.3
+S028,33,1,4,1,5,4,4,3,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,4,2
+S090,34,5,2,0,3,3,0,3,2,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S014,22,1,5,4,4,2,5,4,3,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,1
+S055,32,2,2,1,1,0,5,1,3,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,4,2.6
+S098,27,5,4,2,3,4,4,2,3,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,3,0,3,4,1.9
+S064,27,3,4,0,2,2,1,3,4,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,2,4.4
+S050,35,0,2,4,4,1,3,1,0,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S088,24,0,4,5,5,1,0,5,2,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,1,7.5
+S055,32,2,2,1,1,0,5,1,3,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S061,31,0,5,2,4,2,5,0,5,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,28,0,4,5,9.5
+S022,25,0,1,4,0,0,5,3,0,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,7,0,3,2,5
+S093,20,2,3,1,3,4,4,5,3,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,3.9
+S083,26,0,3,0,5,4,0,2,1,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0.9
+S014,22,1,5,4,4,2,5,4,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,6.4
+S081,18,0,5,3,1,3,1,0,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,3,5.8
+S098,27,5,4,2,3,4,4,2,3,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,3,0
+S064,27,3,4,0,2,2,1,3,4,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,3,1.8
+S063,35,1,1,3,5,3,5,5,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,6,0
+S070,31,1,1,5,4,3,0,4,1,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,3,3.4
+S056,28,2,0,2,2,5,4,3,5,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,13,0,4,5,6.9
+S057,35,2,0,0,2,1,4,2,0,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S085,25,1,3,5,0,4,1,3,5,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,6.1
+S063,35,1,1,3,5,3,5,5,1,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,2.3
+S063,35,1,1,3,5,3,5,5,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S085,25,1,3,5,0,4,1,3,5,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,3,0
+S051,27,2,0,2,1,5,1,5,0,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S042,28,0,0,3,4,4,0,0,4,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,1,15,0,3,0,1.4
+S045,35,2,5,0,1,2,0,0,5,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,3,2.7
+S081,18,0,5,3,1,3,1,0,2,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,1.1
+S046,35,1,2,2,4,1,5,2,1,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0.1
+S003,34,4,0,4,1,5,5,5,4,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,26,0,4,6,8.5
+S073,33,3,2,1,5,2,4,3,5,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,32,0,4,8,15.7
+S076,24,0,3,3,2,4,3,3,0,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,36,0,4,6,13.7
+S042,28,0,0,3,4,4,0,0,4,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,1.4
+S098,27,5,4,2,3,4,4,2,3,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S047,26,4,3,2,0,0,5,3,2,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0
+S010,26,5,5,5,0,4,5,1,4,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,49,0,3,10,21.9
+S012,28,0,1,0,2,3,2,0,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,32,0,3,7,7.8
+S035,26,3,2,3,5,5,4,5,5,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,1.1
+S026,18,4,4,1,4,1,0,0,5,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,1.1
+S059,21,3,4,1,2,0,5,3,0,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,26,0,2,8,2.7
+S060,34,4,5,5,5,5,5,1,2,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,2,0
+S094,28,0,3,2,1,3,1,2,2,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0.2
+S060,34,4,5,5,5,5,5,1,2,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,3.6
+S082,30,2,1,3,2,2,3,2,3,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,1,21,0,3,7,4.3
+S083,26,0,3,0,5,4,0,2,1,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,7.5
+S052,29,4,3,4,5,1,1,1,1,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,24,0,3,8,5.5
+S040,20,3,5,4,4,4,2,2,1,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,1,2.5
+S018,35,2,5,2,0,2,3,1,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S041,28,1,2,3,1,5,5,2,3,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,1,0,0,4,0,0
+S047,26,4,3,2,0,0,5,3,2,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,17,0,3,1,8.3
+S031,30,5,2,0,1,1,1,4,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,1,0.1
+S100,21,5,1,2,0,5,4,5,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S031,30,5,2,0,1,1,1,4,3,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,3,0
+S043,24,4,2,1,2,0,1,2,2,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,9,6.9
+S096,20,1,5,3,3,4,1,5,3,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,33,0,2,6,11.2
+S023,35,1,1,5,3,4,1,2,4,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,5,0
+S033,21,0,5,4,0,0,1,1,3,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S090,34,5,2,0,3,3,0,3,2,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,1,1.5
+S088,24,0,4,5,5,1,0,5,2,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,3,0
+S019,18,5,5,2,4,1,4,0,5,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,1,0,0,3,2,0
+S003,34,4,0,4,1,5,5,5,4,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0.4
+S069,30,3,3,1,1,5,5,0,0,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,40,0,4,8,10.5
+S033,21,0,5,4,0,0,1,1,3,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S057,35,2,0,0,2,1,4,2,0,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,4,0
+S100,21,5,1,2,0,5,4,5,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,35,0,3,4,6.3
+S092,35,3,3,3,5,4,2,2,1,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,6.1
+S021,34,0,4,2,3,0,0,2,2,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,1,11,0,4,2,4.3
+S078,18,2,2,3,3,4,5,5,4,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S015,30,2,1,1,4,3,0,0,0,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S099,35,2,2,5,3,2,2,2,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S088,24,0,4,5,5,1,0,5,2,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,39,0,4,2,10
+S095,28,2,4,5,2,4,0,4,1,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S024,31,1,4,5,5,1,5,2,3,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S074,25,2,3,0,5,2,1,2,2,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,1,9,0,3,0,2.7
+S012,28,0,1,0,2,3,2,0,1,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0.5
+S022,25,0,1,4,0,0,5,3,0,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,3,1.8
+S034,33,3,1,3,0,1,3,0,3,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0.8
+S073,33,3,2,1,5,2,4,3,5,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S099,35,2,2,5,3,2,2,2,1,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S029,33,3,1,0,0,5,3,2,3,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S035,26,3,2,3,5,5,4,5,5,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,1,20,0,4,0,2.2
+S027,19,1,0,0,2,0,4,1,2,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0.5
+S094,28,0,3,2,1,3,1,2,2,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,1.5
+S019,18,5,5,2,4,1,4,0,5,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,29,0,4,0,12.1
+S032,22,3,1,2,3,1,0,3,4,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,2,0
+S089,21,4,0,2,4,3,5,2,0,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S091,32,5,1,3,1,5,4,5,2,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,20,0,2,2,5.6
+S072,32,4,5,4,3,4,3,1,5,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S061,31,0,5,2,4,2,5,0,5,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0.8
+S077,24,3,3,4,5,0,4,3,3,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,41,0,3,8,11.1
+S065,28,3,3,3,5,1,4,3,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,3,0
+S086,26,2,1,4,4,5,5,0,1,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,1,3.5
+S006,29,2,4,2,0,5,3,4,0,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,34,0,4,6,7.9
+S044,23,3,4,5,2,4,5,4,0,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,52,0,5,6,10.1
+S019,18,5,5,2,4,1,4,0,5,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,0,0,3,3,1.1
+S034,33,3,1,3,0,1,3,0,3,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,2,0
+S041,28,1,2,3,1,5,5,2,3,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,4,2.5
+S057,35,2,0,0,2,1,4,2,0,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,1,0,0,3,0,0
+S005,28,2,1,1,2,0,0,3,0,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,1,3.9
+S063,35,1,1,3,5,3,5,5,1,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,1,0
+S019,18,5,5,2,4,1,4,0,5,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,27,0,3,4,9.8
+S073,33,3,2,1,5,2,4,3,5,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S032,22,3,1,2,3,1,0,3,4,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,39,0,3,3,10.2
+S004,31,1,3,4,2,0,1,5,3,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S042,28,0,0,3,4,4,0,0,4,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,2,0.7
+S091,32,5,1,3,1,5,4,5,2,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S035,26,3,2,3,5,5,4,5,5,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0.5
+S006,29,2,4,2,0,5,3,4,0,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S094,28,0,3,2,1,3,1,2,2,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,1.6
+S037,19,5,2,0,0,4,3,4,4,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,2.5
+S071,21,3,1,3,5,4,4,4,2,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,2,1.7
+S023,35,1,1,5,3,4,1,2,4,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S012,28,0,1,0,2,3,2,0,1,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,11,0,4,5,8
+S037,19,5,2,0,0,4,3,4,4,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,2,1.3
+S016,22,5,1,5,3,4,0,3,3,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,1,0
+S040,20,3,5,4,4,4,2,2,1,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,1,30,0,2,11,7.7
+S048,19,0,2,1,5,2,1,5,3,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,4,0
+S012,28,0,1,0,2,3,2,0,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,1,0
+S024,31,1,4,5,5,1,5,2,3,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,2,0,3,1,3.6
+S060,34,4,5,5,5,5,5,1,2,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,0
+S020,27,5,4,4,1,1,2,1,4,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S039,25,3,0,4,1,4,4,0,4,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,5,0.7
+S066,23,5,0,2,4,5,5,4,2,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,51,0,4,6,15.8
+S046,35,1,2,2,4,1,5,2,1,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,2,4.6
+S051,27,2,0,2,1,5,1,5,0,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,1,3.7
+S039,25,3,0,4,1,4,4,0,4,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S086,26,2,1,4,4,5,5,0,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,13,0,3,3,5.6
+S028,33,1,4,1,5,4,4,3,1,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S034,33,3,1,3,0,1,3,0,3,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,2.7
+S001,21,0,5,2,1,1,1,5,0,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,1,1.3
+S096,20,1,5,3,3,4,1,5,3,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,1,33,0,3,4,10.5
+S039,25,3,0,4,1,4,4,0,4,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,0,0,2,0,0
+S003,34,4,0,4,1,5,5,5,4,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,3,0.6
+S027,19,1,0,0,2,0,4,1,2,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,5.7
+S056,28,2,0,2,2,5,4,3,5,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,2.3
+S012,28,0,1,0,2,3,2,0,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,6,0,4,2,2.7
+S032,22,3,1,2,3,1,0,3,4,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,1,0.3
+S051,27,2,0,2,1,5,1,5,0,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,1,21,0,4,4,4.7
+S071,21,3,1,3,5,4,4,4,2,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,4.1
+S066,23,5,0,2,4,5,5,4,2,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,4,9.5
+S063,35,1,1,3,5,3,5,5,1,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0.7
+S055,32,2,2,1,1,0,5,1,3,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,0,0,4,1,0
+S061,31,0,5,2,4,2,5,0,5,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,5,0
+S093,20,2,3,1,3,4,4,5,3,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,2,0
+S065,28,3,3,3,5,1,4,3,5,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S078,18,2,2,3,3,4,5,5,4,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,23,0,3,9,8.4
+S093,20,2,3,1,3,4,4,5,3,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S087,27,0,4,0,2,4,5,3,3,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,1.4
+S021,34,0,4,2,3,0,0,2,2,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,1.8
+S012,28,0,1,0,2,3,2,0,1,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,0,0,3,0,0
+S078,18,2,2,3,3,4,5,5,4,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,1,0.1
+S064,27,3,4,0,2,2,1,3,4,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S021,34,0,4,2,3,0,0,2,2,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S005,28,2,1,1,2,0,0,3,0,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,16,0,3,1,3.7
+S016,22,5,1,5,3,4,0,3,3,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,81,0,4,11,9
+S046,35,1,2,2,4,1,5,2,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,2,0
+S078,18,2,2,3,3,4,5,5,4,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,1,0,4,4,2.7
+S059,21,3,4,1,2,0,5,3,0,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,24,0,2,0,3.7
+S072,32,4,5,4,3,4,3,1,5,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,0,0,2,0,2.9
+S057,35,2,0,0,2,1,4,2,0,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S013,28,1,5,3,3,5,3,1,2,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,43,0,3,10,12.4
+S016,22,5,1,5,3,4,0,3,3,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,41,0,2,10,10.2
+S032,22,3,1,2,3,1,0,3,4,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,2,8.4
+S047,26,4,3,2,0,0,5,3,2,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,0,0,4,0,1.4
+S030,31,3,5,0,5,5,5,0,0,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,40,0,4,4,10.6
+S059,21,3,4,1,2,0,5,3,0,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,4,1.3
+S004,31,1,3,4,2,0,1,5,3,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,24,0,2,4,5.8
+S011,25,1,3,3,2,5,5,4,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S022,25,0,1,4,0,0,5,3,0,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0
+S085,25,1,3,5,0,4,1,3,5,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0.6
+S038,23,0,4,0,1,0,4,0,5,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,3,1.7
+S071,21,3,1,3,5,4,4,4,2,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,25,0,3,0,7.1
+S002,35,0,4,3,0,0,0,1,1,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0.3
+S070,31,1,1,5,4,3,0,4,1,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S052,29,4,3,4,5,1,1,1,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,55,0,3,5,17.7
+S069,30,3,3,1,1,5,5,0,0,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,2.6
+S066,23,5,0,2,4,5,5,4,2,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,15,0,3,7,2.4
+S003,34,4,0,4,1,5,5,5,4,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,3.7
+S034,33,3,1,3,0,1,3,0,3,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,0,0,2,0,4.1
+S058,21,4,3,2,5,2,3,4,4,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,52,0,4,10,16.3
+S031,30,5,2,0,1,1,1,4,3,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,4.1
+S081,18,0,5,3,1,3,1,0,2,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0.7
+S092,35,3,3,3,5,4,2,2,1,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,4,0
+S067,20,1,5,2,1,1,1,0,0,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,4,0
+S075,28,4,0,1,1,1,3,5,1,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,0
+S011,25,1,3,3,2,5,5,4,1,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S061,31,0,5,2,4,2,5,0,5,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,2,0.6
+S068,25,3,4,0,3,3,5,4,1,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S054,26,1,5,0,3,0,3,1,1,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,0,0,4,0,3.2
+S017,32,4,2,4,0,5,5,0,5,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,3,0
+S089,21,4,0,2,4,3,5,2,0,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,1,0,0,3,0,1
+S015,30,2,1,1,4,3,0,0,0,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,53,0,4,11,24.8
+S016,22,5,1,5,3,4,0,3,3,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S038,23,0,4,0,1,0,4,0,5,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,7,0,4,1,0.9
+S007,30,0,4,2,5,4,2,4,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,41,0,4,8,15.7
+S001,21,0,5,2,1,1,1,5,0,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,19,0,2,1,11.5
+S078,18,2,2,3,3,4,5,5,4,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S094,28,0,3,2,1,3,1,2,2,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S080,30,5,1,3,1,4,4,0,3,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,2,0
+S044,23,3,4,5,2,4,5,4,0,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,3
+S057,35,2,0,0,2,1,4,2,0,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,1,0,0,3,0,0
+S091,32,5,1,3,1,5,4,5,2,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S091,32,5,1,3,1,5,4,5,2,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,20,0,2,5,6
+S025,29,3,4,3,0,1,1,0,2,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,5.4
+S073,33,3,2,1,5,2,4,3,5,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.8
+S036,33,1,1,2,1,0,4,5,4,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,1.1
+S075,28,4,0,1,1,1,3,5,1,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,7,0
+S042,28,0,0,3,4,4,0,0,4,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S003,34,4,0,4,1,5,5,5,4,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,1,0.8
+S068,25,3,4,0,3,3,5,4,1,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,49,0,2,2,8.5
+S070,31,1,1,5,4,3,0,4,1,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,10,0,2,5,0
+S020,27,5,4,4,1,1,2,1,4,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,1.7
+S008,20,0,5,1,2,0,1,0,3,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,1,22,0,2,1,1.4
+S039,25,3,0,4,1,4,4,0,4,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,0,0,3,0,0
+S034,33,3,1,3,0,1,3,0,3,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,1,0
+S015,30,2,1,1,4,3,0,0,0,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,2,0
+S053,31,0,1,5,2,3,5,5,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,1.7
+S030,31,3,5,0,5,5,5,0,0,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,5,0
+S017,32,4,2,4,0,5,5,0,5,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,2.5
+S082,30,2,1,3,2,2,3,2,3,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,3.5
+S048,19,0,2,1,5,2,1,5,3,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,1.6
+S069,30,3,3,1,1,5,5,0,0,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,90,1,4,19,27.8
+S001,21,0,5,2,1,1,1,5,0,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,4,0
+S062,27,4,2,5,3,2,3,5,2,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,1,0
+S049,35,5,3,4,0,0,0,5,1,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,1,0,0,3,4,0
+S006,29,2,4,2,0,5,3,4,0,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,4,0
+S088,24,0,4,5,5,1,0,5,2,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,6,1.5
+S091,32,5,1,3,1,5,4,5,2,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,3.2
+S042,28,0,0,3,4,4,0,0,4,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0.6
+S043,24,4,2,1,2,0,1,2,2,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,12,0,2,3,7.3
+S078,18,2,2,3,3,4,5,5,4,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,0,0,3,4,0
+S053,31,0,1,5,2,3,5,5,1,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,3
+S087,27,0,4,0,2,4,5,3,3,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S077,24,3,3,4,5,0,4,3,3,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,2.8
+S090,34,5,2,0,3,3,0,3,2,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S025,29,3,4,3,0,1,1,0,2,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S098,27,5,4,2,3,4,4,2,3,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S025,29,3,4,3,0,1,1,0,2,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S092,35,3,3,3,5,4,2,2,1,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,1.1
+S091,32,5,1,3,1,5,4,5,2,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,1,31,0,4,9,1.4
+S071,21,3,1,3,5,4,4,4,2,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,4.5
+S096,20,1,5,3,3,4,1,5,3,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S030,31,3,5,0,5,5,5,0,0,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,1,58,0,3,7,11.3
+S007,30,0,4,2,5,4,2,4,1,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,2.1
+S036,33,1,1,2,1,0,4,5,4,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S047,26,4,3,2,0,0,5,3,2,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,2.2
+S029,33,3,1,0,0,5,3,2,3,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S058,21,4,3,2,5,2,3,4,4,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,24,0,2,0,9.2
+S074,25,2,3,0,5,2,1,2,2,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,43,0,4,7,18.1
+S010,26,5,5,5,0,4,5,1,4,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,3.4
+S009,26,3,5,2,1,2,2,1,5,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,22,0,4,3,5.4
+S004,31,1,3,4,2,0,1,5,3,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,0,3.7
+S033,21,0,5,4,0,0,1,1,3,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S044,23,3,4,5,2,4,5,4,0,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,3,0
+S031,30,5,2,0,1,1,1,4,3,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,2,5.1
+S098,27,5,4,2,3,4,4,2,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,2
+S011,25,1,3,3,2,5,5,4,1,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,1,20,0,2,6,3.6
+S079,25,3,1,2,3,3,0,3,2,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,30,0,2,0,6.5
+S085,25,1,3,5,0,4,1,3,5,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S055,32,2,2,1,1,0,5,1,3,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S087,27,0,4,0,2,4,5,3,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0
+S025,29,3,4,3,0,1,1,0,2,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S009,26,3,5,2,1,2,2,1,5,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,0,0,3,1,2.1
+S093,20,2,3,1,3,4,4,5,3,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,1,28,0,2,7,6.5
+S008,20,0,5,1,2,0,1,0,3,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.8
+S084,20,5,0,0,1,1,0,4,1,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,3,0
+S070,31,1,1,5,4,3,0,4,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,6,0
+S067,20,1,5,2,1,1,1,0,0,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,27,0,3,0,5.9
+S044,23,3,4,5,2,4,5,4,0,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,6,0.9
+S060,34,4,5,5,5,5,5,1,2,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,0.5
+S073,33,3,2,1,5,2,4,3,5,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,44,0,3,6,22.6
+S014,22,1,5,4,4,2,5,4,3,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,0
+S064,27,3,4,0,2,2,1,3,4,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S089,21,4,0,2,4,3,5,2,0,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,1,13,0,4,4,4.1
+S095,28,2,4,5,2,4,0,4,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,1,51,0,5,11,11.2
+S027,19,1,0,0,2,0,4,1,2,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,2,0
+S047,26,4,3,2,0,0,5,3,2,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,1,0,0,2,0,3.2
+S098,27,5,4,2,3,4,4,2,3,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,1,38,0,3,4,12.4
+S037,19,5,2,0,0,4,3,4,4,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,1,20,0,3,6,2.7
+S034,33,3,1,3,0,1,3,0,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0
+S080,30,5,1,3,1,4,4,0,3,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,1,11,0,3,6,0
+S017,32,4,2,4,0,5,5,0,5,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,1,55,0,4,13,12.7
+S006,29,2,4,2,0,5,3,4,0,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,3,0,3,0,0
+S097,33,3,0,0,2,1,3,5,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,1.5
+S068,25,3,4,0,3,3,5,4,1,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,1,2
+S061,31,0,5,2,4,2,5,0,5,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S075,28,4,0,1,1,1,3,5,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0.3
+S026,18,4,4,1,4,1,0,0,5,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,43,0,3,13,5
+S048,19,0,2,1,5,2,1,5,3,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,1,29,0,2,9,5.2
+S060,34,4,5,5,5,5,5,1,2,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,1,76,0,5,18,39.7
+S056,28,2,0,2,2,5,4,3,5,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,2,3.5
+S034,33,3,1,3,0,1,3,0,3,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,2,1.3
+S038,23,0,4,0,1,0,4,0,5,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,1.2
+S036,33,1,1,2,1,0,4,5,4,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,1,6,0,2,5,5.1
+S070,31,1,1,5,4,3,0,4,1,C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,1,2.5
+S097,33,3,0,0,2,1,3,5,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,3,0
+S002,35,0,4,3,0,0,0,1,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S052,29,4,3,4,5,1,1,1,1,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,1,0
+S020,27,5,4,4,1,1,2,1,4,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,2.6
+S071,21,3,1,3,5,4,4,4,2,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S044,23,3,4,5,2,4,5,4,0,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,22,0,4,6,9.9
+S027,19,1,0,0,2,0,4,1,2,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,3.2
+S048,19,0,2,1,5,2,1,5,3,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,1,0,0,2,0,0
+S064,27,3,4,0,2,2,1,3,4,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,0,0,4,0,1.2
+S055,32,2,2,1,1,0,5,1,3,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,1.1
+S089,21,4,0,2,4,3,5,2,0,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,2,0.8
+S073,33,3,2,1,5,2,4,3,5,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,51,0,4,9,11.7
+S073,33,3,2,1,5,2,4,3,5,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,3,0
+S043,24,4,2,1,2,0,1,2,2,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,1,0
+S023,35,1,1,5,3,4,1,2,4,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,1,6.2
+S004,31,1,3,4,2,0,1,5,3,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,3,3.4
+S068,25,3,4,0,3,3,5,4,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,27,0,2,3,7.3
+S022,25,0,1,4,0,0,5,3,0,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,2,1.5
+S021,34,0,4,2,3,0,0,2,2,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,2.2
+S027,19,1,0,0,2,0,4,1,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S040,20,3,5,4,4,4,2,2,1,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,5,0
+S059,21,3,4,1,2,0,5,3,0,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,1.1
+S058,21,4,3,2,5,2,3,4,4,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,1,0
+S090,34,5,2,0,3,3,0,3,2,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,39,0,3,6,9.5
+S054,26,1,5,0,3,0,3,1,1,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,1,0
+S056,28,2,0,2,2,5,4,3,5,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,1,0
+S090,34,5,2,0,3,3,0,3,2,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,5,0
+S086,26,2,1,4,4,5,5,0,1,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,2,0
+S028,33,1,4,1,5,4,4,3,1,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,4,0
+S060,34,4,5,5,5,5,5,1,2,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,5.5
+S096,20,1,5,3,3,4,1,5,3,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,0,0,0,0,0,2.5
+S025,29,3,4,3,0,1,1,0,2,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S091,32,5,1,3,1,5,4,5,2,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,2.4
+S032,22,3,1,2,3,1,0,3,4,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,58,0,4,14,17.2
+S021,34,0,4,2,3,0,0,2,2,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S023,35,1,1,5,3,4,1,2,4,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,1.6
+S020,27,5,4,4,1,1,2,1,4,C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4,1,16,0,2,7,3.7
+S087,27,0,4,0,2,4,5,3,3,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,0,0,0,0,3,0
+S082,30,2,1,3,2,2,3,2,3,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,2,4.9
+S026,18,4,4,1,4,1,0,0,5,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,33,0,2,8,5.7
+S003,34,4,0,4,1,5,5,5,4,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,1,19,0,3,0,11
+S088,24,0,4,5,5,1,0,5,2,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0.2
+S013,28,1,5,3,3,5,3,1,2,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,1,0,4,3,0
+S066,23,5,0,2,4,5,5,4,2,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,53,0,4,10,17.2
+S080,30,5,1,3,1,4,4,0,3,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,5,0
+S023,35,1,1,5,3,4,1,2,4,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S050,35,0,2,4,4,1,3,1,0,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,1,25,0,4,6,0
+S084,20,5,0,0,1,1,0,4,1,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,1,0,0,3,1,2.5
+S053,31,0,1,5,2,3,5,5,1,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S069,30,3,3,1,1,5,5,0,0,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,1,0
+S077,24,3,3,4,5,0,4,3,3,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S087,27,0,4,0,2,4,5,3,3,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,2,0.4
+S089,21,4,0,2,4,3,5,2,0,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,4.2
+S003,34,4,0,4,1,5,5,5,4,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,1,4.8
+S066,23,5,0,2,4,5,5,4,2,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S091,32,5,1,3,1,5,4,5,2,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S055,32,2,2,1,1,0,5,1,3,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,0,0,3,1,0.1
+S048,19,0,2,1,5,2,1,5,3,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,21,0,3,6,13.8
+S083,26,0,3,0,5,4,0,2,1,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0
+S036,33,1,1,2,1,0,4,5,4,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S097,33,3,0,0,2,1,3,5,1,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,4,0
+S044,23,3,4,5,2,4,5,4,0,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,1,2,0,3,0,2.7
+S088,24,0,4,5,5,1,0,5,2,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S049,35,5,3,4,0,0,0,5,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,4,0
+S001,21,0,5,2,1,1,1,5,0,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,39,0,3,9,4.9
+S007,30,0,4,2,5,4,2,4,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,1,0
+S023,35,1,1,5,3,4,1,2,4,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,0,0,0,0,2,0
+S027,19,1,0,0,2,0,4,1,2,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,2,3.3
+S060,34,4,5,5,5,5,5,1,2,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,44,0,5,9,12.5
+S023,35,1,1,5,3,4,1,2,4,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,0,4.4
+S058,21,4,3,2,5,2,3,4,4,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S062,27,4,2,5,3,2,3,5,2,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,50,0,5,7,8.1
+S022,25,0,1,4,0,0,5,3,0,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S095,28,2,4,5,2,4,0,4,1,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0.7
+S062,27,4,2,5,3,2,3,5,2,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,1,60,0,2,13,20.4
+S033,21,0,5,4,0,0,1,1,3,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,1.5
+S049,35,5,3,4,0,0,0,5,1,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,62,0,3,12,9.8
+S026,18,4,4,1,4,1,0,0,5,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,15,0,4,0,8
+S063,35,1,1,3,5,3,5,5,1,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,1,1.7
+S096,20,1,5,3,3,4,1,5,3,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,4.2
+S076,24,0,3,3,2,4,3,3,0,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,1,20,0,2,6,4.9
+S050,35,0,2,4,4,1,3,1,0,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,1.8
+S033,21,0,5,4,0,0,1,1,3,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,1,1.1
+S063,35,1,1,3,5,3,5,5,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S084,20,5,0,0,1,1,0,4,1,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,7,3.6
+S005,28,2,1,1,2,0,0,3,0,C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,2,0.3
+S090,34,5,2,0,3,3,0,3,2,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,46,0,5,10,11.6
+S088,24,0,4,5,5,1,0,5,2,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S083,26,0,3,0,5,4,0,2,1,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,1,0,0,2,0,0
+S055,32,2,2,1,1,0,5,1,3,C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,4,0.1
+S069,30,3,3,1,1,5,5,0,0,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S094,28,0,3,2,1,3,1,2,2,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,1.4
+S012,28,0,1,0,2,3,2,0,1,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,2.9
+S035,26,3,2,3,5,5,4,5,5,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0.1
+S090,34,5,2,0,3,3,0,3,2,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,1,0,0,5,2,1.6
+S001,21,0,5,2,1,1,1,5,0,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,1,0
+S068,25,3,4,0,3,3,5,4,1,C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,1,4.8
+S048,19,0,2,1,5,2,1,5,3,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,1,12,0,3,2,0
+S058,21,4,3,2,5,2,3,4,4,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,1,16,0,2,3,5.7
+S096,20,1,5,3,3,4,1,5,3,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,1,32,0,5,5,3.6
+S082,30,2,1,3,2,2,3,2,3,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,0,0,2,0,0
+S036,33,1,1,2,1,0,4,5,4,C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5,0,0,0,0,3,0
+S062,27,4,2,5,3,2,3,5,2,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,63,0,2,8,24.1
+S035,26,3,2,3,5,5,4,5,5,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,2,1.2
+S028,33,1,4,1,5,4,4,3,1,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,1,10,0,4,2,0
+S041,28,1,2,3,1,5,5,2,3,C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,3.1
+S008,20,0,5,1,2,0,1,0,3,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,2,0
+S090,34,5,2,0,3,3,0,3,2,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,1.9
+S078,18,2,2,3,3,4,5,5,4,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,1,49,0,3,2,24.4
+S080,30,5,1,3,1,4,4,0,3,C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,3.6
+S053,31,0,1,5,2,3,5,5,1,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S042,28,0,0,3,4,4,0,0,4,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,0.9
+S095,28,2,4,5,2,4,0,4,1,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,1,0,0,5,0,8.3
+S052,29,4,3,4,5,1,1,1,1,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,1,15,0,5,5,0
+S061,31,0,5,2,4,2,5,0,5,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,0,0
+S094,28,0,3,2,1,3,1,2,2,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,0
+S019,18,5,5,2,4,1,4,0,5,C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.8
+S092,35,3,3,3,5,4,2,2,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S087,27,0,4,0,2,4,5,3,3,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,49,0,5,3,2.7
+S015,30,2,1,1,4,3,0,0,0,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,1,38,0,3,9,8.2
+S022,25,0,1,4,0,0,5,3,0,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,0,0,0,0,0,0
+S086,26,2,1,4,4,5,5,0,1,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,0,0
+S069,30,3,3,1,1,5,5,0,0,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,1,11,0,4,4,7
+S029,33,3,1,0,0,5,3,2,3,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,2.3
+S083,26,0,3,0,5,4,0,2,1,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,2
+S056,28,2,0,2,2,5,4,3,5,C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5,1,0,0,2,0,0
+S015,30,2,1,1,4,3,0,0,0,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,3,0
+S025,29,3,4,3,0,1,1,0,2,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,1,0
+S017,32,4,2,4,0,5,5,0,5,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S001,21,0,5,2,1,1,1,5,0,C020,React Development,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S050,35,0,2,4,4,1,3,1,0,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0.7
+S067,20,1,5,2,1,1,1,0,0,C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1,1,11,0,5,4,5.5
+S002,35,0,4,3,0,0,0,1,1,C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4,1,4,0,4,3,0
+S029,33,3,1,0,0,5,3,2,3,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,48,0,4,11,11.1
+S086,26,2,1,4,4,5,5,0,1,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S065,28,3,3,3,5,1,4,3,5,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,4.1
+S091,32,5,1,3,1,5,4,5,2,C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S064,27,3,4,0,2,2,1,3,4,C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1,0,0,0,0,0,2.1
+S043,24,4,2,1,2,0,1,2,2,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,1,25,0,3,8,11.6
+S090,34,5,2,0,3,3,0,3,2,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S023,35,1,1,5,3,4,1,2,4,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,1,36,0,3,8,4.7
+S003,34,4,0,4,1,5,5,5,4,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,90,1,5,19,16.6
+S045,35,2,5,0,1,2,0,0,5,C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1,1,37,0,4,14,13.7
+S037,19,5,2,0,0,4,3,4,4,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,2,0.4
+S071,21,3,1,3,5,4,4,4,2,C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,0
+S075,28,4,0,1,1,1,3,5,1,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S059,21,3,4,1,2,0,5,3,0,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,1,0,0,5,0,0
+S038,23,0,4,0,1,0,4,0,5,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,0
+S026,18,4,4,1,4,1,0,0,5,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S087,27,0,4,0,2,4,5,3,3,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,9,4.1
+S008,20,0,5,1,2,0,1,0,3,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,0.7
+S007,30,0,4,2,5,4,2,4,1,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S076,24,0,3,3,2,4,3,3,0,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,1.3
+S005,28,2,1,1,2,0,0,3,0,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,2.9
+S096,20,1,5,3,3,4,1,5,3,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,2,4.1
+S012,28,0,1,0,2,3,2,0,1,C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,1.4
+S049,35,5,3,4,0,0,0,5,1,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,1,0
+S016,22,5,1,5,3,4,0,3,3,C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,0,4.8
+S029,33,3,1,0,0,5,3,2,3,C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2,0,0,0,0,0,1.9
+S089,21,4,0,2,4,3,5,2,0,C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S083,26,0,3,0,5,4,0,2,1,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,0,0
+S013,28,1,5,3,3,5,3,1,2,C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S069,30,3,3,1,1,5,5,0,0,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,0,0
+S051,27,2,0,2,1,5,1,5,0,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,2,1.8
+S092,35,3,3,3,5,4,2,2,1,C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1,0,0,0,0,0,0
+S085,25,1,3,5,0,4,1,3,5,C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,0
+S024,31,1,4,5,5,1,5,2,3,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,1,2.8
+S016,22,5,1,5,3,4,0,3,3,C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5,1,28,0,3,2,9.2
+S012,28,0,1,0,2,3,2,0,1,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,0
+S085,25,1,3,5,0,4,1,3,5,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,1,31,0,4,8,6.7
+S057,35,2,0,0,2,1,4,2,0,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0.6
+S067,20,1,5,2,1,1,1,0,0,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,3,0
+S089,21,4,0,2,4,3,5,2,0,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,1,64,0,2,16,27.4
+S025,29,3,4,3,0,1,1,0,2,C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4,0,0,0,0,0,1.8
+S018,35,2,5,2,0,2,3,1,3,C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,4,1.3
+S094,28,0,3,2,1,3,1,2,2,C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5,0,0,0,0,0,0
+S052,29,4,3,4,5,1,1,1,1,C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5,1,17,0,5,0,3.8
+S069,30,3,3,1,1,5,5,0,0,C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4,0,0,0,0,3,0
+S082,30,2,1,3,2,2,3,2,3,C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1,0,0,0,0,4,3.4
+S083,26,0,3,0,5,4,0,2,1,C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5,0,0,0,0,0,1.6
+S056,28,2,0,2,2,5,4,3,5,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,0,0,0,0,0,3.7
+S010,26,5,5,5,0,4,5,1,4,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,1,19,0,5,0,6.5
+S047,26,4,3,2,0,0,5,3,2,C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2,1,25,0,3,5,10.3
+S013,28,1,5,3,3,5,3,1,2,C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1,1,70,0,2,17,15.3
+S068,25,3,4,0,3,3,5,4,1,C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2,0,0,0,0,0,0
+S063,35,1,1,3,5,3,5,5,1,C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5,0,0,0,0,1,0.7
+S037,19,5,2,0,0,4,3,4,4,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,1,58,0,2,13,13.3
+S024,31,1,4,5,5,1,5,2,3,C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0,0,0,0,0,0,0
+S069,30,3,3,1,1,5,5,0,0,C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5,0,0,0,0,0,3.2
+S062,27,4,2,5,3,2,3,5,2,C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5,1,17,0,3,4,3.8
+S085,25,1,3,5,0,4,1,3,5,C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4,0,0,0,0,0,0
+S035,26,3,2,3,5,5,4,5,5,C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4,0,0,0,0,0,0
+S048,19,0,2,1,5,2,1,5,3,C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1,0,0,0,0,0,0
+S059,21,3,4,1,2,0,5,3,0,C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5,0,0,0,0,3,0
+S037,19,5,2,0,0,4,3,4,4,C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1,0,0,0,0,4,4.6
+S040,20,3,5,4,4,4,2,2,1,C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2,0,0,0,0,0,0
+S041,28,1,2,3,1,5,5,2,3,C006,Database Design,Database,Intermediate,22,1,5,1,1,4,1,0,0,3,0,0
+S012,28,0,1,0,2,3,2,0,1,C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5,1,44,0,4,9,9.1
+S002,35,0,4,3,0,0,0,1,1,C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5,0,0,0,0,0,0
+S018,35,2,5,2,0,2,3,1,3,C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4,0,0,0,0,2,0.9
+S052,29,4,3,4,5,1,1,1,1,C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2,0,0,0,0,0,1.7

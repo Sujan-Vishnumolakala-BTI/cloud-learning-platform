@@ -1,0 +1,44 @@
+<footer class="border-t border-slate-100 bg-white">
+  <div class="section grid grid-cols-2 gap-10 py-14 md:grid-cols-6">
+    <div class="col-span-2">
+      <a routerLink="/" class="flex items-center gap-2 font-display text-lg font-bold text-slate-900">
+        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary-600 to-accent-500 text-white">
+          <svg viewBox="0 0 24 24" class="h-4.5 w-4.5" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M7 18a4.5 4.5 0 0 1-.5-8.97A5.5 5.5 0 0 1 17.2 8.06 4 4 0 0 1 17 16H7Z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        CloudPath
+      </a>
+      <p class="mt-4 max-w-xs text-sm leading-relaxed text-slate-500">
+        Certification-ready cloud and DevOps courses, built by engineers who ship to production.
+      </p>
+      <div class="mt-5 flex gap-3">
+        @for (s of socials; track s.label) {
+          <a href="#" [attr.aria-label]="s.label" class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition-colors hover:border-primary-300 hover:text-primary-600">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path [attr.d]="s.d"/></svg>
+          </a>
+        }
+      </div>
+    </div>
+
+    @for (col of columns; track col.title) {
+      <div class="col-span-1">
+        <h4 class="font-display text-sm font-semibold text-slate-900">{{ col.title }}</h4>
+        <ul class="mt-4 space-y-2.5">
+          @for (link of col.links; track link.label) {
+            <li>
+              <a [routerLink]="link.path" [fragment]="link.fragment" class="text-sm text-slate-500 transition-colors hover:text-primary-600">{{ link.label }}</a>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+
+  <div class="border-t border-slate-100">
+    <div class="section flex flex-col items-center justify-between gap-3 py-5 text-xs text-slate-400 sm:flex-row">
+      <p>&copy; {{ year }} CloudPath. All rights reserved.</p>
+      <p class="font-mono">built for learners who deploy on Fridays anyway 🚀</p>
+    </div>
+  </div>
+</footer>

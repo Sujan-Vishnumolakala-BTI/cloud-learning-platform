@@ -1,0 +1,51 @@
+course_id,course_title,category,difficulty,duration_hours,course_python,course_sql,course_ml,course_web,course_data_science
+C001,Python for Beginners,Programming,Beginner,20,5,1,0,1,2
+C002,Advanced Python,Programming,Advanced,35,5,1,2,2,2
+C003,Python for Data Science,Data Science,Intermediate,30,5,2,3,0,5
+C004,SQL for Beginners,Database,Beginner,15,1,5,1,0,4
+C005,Advanced SQL,Database,Advanced,25,1,5,2,0,5
+C006,Database Design,Database,Intermediate,22,1,5,1,1,4
+C007,Machine Learning Fundamentals,AI,Intermediate,35,4,2,5,0,5
+C008,Deep Learning with Python,AI,Advanced,45,5,1,5,0,5
+C009,Artificial Intelligence Basics,AI,Beginner,25,3,1,4,0,4
+C010,Natural Language Processing,AI,Advanced,40,4,1,5,0,4
+C011,Data Analysis with Pandas,Data Science,Beginner,18,5,3,2,0,5
+C012,Data Visualization,Data Science,Beginner,15,3,2,1,0,5
+C013,Statistics for Data Science,Data Science,Intermediate,28,2,2,3,0,5
+C014,Excel for Data Analysis,Data Science,Beginner,12,0,1,0,0,4
+C015,Power BI Fundamentals,Data Science,Beginner,20,0,1,0,0,5
+C016,Web Development Fundamentals,Web Development,Beginner,25,2,1,0,5,2
+C017,HTML and CSS,Web Development,Beginner,15,0,0,0,5,1
+C018,JavaScript Fundamentals,Web Development,Beginner,25,2,0,0,5,1
+C019,Advanced JavaScript,Web Development,Advanced,35,3,0,1,5,1
+C020,React Development,Web Development,Intermediate,30,3,0,1,5,1
+C021,Node.js Backend Development,Web Development,Intermediate,32,4,1,1,5,1
+C022,Full Stack Development,Web Development,Advanced,50,4,2,2,5,2
+C023,Git and GitHub,Programming,Beginner,10,2,0,0,3,0
+C024,Software Engineering,Programming,Intermediate,30,3,2,1,3,1
+C025,Object Oriented Programming,Programming,Intermediate,25,4,1,1,3,1
+C026,Python for Beginners - Advanced Track 1,Programming,Beginner,20,5,1,0,1,2
+C027,Advanced Python - Advanced Track 2,Programming,Advanced,35,5,1,2,2,2
+C028,Python for Data Science - Advanced Track 3,Data Science,Intermediate,30,5,2,3,0,5
+C029,SQL for Beginners - Advanced Track 4,Database,Beginner,15,1,5,1,0,4
+C030,Advanced SQL - Advanced Track 5,Database,Advanced,25,1,5,2,0,5
+C031,Database Design - Advanced Track 6,Database,Intermediate,22,1,5,1,1,4
+C032,Machine Learning Fundamentals - Advanced Track 7,AI,Intermediate,35,4,2,5,0,5
+C033,Deep Learning with Python - Advanced Track 8,AI,Advanced,45,5,1,5,0,5
+C034,Artificial Intelligence Basics - Advanced Track 9,AI,Beginner,25,3,1,4,0,4
+C035,Natural Language Processing - Advanced Track 10,AI,Advanced,40,4,1,5,0,4
+C036,Data Analysis with Pandas - Advanced Track 11,Data Science,Beginner,18,5,3,2,0,5
+C037,Data Visualization - Advanced Track 12,Data Science,Beginner,15,3,2,1,0,5
+C038,Statistics for Data Science - Advanced Track 13,Data Science,Intermediate,28,2,2,3,0,5
+C039,Excel for Data Analysis - Advanced Track 14,Data Science,Beginner,12,0,1,0,0,4
+C040,Power BI Fundamentals - Advanced Track 15,Data Science,Beginner,20,0,1,0,0,5
+C041,Web Development Fundamentals - Advanced Track 16,Web Development,Beginner,25,2,1,0,5,2
+C042,HTML and CSS - Advanced Track 17,Web Development,Beginner,15,0,0,0,5,1
+C043,JavaScript Fundamentals - Advanced Track 18,Web Development,Beginner,25,2,0,0,5,1
+C044,Advanced JavaScript - Advanced Track 19,Web Development,Advanced,35,3,0,1,5,1
+C045,React Development - Advanced Track 20,Web Development,Intermediate,30,3,0,1,5,1
+C046,Node.js Backend Development - Advanced Track 21,Web Development,Intermediate,32,4,1,1,5,1
+C047,Full Stack Development - Advanced Track 22,Web Development,Advanced,50,4,2,2,5,2
+C048,Git and GitHub - Advanced Track 23,Programming,Beginner,10,2,0,0,3,0
+C049,Software Engineering - Advanced Track 24,Programming,Intermediate,30,3,2,1,3,1
+C050,Object Oriented Programming - Advanced Track 25,Programming,Intermediate,25,4,1,1,3,1

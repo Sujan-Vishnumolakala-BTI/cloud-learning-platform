@@ -1,0 +1,158 @@
+services:
+
+  # =========================================================
+  # POSTGRESQL
+  # =========================================================
+
+  postgres:
+    image: postgres:17
+    container_name: learning-platform-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: learning_platform
+      POSTGRES_USER: learning_admin
+      POSTGRES_PASSWORD: learning_password
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U learning_admin -d learning_platform"
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+
+  # =========================================================
+  # USER SERVICE
+  # =========================================================
+
+  user-service:
+    build:
+      context: ../services/user-service
+      dockerfile: Dockerfile
+
+    container_name: learning-platform-user-service
+    restart: unless-stopped
+
+    ports:
+      - "8081:8081"
+
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/learning_platform
+      SPRING_DATASOURCE_USERNAME: learning_admin
+      SPRING_DATASOURCE_PASSWORD: learning_password
+
+      JWT_SECRET: learning-platform-secret-key-change-this-in-production-123456789
+      JWT_EXPIRATION: 86400000
+      JWT_REFRESH_EXPIRATION: 604800000
+
+      # Gmail
+      MAIL_USERNAME: ${MAIL_USERNAME}
+      MAIL_PASSWORD: ${MAIL_PASSWORD}
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+
+  # =========================================================
+  # COURSE SERVICE
+  # =========================================================
+
+  course-service:
+    build:
+      context: ../services/course-service
+      dockerfile: Dockerfile
+
+    container_name: learning-platform-course-service
+    restart: unless-stopped
+
+    ports:
+      - "8082:8082"
+
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/learning_platform
+      SPRING_DATASOURCE_USERNAME: learning_admin
+      SPRING_DATASOURCE_PASSWORD: learning_password
+
+      JWT_SECRET: learning-platform-secret-key-change-this-in-production-123456789
+
+      USER_SERVICE_URL: http://user-service:8081
+      ENROLLMENT_SERVICE_URL: http://enroll-service:8083
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+      user-service:
+        condition: service_started
+
+      # enroll-service:
+      #   condition: service_started
+
+
+  # =========================================================
+  # ENROLLMENT SERVICE
+  # =========================================================
+
+  enroll-service:
+    build:
+      context: ../services/enroll-service
+      dockerfile: Dockerfile
+
+    container_name: learning-platform-enroll-service
+    restart: unless-stopped
+
+    ports:
+      - "8083:8083"
+
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/learning_platform_enrollment
+      SPRING_DATASOURCE_USERNAME: learning_admin
+      SPRING_DATASOURCE_PASSWORD: learning_password
+
+      JWT_SECRET: learning-platform-secret-key-change-this-in-production-123456789
+
+      COURSE_SERVICE_URL: http://course-service:8082
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+      course-service:
+        condition: service_started
+
+
+  # =========================================================
+  # RECOMMENDATION SERVICE
+  # =========================================================
+
+  recommendation-service:
+    build:
+      context: ../services/recommendation-service
+      dockerfile: Dockerfile
+
+    container_name: learning-platform-recommendation-service
+    restart: unless-stopped
+
+    ports:
+      - "8000:8000"
+
+
+# =========================================================
+# VOLUMES
+# =========================================================
+
+volumes:
+
+  postgres_data:
