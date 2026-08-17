@@ -25,13 +25,13 @@ export class AuthService {
   private readonly http = inject(HttpClient);
 
   private readonly userApiUrl =
-    'http://127.0.0.1:8081/api/users';
+    'http://localhost:8080/api/users';
 
   private readonly authApiUrl =
-    'http://127.0.0.1:8081/api/auth';
+    'http://localhost:8080/api/auth';
 
   private readonly AUTH_API =
-    'http://127.0.0.1:8081/api/auth';
+    'http://localhost:8080/api/auth';
 
   private readonly _currentUser =
     signal<User | null>(this.readStoredUser());
@@ -259,7 +259,7 @@ export class AuthService {
           ) {
 
             message =
-              'Unable to connect to User Service on port 8081.';
+              'Unable to connect to User Service on port 8080.';
           }
 
           return throwError(
@@ -457,6 +457,16 @@ export class AuthService {
         }
       )
       .pipe(
+
+        tap(response => {
+          console.log('========== OTP BACKEND RESPONSE ==========');
+          console.log('FULL RESPONSE:', response);
+          console.log('STATUS:', response?.status);
+          console.log('MESSAGE:', response?.message);
+          console.log('USER:', response?.user);
+          console.log('USER ROLE:', response?.user?.role);
+          console.log('==========================================');
+        }),
 
         map(response => {
 

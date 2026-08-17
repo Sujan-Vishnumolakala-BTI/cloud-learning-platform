@@ -21,7 +21,7 @@ npm install
 ng serve
 
 # 3. Open the app
-# http://127.0.0.1:4200
+# http://localhost:4200
 ```
 
 If you'd rather scaffold a fresh Angular 20 project yourself and copy this `src/` folder in:

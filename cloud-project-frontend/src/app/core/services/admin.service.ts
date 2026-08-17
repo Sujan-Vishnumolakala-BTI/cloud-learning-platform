@@ -36,16 +36,16 @@ export class AdminService {
   // =========================================
 
   private readonly userApiUrl =
-    'http://127.0.0.1:8081/api/admin/users';
+    'http://localhost:8080/api/admin/users';
 
   private readonly courseApiUrl =
-    'http://127.0.0.1:8082/api/courses';
+    'http://localhost:8080/api/courses';
 
   private readonly enrollmentApiUrl =
-    'http://127.0.0.1:8083/api/admin/enrollments';
+    'http://localhost:8080/api/admin/enrollments';
 
   private readonly internalEnrollmentApiUrl =
-    'http://127.0.0.1:8083/api/internal';
+    'http://localhost:8080/api/internal';
 
 
   // =========================================

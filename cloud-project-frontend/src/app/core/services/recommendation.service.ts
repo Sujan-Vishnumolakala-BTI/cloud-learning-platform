@@ -37,7 +37,7 @@ export class RecommendationService {
   private readonly http = inject(HttpClient);
 
   private readonly API_URL =
-    'http://127.0.0.1:8000/api/recommendations';
+    'http://localhost:8000/api/recommendations';
 
   getRecommendations(
     request: RecommendationRequest

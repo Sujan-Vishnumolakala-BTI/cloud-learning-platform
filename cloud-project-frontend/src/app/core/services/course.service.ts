@@ -35,14 +35,14 @@
 //   // =========================
 
 //   private readonly courseApiUrl =
-//     'http://127.0.0.1:8082/api';
+//     'http://localhost:8080/api';
 
 //   // =========================
 //   // PROGRESS SERVICE
 //   // =========================
 
 //   private readonly progressApiUrl =
-//     'http://127.0.0.1:8083/api/progress';
+//     'http://localhost:8080/api/progress';
 
 //   // =========================================================
 //   // COURSES
@@ -485,10 +485,10 @@ export class CourseService {
    */
 
   private readonly courseApiUrl =
-    'http://127.0.0.1:8082/api/courses';
+    'http://localhost:8080/api/courses';
 
   private readonly apiUrl =
-    'http://127.0.0.1:8082/api';
+    'http://localhost:8080/api';
 
   /*
    * ==========================================
@@ -497,15 +497,15 @@ export class CourseService {
    */
 
   private readonly progressApiUrl =
-    'http://127.0.0.1:8083/api/progress';
+    'http://localhost:8080/api/progress';
 
   private readonly quizApiUrl =
-    'http://127.0.0.1:8082/api';
+    'http://localhost:8080/api';
 
   private readonly quizAttemptApiUrl =
-    'http://127.0.0.1:8083/api/quiz-attempts';
+    'http://localhost:8080/api/quiz-attempts';
 
-  private readonly API_URL = 'http://127.0.0.1:8082/api';
+  private readonly API_URL = 'http://localhost:8080/api';
 
   /*
    * ==========================================
@@ -774,7 +774,7 @@ export class CourseService {
    * GET
    * /api/courses/{courseId}/modules
    *
-   * Course Service = 8082
+   * Course Service = 8080
    * ==========================================
    */
 
@@ -803,7 +803,7 @@ export class CourseService {
    * GET
    * /api/modules/{moduleId}/lessons
    *
-   * Course Service = 8082
+   * Course Service = 8080
    * ==========================================
    */
 
@@ -812,7 +812,7 @@ export class CourseService {
   ): Observable<Lesson[]> {
 
     const url =
-      `http://127.0.0.1:8082/api/modules/${moduleId}/lessons`;
+      `http://localhost:8080/api/modules/${moduleId}/lessons`;
 
     console.log(
       'CourseService: GET lessons',
@@ -930,7 +930,7 @@ export class CourseService {
    * GET
    * /api/progress/courses/{courseId}
    *
-   * Enrollment Service = 8083
+   * Enrollment Service = 8080
    * ==========================================
    */
 
@@ -959,7 +959,7 @@ export class CourseService {
    * POST
    * /api/progress/lessons/{lessonId}/start
    *
-   * Enrollment Service = 8083
+   * Enrollment Service = 8080
    * ==========================================
    */
 
@@ -989,7 +989,7 @@ export class CourseService {
    * POST
    * /api/progress/lessons/{lessonId}/complete
    *
-   * Enrollment Service = 8083
+   * Enrollment Service = 8080
    * ==========================================
    */
 
@@ -1017,7 +1017,7 @@ export class CourseService {
 
   //   console.log(
   //     'CourseService: GET modules',
-  //     `http://127.0.0.1:8082/api/courses/${courseId}/modules`
+  //     `http://localhost:8080/api/courses/${courseId}/modules`
   //   );
 
   //   return this.http.get<Module[]>(
@@ -1261,11 +1261,11 @@ export class CourseService {
 
     console.log(
       'CourseService: GET certificate',
-      `http://127.0.0.1:8083/api/certificates/courses/${courseId}`
+      `http://localhost:8080/api/certificates/courses/${courseId}`
     );
 
     return this.http.get<Certificate>(
-      `http://127.0.0.1:8083/api/certificates/courses/${courseId}`
+      `http://localhost:8080/api/certificates/courses/${courseId}`
     );
   }
 
@@ -1282,11 +1282,11 @@ export class CourseService {
 
     console.log(
       'CourseService: GENERATE certificate',
-      `http://127.0.0.1:8083/api/certificates/courses/${courseId}`
+      `http://localhost:8080/api/certificates/courses/${courseId}`
     );
 
     return this.http.post<Certificate>(
-      `http://127.0.0.1:8083/api/certificates/courses/${courseId}`,
+      `http://localhost:8080/api/certificates/courses/${courseId}`,
       {}
     );
 
@@ -1306,11 +1306,11 @@ export class CourseService {
 
     console.log(
       'CourseService: DOWNLOAD certificate',
-      `http://127.0.0.1:8083/api/certificates/courses/${courseId}/download`
+      `http://localhost:8080/api/certificates/courses/${courseId}/download`
     );
 
     return this.http.get(
-      `http://127.0.0.1:8083/api/certificates/courses/${courseId}/download`,
+      `http://localhost:8080/api/certificates/courses/${courseId}/download`,
       {
         responseType: 'blob'
       }
@@ -1326,12 +1326,12 @@ export class CourseService {
    *
    * GET /api/instructor/courses
    *
-   * Course Service = 8082
+   * Course Service = 8080
    */
   getInstructorCourses(): Observable<Course[]> {
 
     const url =
-      'http://127.0.0.1:8082/api/instructor/courses';
+      'http://localhost:8080/api/instructor/courses';
 
     console.log(
       'CourseService: GET instructor courses',
@@ -1352,7 +1352,7 @@ export class CourseService {
   ): Observable<InstructorStudent[]> {
 
     const url =
-      `http://127.0.0.1:8082/api/instructor/courses/${courseId}/students`;
+      `http://localhost:8080/api/instructor/courses/${courseId}/students`;
 
     console.log(
       'CourseService: GET instructor course students',
@@ -1373,7 +1373,7 @@ export class CourseService {
   ): Observable<InstructorCourseProgress[]> {
 
     const url =
-      `http://127.0.0.1:8082/api/instructor/courses/${courseId}/progress`;
+      `http://localhost:8080/api/instructor/courses/${courseId}/progress`;
 
     console.log(
       'CourseService: GET instructor course progress',

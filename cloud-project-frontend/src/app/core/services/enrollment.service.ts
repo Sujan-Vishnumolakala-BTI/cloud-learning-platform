@@ -24,7 +24,7 @@ export class EnrollmentService {
   private readonly http = inject(HttpClient);
 
   private readonly apiUrl =
-    'http://127.0.0.1:8083/api/enrollments';
+    'http://localhost:8080/api/enrollments';
 
   /**
    * Enroll the currently authenticated user

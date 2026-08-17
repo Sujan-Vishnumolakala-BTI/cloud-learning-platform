@@ -139,7 +139,7 @@ export class CourseDetailComponent implements OnInit {
 
         console.log(
             'CALLING COURSE API:',
-            `http://127.0.0.1:8082/api/courses/${courseId}`
+            `http://localhost:8080/api/courses/${courseId}`
         );
 
 
