@@ -29,6 +29,9 @@ import org.springframework.web.client.RestClient;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.learningplatform.enroll_service.event.CourseCompletedEvent;
+import com.learningplatform.enroll_service.event.CourseCompletionEventProducer;
+
 @Service
 public class ProgressService {
 
@@ -42,12 +45,15 @@ public class ProgressService {
 
         private final CourseClient courseClient;
 
+        private final CourseCompletionEventProducer courseCompletionEventProducer;
+
         public ProgressService(
                         LessonProgressRepository progressRepository,
                         EnrollmentRepository enrollmentRepository,
                         RestClient restClient,
                         HttpServletRequest request,
-                        CourseClient courseClient) {
+                        CourseClient courseClient,
+                        CourseCompletionEventProducer courseCompletionEventProducer) {
 
                 this.progressRepository = progressRepository;
 
@@ -58,6 +64,8 @@ public class ProgressService {
                 this.request = request;
 
                 this.courseClient = courseClient;
+
+                this.courseCompletionEventProducer = courseCompletionEventProducer;
         }
 
         /*
@@ -456,6 +464,14 @@ public class ProgressService {
 
                         enrollmentRepository.save(
                                         enrollment);
+
+                        CourseCompletedEvent event = new CourseCompletedEvent(
+                                        userId,
+                                        courseId,
+                                        enrollment.getCompletedAt());
+
+                        courseCompletionEventProducer
+                                        .publishCourseCompleted(event);
                 }
         }
 

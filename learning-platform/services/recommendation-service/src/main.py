@@ -1,20 +1,38 @@
+from contextlib import asynccontextmanager
+from typing import Dict, List
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
-from typing import Dict, List
 
 from src.recommendation.recommender import recommend_courses
+from src.kafka_consumer import start_kafka_consumer
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+
+    start_kafka_consumer()
+
+    print(
+        "Recommendation Kafka consumer thread started",
+        flush=True
+    )
+
+    yield
 
 
 app = FastAPI(
     title="CloudPath Recommendation Service",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan
 )
+
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://127.0.0.1:4200",
+        "http://localhost:4200",
         "http://127.0.0.1:4200"
     ],
     allow_credentials=True,
@@ -24,9 +42,11 @@ app.add_middleware(
 
 
 class Course(BaseModel):
+
     course_id: str
     course_title: str
     difficulty: str
+
     skills: Dict[str, float] = Field(
         default_factory=dict
     )

@@ -6,6 +6,8 @@ import com.learningplatform.enroll_service.dto.EnrollmentResponse;
 import com.learningplatform.enroll_service.dto.InstructorStudentResponse;
 import com.learningplatform.enroll_service.entity.Enrollment;
 import com.learningplatform.enroll_service.entity.EnrollmentStatus;
+import com.learningplatform.enroll_service.event.CourseEnrolledEvent;
+import com.learningplatform.enroll_service.event.EnrollmentEventProducer;
 import com.learningplatform.enroll_service.exception.AlreadyEnrolledException;
 import com.learningplatform.enroll_service.exception.CourseNotAvailableException;
 import com.learningplatform.enroll_service.repository.EnrollmentRepository;
@@ -30,17 +32,21 @@ public class EnrollmentService {
         private final EnrollmentRepository enrollmentRepository;
         private final RestClient restClient;
         private final HttpServletRequest request;
+        private final EnrollmentEventProducer eventProducer;
 
         public EnrollmentService(
                         EnrollmentRepository enrollmentRepository,
                         RestClient restClient,
-                        HttpServletRequest request) {
+                        HttpServletRequest request,
+                        EnrollmentEventProducer eventProducer) {
 
                 this.enrollmentRepository = enrollmentRepository;
 
                 this.restClient = restClient;
 
                 this.request = request;
+
+                this.eventProducer = eventProducer;
         }
 
         // @Transactional
@@ -138,6 +144,13 @@ public class EnrollmentService {
                                 Enrollment saved = enrollmentRepository
                                                 .save(enrollment);
 
+                                CourseEnrolledEvent event = new CourseEnrolledEvent(
+                                                userId,
+                                                courseId,
+                                                LocalDateTime.now());
+
+                                eventProducer.publishCourseEnrolled(event);
+
                                 return toResponse(saved);
                         }
                 }
@@ -159,6 +172,13 @@ public class EnrollmentService {
 
                 Enrollment saved = enrollmentRepository
                                 .save(enrollment);
+
+                CourseEnrolledEvent event = new CourseEnrolledEvent(
+                                userId,
+                                courseId,
+                                LocalDateTime.now());
+
+                eventProducer.publishCourseEnrolled(event);
 
                 return toResponse(saved);
         }

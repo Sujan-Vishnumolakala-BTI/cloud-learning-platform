@@ -172,7 +172,7 @@ public class SecurityConfig {
                         HttpSecurity http) throws Exception {
 
                 http
-                                .cors(cors -> cors.configurationSource(corsConfigurationSource()))
+                                // .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                                 .csrf(csrf -> csrf.disable())
 
                                 .sessionManagement(session -> session.sessionCreationPolicy(
@@ -393,44 +393,44 @@ public class SecurityConfig {
                 return http.build();
         }
 
-        @Bean
-        public CorsConfigurationSource corsConfigurationSource() {
+        // @Bean
+        // public CorsConfigurationSource corsConfigurationSource() {
 
-                CorsConfiguration configuration = new CorsConfiguration();
+        //         CorsConfiguration configuration = new CorsConfiguration();
 
-                configuration.setAllowedOrigins(
-                                List.of(
-                                                "http://127.0.0.1:4200",
-                                                "http://127.0.0.1:4200"));
+        //         configuration.setAllowedOrigins(
+        //                         List.of(
+        //                                         "http://127.0.0.1:4200",
+        //                                         "http://localhost:4200"));
 
-                configuration.setAllowedMethods(
-                                List.of(
-                                                "GET",
-                                                "POST",
-                                                "PUT",
-                                                "DELETE",
-                                                "PATCH",
-                                                "OPTIONS"));
+        //         configuration.setAllowedMethods(
+        //                         List.of(
+        //                                         "GET",
+        //                                         "POST",
+        //                                         "PUT",
+        //                                         "DELETE",
+        //                                         "PATCH",
+        //                                         "OPTIONS"));
 
-                configuration.setAllowedHeaders(
-                                List.of(
-                                                "Authorization",
-                                                "Content-Type",
-                                                "Accept",
-                                                "Origin"));
+        //         configuration.setAllowedHeaders(
+        //                         List.of(
+        //                                         "Authorization",
+        //                                         "Content-Type",
+        //                                         "Accept",
+        //                                         "Origin"));
 
-                configuration.setExposedHeaders(
-                                List.of(
-                                                "Authorization"));
+        //         configuration.setExposedHeaders(
+        //                         List.of(
+        //                                         "Authorization"));
 
-                configuration.setAllowCredentials(true);
+        //         configuration.setAllowCredentials(true);
 
-                UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        //         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 
-                source.registerCorsConfiguration(
-                                "/**",
-                                configuration);
+        //         source.registerCorsConfiguration(
+        //                         "/**",
+        //                         configuration);
 
-                return source;
-        }
+        //         return source;
+        // }
 }

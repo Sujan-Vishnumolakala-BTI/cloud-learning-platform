@@ -30,6 +30,57 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
+  
+    # =========================================================
+  # KAFKA
+  # =========================================================
+
+  kafka:
+    image: apache/kafka:4.3.1
+    container_name: learning-platform-kafka
+    restart: unless-stopped
+
+    ports:
+      - "9092:9092"
+
+    environment:
+      # KRaft
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+
+      # Controller
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:29093
+
+      # Listeners
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:29093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT
+
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+
+      # Single-node development configuration
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+
+    volumes:
+      - kafka_data:/var/lib/kafka/data
+
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "/opt/kafka/bin/kafka-broker-api-versions.sh --bootstrap-server localhost:9092 > /dev/null 2>&1"
+        ]
+      interval: 10s
+      timeout: 10s
+      retries: 10
 
 
   # =========================================================
@@ -106,32 +157,35 @@ services:
   # =========================================================
 
   enroll-service:
-    build:
-      context: ../services/enroll-service
-      dockerfile: Dockerfile
+      build:
+        context: ../services/enroll-service
+        dockerfile: Dockerfile
+      container_name: learning-platform-enroll-service
+      restart: unless-stopped
 
-    container_name: learning-platform-enroll-service
-    restart: unless-stopped
+      ports:
+        - "8083:8083"
 
-    ports:
-      - "8083:8083"
+      environment:
+        SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/learning_platform_enrollment
+        SPRING_DATASOURCE_USERNAME: learning_admin
+        SPRING_DATASOURCE_PASSWORD: learning_password
 
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/learning_platform_enrollment
-      SPRING_DATASOURCE_USERNAME: learning_admin
-      SPRING_DATASOURCE_PASSWORD: learning_password
+        JWT_SECRET: learning-platform-secret-key-change-this-in-production-123456789
 
-      JWT_SECRET: learning-platform-secret-key-change-this-in-production-123456789
+        COURSE_SERVICE_URL: http://course-service:8082
 
-      COURSE_SERVICE_URL: http://course-service:8082
+        KAFKA_BOOTSTRAP_SERVERS: kafka:9092
 
-    depends_on:
-      postgres:
-        condition: service_healthy
+      depends_on:
+        postgres:
+          condition: service_healthy
 
-      course-service:
-        condition: service_started
+        course-service:
+          condition: service_started
 
+        kafka:
+          condition: service_healthy
 
   # =========================================================
   # RECOMMENDATION SERVICE
@@ -147,6 +201,58 @@ services:
 
     ports:
       - "8000:8000"
+  
+    # =========================================================
+  # REPORTING SERVICE
+  # =========================================================
+
+  reporting-service:
+    build:
+      context: ../services/reporting-service
+      dockerfile: Dockerfile
+
+    container_name: learning-platform-reporting-service
+    restart: unless-stopped
+
+    ports:
+      - "8001:8001"
+
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+
+      DATABASE_URL: postgresql://learning_admin:learning_password@postgres:5432/learning_platform_reporting
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+      kafka:
+        condition: service_healthy
+
+  api-gateway:
+    build:
+      context: ../services/api-gateway
+      dockerfile: Dockerfile
+
+    container_name: learning-platform-api-gateway
+
+    ports:
+      - "8080:8080"
+
+    depends_on:
+      user-service:
+        condition: service_started
+
+      course-service:
+        condition: service_started
+
+      enroll-service:
+        condition: service_started
+
+      reporting-service:
+        condition: service_started
+
+    restart: unless-stopped
 
 
 # =========================================================
@@ -156,3 +262,5 @@ services:
 volumes:
 
   postgres_data:
+
+  kafka_data:

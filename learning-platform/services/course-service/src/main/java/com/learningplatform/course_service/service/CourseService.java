@@ -15,6 +15,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import com.learningplatform.course_service.exception.CourseAlreadyPublishedException;
 import com.learningplatform.course_service.exception.CourseNotFoundException;
 import com.learningplatform.course_service.exception.CourseStateException;
+import com.learningplatform.course_service.event.CourseEventProducer;
 
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.Authentication;
@@ -36,15 +37,18 @@ public class CourseService {
         private final CourseRepository courseRepository;
         private final UserServiceClient userServiceClient;
         private final HttpServletRequest request;
+        private final CourseEventProducer courseEventProducer;
 
         public CourseService(
                         CourseRepository courseRepository,
                         UserServiceClient userServiceClient,
-                        HttpServletRequest request) {
+                        HttpServletRequest request,
+                        CourseEventProducer courseEventProducer) {
 
                 this.courseRepository = courseRepository;
                 this.userServiceClient = userServiceClient;
                 this.request = request;
+                this.courseEventProducer = courseEventProducer;
         }
 
         /*
@@ -108,6 +112,10 @@ public class CourseService {
                 }
 
                 Course savedCourse = courseRepository.save(course);
+
+                courseEventProducer.publish(
+                                savedCourse,
+                                "COURSE_CREATED");
 
                 return new CourseResponse(savedCourse);
         }
@@ -310,6 +318,10 @@ public class CourseService {
 
                 Course updatedCourse = courseRepository.save(course);
 
+                courseEventProducer.publish(
+                                updatedCourse,
+                                "COURSE_UPDATED");
+
                 return new CourseResponse(updatedCourse);
         }
 
@@ -344,6 +356,10 @@ public class CourseService {
 
                 Course savedCourse = courseRepository.save(course);
 
+                courseEventProducer.publish(
+                                savedCourse,
+                                "COURSE_PUBLISHED");
+
                 return new CourseResponse(savedCourse);
         }
 
@@ -372,6 +388,10 @@ public class CourseService {
                 course.setPublished(false);
 
                 Course savedCourse = courseRepository.save(course);
+
+                courseEventProducer.publish(
+                                savedCourse,
+                                "COURSE_UNPUBLISHED");
 
                 return new CourseResponse(savedCourse);
         }
@@ -730,6 +750,10 @@ public class CourseService {
 
                 Course savedCourse = courseRepository.save(course);
 
+                courseEventProducer.publish(
+                                savedCourse,
+                                "COURSE_ACTIVATED");
+
                 return new CourseResponse(savedCourse);
         }
 
@@ -752,6 +776,10 @@ public class CourseService {
                 course.setActive(false);
 
                 Course savedCourse = courseRepository.save(course);
+
+                courseEventProducer.publish(
+                                savedCourse,
+                                "COURSE_DEACTIVATED");
 
                 return new CourseResponse(savedCourse);
         }

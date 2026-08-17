@@ -89,6 +89,7 @@ import com.learningplatform.user_service.dto.LoginRequest;
 import com.learningplatform.user_service.dto.LoginResponse;
 import com.learningplatform.user_service.dto.RefreshTokenRequest;
 import com.learningplatform.user_service.entity.RefreshToken;
+import com.learningplatform.user_service.entity.Role;
 import com.learningplatform.user_service.entity.User;
 import com.learningplatform.user_service.exception.AccountDisabledException;
 import com.learningplatform.user_service.exception.AccountLockedException;
@@ -241,8 +242,14 @@ public class AuthService {
                                 passwordEncoder.encode(
                                                 request.getPassword()));
 
-                user.setRole(
-                                com.learningplatform.user_service.entity.Role.STUDENT);
+                String requestedRole = request.getRole();
+
+                if (requestedRole == null || requestedRole.isBlank()) {
+                        user.setRole(Role.STUDENT);
+                } else {
+                        user.setRole(
+                                Role.valueOf(requestedRole.trim().toUpperCase()));
+                }
 
                 /*
                  * User cannot login until OTP

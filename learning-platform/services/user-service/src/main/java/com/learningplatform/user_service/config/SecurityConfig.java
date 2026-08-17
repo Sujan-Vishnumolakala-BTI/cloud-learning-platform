@@ -248,44 +248,6 @@ public class SecurityConfig {
          * http://127.0.0.1:8081
          */
         @Bean
-        public CorsConfigurationSource corsConfigurationSource() {
-
-                CorsConfiguration configuration = new CorsConfiguration();
-
-                configuration.setAllowedOrigins(
-                                List.of("http://127.0.0.1:4200",
-                                                "http://127.0.0.1:4200"));
-
-                configuration.setAllowedMethods(
-                                List.of(
-                                                "GET",
-                                                "POST",
-                                                "PUT",
-                                                "DELETE",
-                                                "OPTIONS"));
-
-                configuration.setAllowedHeaders(
-                                List.of(
-                                                "Authorization",
-                                                "Content-Type",
-                                                "Accept"));
-
-                /*
-                 * We are using JWT in the Authorization header,
-                 * not cookie-based authentication.
-                 */
-                configuration.setAllowCredentials(false);
-
-                UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-
-                source.registerCorsConfiguration(
-                                "/**",
-                                configuration);
-
-                return source;
-        }
-
-        @Bean
         public SecurityFilterChain securityFilterChain(
                         HttpSecurity http) throws Exception {
 
@@ -299,8 +261,7 @@ public class SecurityConfig {
                                 /*
                                  * Enable CORS using corsConfigurationSource().
                                  */
-                                .cors(cors -> {
-                                })
+                                // .cors(cors -> {})
 
                                 /*
                                  * JWT authentication is stateless.
@@ -457,4 +418,45 @@ public class SecurityConfig {
 
                 return http.build();
         }
+
+        // @Bean
+        // public CorsConfigurationSource corsConfigurationSource() {
+
+        //         CorsConfiguration configuration = new CorsConfiguration();
+
+        //         configuration.setAllowedOrigins(
+        //                         List.of(
+        //                                         "http://127.0.0.1:4200",
+        //                                         "http://localhost:4200"));
+
+        //         configuration.setAllowedMethods(
+        //                         List.of(
+        //                                         "GET",
+        //                                         "POST",
+        //                                         "PUT",
+        //                                         "DELETE",
+        //                                         "PATCH",
+        //                                         "OPTIONS"));
+
+        //         configuration.setAllowedHeaders(
+        //                         List.of(
+        //                                         "Authorization",
+        //                                         "Content-Type",
+        //                                         "Accept",
+        //                                         "Origin"));
+
+        //         configuration.setExposedHeaders(
+        //                         List.of(
+        //                                         "Authorization"));
+
+        //         configuration.setAllowCredentials(true);
+
+        //         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+
+        //         source.registerCorsConfiguration(
+        //                         "/**",
+        //                         configuration);
+
+        //         return source;
+        // }
 }
