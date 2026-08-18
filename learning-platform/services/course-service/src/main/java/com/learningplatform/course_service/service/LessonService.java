@@ -4,6 +4,8 @@ import com.learningplatform.course_service.dto.CourseLessonResponse;
 import com.learningplatform.course_service.dto.CreateLessonRequest;
 import com.learningplatform.course_service.dto.LessonResponse;
 import com.learningplatform.course_service.dto.UpdateLessonRequest;
+import com.learningplatform.course_service.dto.VideoUploadUrlResponse;
+import com.learningplatform.course_service.dto.VideoUrlResponse;
 import com.learningplatform.course_service.entity.Course;
 import com.learningplatform.course_service.entity.Lesson;
 import com.learningplatform.course_service.entity.Module;
@@ -22,6 +24,17 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpRange;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+
+import java.io.InputStream;
+
 import java.util.List;
 
 @Service
@@ -30,15 +43,18 @@ public class LessonService {
         private final LessonRepository lessonRepository;
         private final ModuleRepository moduleRepository;
         private final CourseRepository courseRepository;
+        private final MinioService minioService;
 
         public LessonService(
                         LessonRepository lessonRepository,
                         ModuleRepository moduleRepository,
-                        CourseRepository courseRepository) {
+                        CourseRepository courseRepository,
+                        MinioService minioService) {
 
                 this.lessonRepository = lessonRepository;
                 this.moduleRepository = moduleRepository;
                 this.courseRepository = courseRepository;
+                this.minioService = minioService;
         }
 
         /*
@@ -347,4 +363,249 @@ public class LessonService {
                                                 lesson.getOrderIndex()))
                                 .toList();
         }
+
+        public VideoUploadUrlResponse generateVideoUploadUrl(
+                        Long lessonId) {
+
+                Lesson lesson = lessonRepository.findById(lessonId)
+                                .orElseThrow(() -> new LessonNotFoundException(
+                                                "Lesson not found with id: " + lessonId));
+
+                Module module = getModule(lesson.getModuleId());
+
+                Course course = getCourse(module.getCourseId());
+
+                checkCourseOwnership(course);
+
+                String objectKey = "course-" + course.getId()
+                                + "/module-" + module.getId()
+                                + "/lesson-" + lesson.getId()
+                                + ".mp4";
+
+                try {
+
+                        String uploadUrl = minioService.generateUploadUrl(objectKey);
+
+                        return new VideoUploadUrlResponse(
+                                        lesson.getId(),
+                                        objectKey,
+                                        uploadUrl);
+
+                } catch (Exception e) {
+
+                        throw new RuntimeException(
+                                        "Failed to generate video upload URL",
+                                        e);
+                }
+        }
+
+        @Transactional
+        public LessonResponse completeVideoUpload(
+                        Long lessonId,
+                        String objectKey) {
+
+                Lesson lesson = lessonRepository.findById(lessonId)
+                                .orElseThrow(() -> new LessonNotFoundException(
+                                                "Lesson not found with id: " + lessonId));
+
+                Module module = getModule(lesson.getModuleId());
+
+                Course course = getCourse(module.getCourseId());
+
+                checkCourseOwnership(course);
+
+                String expectedPrefix = "course-" + course.getId()
+                                + "/module-" + module.getId()
+                                + "/lesson-" + lesson.getId();
+
+                if (!objectKey.startsWith(expectedPrefix)) {
+                        throw new AccessDeniedException(
+                                        "Invalid video object key");
+                }
+
+                lesson.setContentType("VIDEO");
+                lesson.setContentUrl(objectKey);
+
+                return toResponse(
+                                lessonRepository.save(lesson));
+        }
+
+        public VideoUrlResponse getVideoUrl(Long lessonId) {
+
+                Lesson lesson = lessonRepository.findById(lessonId)
+                                .orElseThrow(() -> new LessonNotFoundException(
+                                                "Lesson not found with id: " + lessonId));
+
+                if (!"VIDEO".equalsIgnoreCase(lesson.getContentType())) {
+                        throw new IllegalStateException(
+                                        "Lesson does not contain a video");
+                }
+
+                if (lesson.getContentUrl() == null ||
+                                lesson.getContentUrl().isBlank()) {
+
+                        throw new IllegalStateException(
+                                        "Video is not available for this lesson");
+                }
+
+                try {
+
+                        String videoUrl = minioService.generateDownloadUrl(
+                                        lesson.getContentUrl());
+
+                        return new VideoUrlResponse(
+                                        lesson.getId(),
+                                        videoUrl);
+
+                } catch (Exception e) {
+
+                        throw new RuntimeException(
+                                        "Failed to generate video URL",
+                                        e);
+                }
+        }
+
+        // public ResponseEntity<InputStreamResource> streamVideo(Long lessonId) {
+
+        //         Lesson lesson = lessonRepository.findById(lessonId)
+        //                         .orElseThrow(() -> new LessonNotFoundException(
+        //                                         "Lesson not found with id: " + lessonId));
+
+        //         if (!"VIDEO".equalsIgnoreCase(lesson.getContentType())) {
+        //                 throw new IllegalStateException(
+        //                                 "Lesson does not contain a video");
+        //         }
+
+        //         if (lesson.getContentUrl() == null ||
+        //                         lesson.getContentUrl().isBlank()) {
+
+        //                 throw new IllegalStateException(
+        //                                 "Video is not available for this lesson");
+        //         }
+
+        //         try {
+
+        //                 InputStream inputStream = minioService.getObject(
+        //                                 lesson.getContentUrl());
+
+        //                 return ResponseEntity.ok()
+        //                                 .header(
+        //                                                 HttpHeaders.CONTENT_DISPOSITION,
+        //                                                 "inline; filename=\"lesson-" +
+        //                                                                 lessonId +
+        //                                                                 ".mp4\"")
+        //                                 .contentType(MediaType.parseMediaType("video/mp4"))
+        //                                 .body(new InputStreamResource(inputStream));
+
+        //         } catch (Exception e) {
+
+        //                 throw new RuntimeException(
+        //                                 "Failed to stream video",
+        //                                 e);
+        //         }
+        // }
+
+        public ResponseEntity<InputStreamResource> streamVideo(
+        Long lessonId,
+        String rangeHeader) {
+
+    Lesson lesson = lessonRepository.findById(lessonId)
+            .orElseThrow(() -> new LessonNotFoundException(
+                    "Lesson not found with id: " + lessonId));
+
+    if (!"VIDEO".equalsIgnoreCase(lesson.getContentType())) {
+        throw new IllegalStateException(
+                "Lesson does not contain a video");
+    }
+
+    if (lesson.getContentUrl() == null ||
+            lesson.getContentUrl().isBlank()) {
+
+        throw new IllegalStateException(
+                "Video is not available for this lesson");
+    }
+
+    try {
+
+        var stat = minioService.statObject(
+                lesson.getContentUrl());
+
+        long fileSize = stat.size();
+
+        /*
+         * No Range header:
+         * Return the complete video.
+         */
+        if (rangeHeader == null || rangeHeader.isBlank()) {
+
+            InputStream inputStream =
+                    minioService.getObject(
+                            lesson.getContentUrl());
+
+            return ResponseEntity.ok()
+                    .header(
+                            HttpHeaders.CONTENT_DISPOSITION,
+                            "inline; filename=\"lesson-" +
+                                    lessonId +
+                                    ".mp4\"")
+                    .header(
+                            HttpHeaders.ACCEPT_RANGES,
+                            "bytes")
+                    .contentLength(fileSize)
+                    .contentType(MediaType.parseMediaType("video/mp4"))
+                    .body(new InputStreamResource(inputStream));
+        }
+
+        /*
+         * Parse Range header.
+         */
+        HttpRange range = HttpRange.parseRanges(rangeHeader)
+                .get(0);
+
+        long start = range.getRangeStart(fileSize);
+        long end = range.getRangeEnd(fileSize);
+
+        long contentLength = end - start + 1;
+
+        /*
+         * For now, retrieve the object and skip
+         * to the requested starting position.
+         */
+        InputStream inputStream =
+                minioService.getObject(
+                        lesson.getContentUrl());
+
+        inputStream.skip(start);
+
+        byte[] buffer = inputStream.readNBytes(
+                (int) contentLength);
+
+        InputStreamResource resource =
+                new InputStreamResource(
+                        new ByteArrayInputStream(buffer));
+
+        return ResponseEntity.status(206)
+                .header(
+                        HttpHeaders.CONTENT_DISPOSITION,
+                        "inline; filename=\"lesson-" +
+                                lessonId +
+                                ".mp4\"")
+                .header(
+                        HttpHeaders.ACCEPT_RANGES,
+                        "bytes")
+                .header(
+                        HttpHeaders.CONTENT_RANGE,
+                        "bytes " + start + "-" +
+                                end + "/" + fileSize)
+                .contentLength(buffer.length)
+                .contentType(MediaType.parseMediaType("video/mp4"))
+                .body(resource);
+
+    } catch (Exception e) {
+
+        throw new RuntimeException(
+                "Failed to stream video",
+                e);
+    }
+}
 }

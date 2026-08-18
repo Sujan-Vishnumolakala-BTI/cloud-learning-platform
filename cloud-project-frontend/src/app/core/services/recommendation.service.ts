@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface RecommendationCourse {
@@ -7,26 +7,15 @@ export interface RecommendationCourse {
   course_title: string;
   difficulty: string;
   score: number;
+  similarity_score: number;
+  skill_gap_score: number;
   skills: string[];
+  generated_at?: string;
 }
 
 export interface RecommendationResponse {
+  userId: number;
   recommendations: RecommendationCourse[];
-}
-
-export interface RecommendationCourseInput {
-  course_id: string;
-  course_title: string;
-  difficulty: string;
-  skills: Record<string, number>;
-}
-
-export interface RecommendationRequest {
-  student_skills: Record<string, number>;
-  courses: RecommendationCourseInput[];
-  completed_courses: string[];
-  enrolled_courses: string[];
-  top_n: number;
 }
 
 @Injectable({
@@ -37,15 +26,28 @@ export class RecommendationService {
   private readonly http = inject(HttpClient);
 
   private readonly API_URL =
-    'http://localhost:8000/api/recommendations';
+    'http://localhost:8080/api/recommendations';
 
   getRecommendations(
-    request: RecommendationRequest
+    userId: number
   ): Observable<RecommendationResponse> {
 
-    return this.http.post<RecommendationResponse>(
-      this.API_URL,
-      request
+    const token = localStorage.getItem('token');
+
+    let headers = new HttpHeaders();
+
+    if (token) {
+      headers = headers.set(
+        'Authorization',
+        `Bearer ${token}`
+      );
+    }
+
+    return this.http.get<RecommendationResponse>(
+      `${this.API_URL}/${userId}`,
+      {
+        headers
+      }
     );
   }
 }

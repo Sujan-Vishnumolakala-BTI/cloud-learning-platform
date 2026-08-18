@@ -170,6 +170,118 @@ public class ProgressService {
         // return toResponse(saved);
         // }
 
+        // @Transactional
+        // public LessonProgressResponse startLesson(Long lessonId) {
+
+        // Long userId = getCurrentUserId();
+
+        // System.out.println("========== START LESSON ==========");
+        // System.out.println("USER ID: " + userId);
+        // System.out.println("LESSON ID: " + lessonId);
+
+        // Long courseId = courseClient.getCourseIdForLesson(lessonId);
+
+        // System.out.println("COURSE ID FROM COURSE SERVICE: " + courseId);
+
+        // Enrollment enrollment = enrollmentRepository
+        // .findByUserIdAndCourseId(
+        // userId,
+        // courseId)
+        // .orElseThrow(() -> {
+
+        // System.out.println(
+        // "❌ ENROLLMENT NOT FOUND");
+
+        // System.out.println(
+        // "USER ID: " + userId);
+
+        // System.out.println(
+        // "COURSE ID: " + courseId);
+
+        // return new AccessDeniedException(
+        // "You are not enrolled in this course");
+        // });
+
+        // System.out.println(
+        // "✅ ENROLLMENT FOUND: " +
+        // enrollment.getId());
+
+        // System.out.println(
+        // "ENROLLMENT USER ID: " +
+        // enrollment.getUserId());
+
+        // System.out.println(
+        // "ENROLLMENT COURSE ID: " +
+        // enrollment.getCourseId());
+
+        // System.out.println(
+        // "ENROLLMENT STATUS: " +
+        // enrollment.getStatus());
+
+        // if (enrollment.getStatus() != EnrollmentStatus.ACTIVE) {
+
+        // System.out.println(
+        // "❌ ENROLLMENT IS NOT ACTIVE");
+
+        // throw new AccessDeniedException(
+        // "Your enrollment is not active");
+        // }
+
+        // System.out.println(
+        // "✅ ENROLLMENT ACTIVE");
+
+        // LessonProgress progress = progressRepository
+        // .findByUserIdAndLessonId(
+        // userId,
+        // lessonId)
+        // .orElseGet(() -> {
+
+        // LessonProgress newProgress = new LessonProgress();
+
+        // newProgress.setUserId(userId);
+        // newProgress.setCourseId(courseId);
+        // newProgress.setLessonId(lessonId);
+        // newProgress.setStatus(
+        // ProgressStatus.IN_PROGRESS);
+        // newProgress.setStartedAt(
+        // LocalDateTime.now());
+
+        // return newProgress;
+        // });
+
+        // if (progress.getStatus() == ProgressStatus.NOT_STARTED) {
+
+        // progress.setStatus(
+        // ProgressStatus.IN_PROGRESS);
+
+        // if (progress.getStartedAt() == null) {
+
+        // progress.setStartedAt(
+        // LocalDateTime.now());
+        // }
+        // }
+
+        // if (progress.getStatus() == ProgressStatus.COMPLETED) {
+
+        // return toResponse(progress);
+        // }
+
+        // if (progress.getCourseId() == null) {
+
+        // progress.setCourseId(courseId);
+        // }
+
+        // LessonProgress saved = progressRepository.save(progress);
+
+        // System.out.println(
+        // "✅ LESSON STARTED SUCCESSFULLY");
+
+        // System.out.println(
+        // "================================");
+
+        // return toResponse(saved);
+        // }
+
         @Transactional
         public LessonProgressResponse startLesson(Long lessonId) {
 
@@ -179,10 +291,17 @@ public class ProgressService {
                 System.out.println("USER ID: " + userId);
                 System.out.println("LESSON ID: " + lessonId);
 
+                /*
+                 * Get course ID from Course Service.
+                 */
                 Long courseId = courseClient.getCourseIdForLesson(lessonId);
 
-                System.out.println("COURSE ID FROM COURSE SERVICE: " + courseId);
+                System.out.println(
+                                "COURSE ID FROM COURSE SERVICE: " + courseId);
 
+                /*
+                 * Find student's enrollment.
+                 */
                 Enrollment enrollment = enrollmentRepository
                                 .findByUserIdAndCourseId(
                                                 userId,
@@ -207,17 +326,93 @@ public class ProgressService {
                                                 enrollment.getId());
 
                 System.out.println(
-                                "ENROLLMENT USER ID: " +
-                                                enrollment.getUserId());
-
-                System.out.println(
-                                "ENROLLMENT COURSE ID: " +
-                                                enrollment.getCourseId());
-
-                System.out.println(
                                 "ENROLLMENT STATUS: " +
                                                 enrollment.getStatus());
 
+                /*
+                 * =========================================================
+                 * HANDLE COMPLETED ENROLLMENT
+                 * =========================================================
+                 *
+                 * A student may have completed the course previously.
+                 *
+                 * However, the instructor may have added new lessons
+                 * after that.
+                 *
+                 * Example:
+                 *
+                 * Old course:
+                 * 1 lesson
+                 * 1 completed
+                 * 100%
+                 * COMPLETED
+                 *
+                 * Instructor adds another lesson:
+                 * 2 total lessons
+                 * 1 completed
+                 * 50%
+                 *
+                 * In that situation we reactivate the enrollment.
+                 */
+
+                if (enrollment.getStatus() == EnrollmentStatus.COMPLETED) {
+
+                        long totalLessons = courseClient.getLessonCount(courseId);
+
+                        long completedLessons = progressRepository
+                                        .countByUserIdAndCourseIdAndStatus(
+                                                        userId,
+                                                        courseId,
+                                                        ProgressStatus.COMPLETED);
+
+                        System.out.println(
+                                        "TOTAL LESSONS: " + totalLessons);
+
+                        System.out.println(
+                                        "COMPLETED LESSONS: " + completedLessons);
+
+                        /*
+                         * New lessons have been added after
+                         * the student completed the course.
+                         */
+                        if (totalLessons > completedLessons) {
+
+                                System.out.println(
+                                                "⚠️ NEW LESSONS DETECTED");
+
+                                System.out.println(
+                                                "REACTIVATING ENROLLMENT");
+
+                                enrollment.setStatus(
+                                                EnrollmentStatus.ACTIVE);
+
+                                enrollment.setCompletedAt(null);
+
+                                enrollmentRepository.save(enrollment);
+
+                                System.out.println(
+                                                "✅ ENROLLMENT REACTIVATED");
+
+                        } else {
+
+                                /*
+                                 * No new lessons exist.
+                                 *
+                                 * The course is still completely finished.
+                                 */
+                                System.out.println(
+                                                "❌ COURSE IS STILL COMPLETED");
+
+                                return getExistingCompletedProgress(
+                                                userId,
+                                                lessonId);
+                        }
+                }
+
+                /*
+                 * Only ACTIVE enrollment can
+                 * start a lesson.
+                 */
                 if (enrollment.getStatus() != EnrollmentStatus.ACTIVE) {
 
                         System.out.println(
@@ -230,6 +425,9 @@ public class ProgressService {
                 System.out.println(
                                 "✅ ENROLLMENT ACTIVE");
 
+                /*
+                 * Find existing lesson progress.
+                 */
                 LessonProgress progress = progressRepository
                                 .findByUserIdAndLessonId(
                                                 userId,
@@ -239,16 +437,24 @@ public class ProgressService {
                                         LessonProgress newProgress = new LessonProgress();
 
                                         newProgress.setUserId(userId);
+
                                         newProgress.setCourseId(courseId);
+
                                         newProgress.setLessonId(lessonId);
+
                                         newProgress.setStatus(
                                                         ProgressStatus.IN_PROGRESS);
+
                                         newProgress.setStartedAt(
                                                         LocalDateTime.now());
 
                                         return newProgress;
                                 });
 
+                /*
+                 * If lesson was previously NOT_STARTED,
+                 * move it to IN_PROGRESS.
+                 */
                 if (progress.getStatus() == ProgressStatus.NOT_STARTED) {
 
                         progress.setStatus(
@@ -261,11 +467,18 @@ public class ProgressService {
                         }
                 }
 
+                /*
+                 * Don't restart a completed lesson.
+                 */
                 if (progress.getStatus() == ProgressStatus.COMPLETED) {
 
                         return toResponse(progress);
                 }
 
+                /*
+                 * Make sure course ID exists for
+                 * old lesson progress records.
+                 */
                 if (progress.getCourseId() == null) {
 
                         progress.setCourseId(courseId);
@@ -281,6 +494,23 @@ public class ProgressService {
 
                 return toResponse(saved);
         }
+
+        private LessonProgressResponse getExistingCompletedProgress(
+        Long userId,
+        Long lessonId) {
+
+    return progressRepository
+            .findByUserIdAndLessonId(
+                    userId,
+                    lessonId
+            )
+            .map(this::toResponse)
+            .orElseThrow(() ->
+                    new AccessDeniedException(
+                            "Your enrollment is already completed"
+                    )
+            );
+}
 
         /*
          * =========================================================

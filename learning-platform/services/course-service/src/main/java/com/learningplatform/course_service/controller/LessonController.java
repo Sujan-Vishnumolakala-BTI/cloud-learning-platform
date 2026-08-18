@@ -4,14 +4,22 @@ import com.learningplatform.course_service.dto.CourseLessonResponse;
 import com.learningplatform.course_service.dto.CreateLessonRequest;
 import com.learningplatform.course_service.dto.LessonResponse;
 import com.learningplatform.course_service.dto.UpdateLessonRequest;
+import com.learningplatform.course_service.dto.VideoUploadCompleteRequest;
+import com.learningplatform.course_service.dto.VideoUploadUrlResponse;
+import com.learningplatform.course_service.dto.VideoUrlResponse;
+import com.learningplatform.course_service.entity.Lesson;
+import com.learningplatform.course_service.exception.LessonNotFoundException;
 import com.learningplatform.course_service.service.LessonService;
 
 import jakarta.validation.Valid;
 
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.InputStream;
 import java.util.List;
 
 @RestController
@@ -116,5 +124,42 @@ public class LessonController {
                 return ResponseEntity.ok(
                                 lessonService.getLessonCount(
                                                 courseId));
+        }
+
+        @PostMapping("/lessons/{lessonId}/video/upload-url")
+        public ResponseEntity<VideoUploadUrlResponse> generateVideoUploadUrl(
+                        @PathVariable Long lessonId) {
+
+                return ResponseEntity.ok(
+                                lessonService.generateVideoUploadUrl(lessonId));
+        }
+
+        @PostMapping("/lessons/{lessonId}/video/complete")
+        public ResponseEntity<LessonResponse> completeVideoUpload(
+                        @PathVariable Long lessonId,
+                        @Valid @RequestBody VideoUploadCompleteRequest request) {
+
+                return ResponseEntity.ok(
+                                lessonService.completeVideoUpload(
+                                                lessonId,
+                                                request.getObjectKey()));
+        }
+
+        @GetMapping("/lessons/{lessonId}/video")
+        public ResponseEntity<VideoUrlResponse> getVideoUrl(
+                        @PathVariable Long lessonId) {
+
+                return ResponseEntity.ok(
+                                lessonService.getVideoUrl(lessonId));
+        }
+
+        @GetMapping("/lessons/{lessonId}/video/stream")
+        public ResponseEntity<InputStreamResource> streamVideo(
+                        @PathVariable Long lessonId,
+                        @RequestHeader(value = HttpHeaders.RANGE, required = false) String rangeHeader) {
+
+                return lessonService.streamVideo(
+                                lessonId,
+                                rangeHeader);
         }
 }

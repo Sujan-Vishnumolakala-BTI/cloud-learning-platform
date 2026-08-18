@@ -402,6 +402,37 @@
                     currentLessonId() === lesson.id
                     ) {
 
+                    @if (lesson.contentType === 'VIDEO') {
+
+                    <div class="mt-6 rounded-xl overflow-hidden bg-black">
+
+                        @if (videoLoading()) {
+
+                        <div class="flex h-64 items-center justify-center text-white">
+                            Loading video...
+                        </div>
+
+                        }
+
+                        @else if (videoUrl()) {
+
+                        <video class="w-full max-h-[600px]" controls preload="metadata" [src]="videoUrl()">
+                        </video>
+
+                        }
+
+                        @else {
+
+                        <div class="flex h-64 items-center justify-center text-slate-400">
+                            Video unavailable.
+                        </div>
+
+                        }
+
+                    </div>
+
+                    }
+
                     <div class="mt-4 flex items-center justify-between border-t border-slate-100 pt-4">
 
                         <!-- Previous -->

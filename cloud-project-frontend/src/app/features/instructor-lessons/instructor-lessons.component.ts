@@ -386,7 +386,7 @@
 //     ]);
 //   }
 
-  
+
 // }
 
 import {
@@ -491,6 +491,9 @@ export class InstructorLessonsComponent
 
   moduleId:
     number | null = null;
+
+  selectedVideoFile: File | null = null;
+  videoUploading = false;
 
 
   ngOnInit(): void {
@@ -764,6 +767,14 @@ export class InstructorLessonsComponent
       this.editingLessonId !== null
     ) {
 
+      const lessonId = this.editingLessonId;
+      console.log(
+        'UPDATING LESSON:',
+        lessonId,
+        request
+      );
+
+
       this.courseService
         .updateLesson(
           this.editingLessonId,
@@ -777,6 +788,26 @@ export class InstructorLessonsComponent
               'LESSON UPDATED:',
               updated
             );
+
+            if (
+              this.contentType === 'VIDEO' &&
+              this.selectedVideoFile
+            ) {
+
+              console.log(
+                'VIDEO SELECTED DURING UPDATE'
+              );
+
+              console.log(
+                'STARTING VIDEO UPLOAD FOR EXISTING LESSON:',
+                lessonId
+              );
+
+              // Keep form/saving state until upload completes
+              this.uploadVideo(lessonId);
+
+              return;
+            }
 
             this.success.set(
               'Lesson updated successfully.'
@@ -826,6 +857,24 @@ export class InstructorLessonsComponent
             'LESSON CREATED:',
             created
           );
+
+          if (
+            this.contentType === 'VIDEO' &&
+            this.selectedVideoFile
+          ) {
+
+            console.log(
+              'STARTING VIDEO UPLOAD FOR LESSON:',
+              created.id
+            );
+
+            this.uploadVideo(created.id);
+
+            // this.saving.set(false);
+            // this.showForm = false;
+
+            return;
+          }
 
           this.success.set(
             'Lesson created successfully.'
@@ -897,6 +946,156 @@ export class InstructorLessonsComponent
             'Unable to delete lesson.'
           );
         }
+      });
+  }
+
+  onVideoSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
+
+    if (!input.files || input.files.length === 0) {
+      this.selectedVideoFile = null;
+      return;
+    }
+
+    const file = input.files[0];
+
+    if (!file.type.startsWith('video/')) {
+      this.error.set('Please select a valid video file.');
+      this.selectedVideoFile = null;
+      return;
+    }
+
+    this.selectedVideoFile = file;
+
+    console.log(
+      'VIDEO SELECTED:',
+      file.name,
+      file.type,
+      file.size
+    );
+  }
+
+  uploadVideo(lessonId: number): void {
+
+    if (!this.selectedVideoFile) {
+      this.error.set('Please select a video file.');
+      this.saving.set(false);
+      return;
+    }
+
+    this.videoUploading = true;
+    this.saving.set(true);
+    this.error.set(null);
+    this.success.set(null);
+
+    console.log(
+      'REQUESTING VIDEO UPLOAD URL FOR LESSON:',
+      lessonId
+    );
+
+    this.courseService
+      .generateVideoUploadUrl(lessonId)
+      .subscribe({
+
+        next: response => {
+
+          console.log(
+            'VIDEO UPLOAD URL:',
+            response
+          );
+
+          this.courseService
+            .uploadVideoToMinio(
+              response.uploadUrl,
+              this.selectedVideoFile!
+            )
+            .subscribe({
+
+              next: () => {
+
+                console.log(
+                  'VIDEO UPLOADED TO MINIO'
+                );
+
+                this.courseService
+                  .completeVideoUpload(
+                    lessonId,
+                    response.objectKey
+                  )
+                  .subscribe({
+
+                    next: updatedLesson => {
+
+                      console.log(
+                        'VIDEO UPLOAD COMPLETED:',
+                        updatedLesson
+                      );
+
+                      this.videoUploading = false;
+                      this.saving.set(false);
+                      // this.showForm = false;
+
+                      this.success.set(
+                        'Lesson and video uploaded successfully.'
+                      );
+
+                      this.selectedVideoFile = null;
+                      this.showForm = false;
+                      this.loadLessons();
+                    },
+
+                    error: error => {
+
+                      console.error(
+                        'VIDEO COMPLETE ERROR:',
+                        error
+                      );
+
+                      this.videoUploading = false;
+                      this.saving.set(false);
+
+                      this.error.set(
+                        error?.error?.message ??
+                        'Video uploaded but could not be completed.'
+                      );
+                    }
+
+                  });
+              },
+
+              error: error => {
+
+                console.error(
+                  'MINIO VIDEO UPLOAD ERROR:',
+                  error
+                );
+
+                this.videoUploading = false;
+                this.saving.set(false);
+                this.error.set(
+                  'Failed to upload video to storage.'
+                );
+              }
+
+            });
+        },
+
+        error: error => {
+
+          console.error(
+            'UPLOAD URL ERROR:',
+            error
+          );
+
+          this.videoUploading = false;
+          this.saving.set(false);
+
+          this.error.set(
+            error?.error?.message ??
+            'Unable to generate video upload URL.'
+          );
+        }
+
       });
   }
 

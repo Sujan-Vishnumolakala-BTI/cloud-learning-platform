@@ -1,6 +1,7 @@
 import {
   Component,
   OnInit,
+  OnDestroy,
   inject,
   signal
 } from '@angular/core';
@@ -30,7 +31,7 @@ import { Lesson } from '../../core/models/lesson.model';
   ],
   templateUrl: './course-learning.component.html'
 })
-export class CourseLearningComponent implements OnInit {
+export class CourseLearningComponent implements OnInit, OnDestroy {
 
   private route = inject(ActivatedRoute);
   private courseService = inject(CourseService);
@@ -76,6 +77,16 @@ export class CourseLearningComponent implements OnInit {
 
   readonly currentLessonId =
     signal<number | null>(null);
+
+  // =========================
+  // VIDEO
+  // =========================
+
+  readonly videoUrl = signal<string | null>(null);
+
+  readonly videoLoading = signal(false);
+
+  private videoObjectUrl: string | null = null;
 
   // =========================
   // LOADING / ERROR
@@ -275,6 +286,8 @@ export class CourseLearningComponent implements OnInit {
             this.currentLessonId.set(
               lessons[0].id
             );
+
+            this.loadVideo(lessons[0]);
 
           }
 
@@ -521,6 +534,20 @@ export class CourseLearningComponent implements OnInit {
   // SELECT LESSON
   // =========================================================
 
+  // selectLesson(
+  //   lesson: Lesson
+  // ): void {
+
+  //   this.currentLessonId.set(
+  //     lesson.id
+  //   );
+
+  //   console.log(
+  //     'CURRENT LESSON:',
+  //     lesson
+  //   );
+  // }
+
   selectLesson(
     lesson: Lesson
   ): void {
@@ -529,25 +556,52 @@ export class CourseLearningComponent implements OnInit {
       lesson.id
     );
 
+    this.loadVideo(lesson);
+
     console.log(
       'CURRENT LESSON:',
       lesson
     );
   }
 
-
   // =========================================================
   // GO TO NEXT LESSON
   // =========================================================
+
+  // goToNextLesson(
+  //   lessonId: number
+  // ): void {
+
+  //   const nextLesson =
+  //     this.getNextLesson(
+  //       lessonId
+  //     );
+
+  //   if (!nextLesson) {
+
+  //     console.log(
+  //       'No next lesson. Course finished.'
+  //     );
+
+  //     return;
+  //   }
+
+  //   this.currentLessonId.set(
+  //     nextLesson.id
+  //   );
+
+  //   console.log(
+  //     'NEXT LESSON:',
+  //     nextLesson
+  //   );
+  // }
 
   goToNextLesson(
     lessonId: number
   ): void {
 
     const nextLesson =
-      this.getNextLesson(
-        lessonId
-      );
+      this.getNextLesson(lessonId);
 
     if (!nextLesson) {
 
@@ -562,28 +616,50 @@ export class CourseLearningComponent implements OnInit {
       nextLesson.id
     );
 
+    this.loadVideo(nextLesson);
+
     console.log(
       'NEXT LESSON:',
       nextLesson
     );
   }
 
-
   // =========================================================
   // GO TO PREVIOUS LESSON
   // =========================================================
+
+  // goToPreviousLesson(
+  //   lessonId: number
+  // ): void {
+
+  //   const previousLesson =
+  //     this.getPreviousLesson(
+  //       lessonId
+  //     );
+
+  //   if (!previousLesson) {
+
+  //     return;
+  //   }
+
+  //   this.currentLessonId.set(
+  //     previousLesson.id
+  //   );
+
+  //   console.log(
+  //     'PREVIOUS LESSON:',
+  //     previousLesson
+  //   );
+  // }
 
   goToPreviousLesson(
     lessonId: number
   ): void {
 
     const previousLesson =
-      this.getPreviousLesson(
-        lessonId
-      );
+      this.getPreviousLesson(lessonId);
 
     if (!previousLesson) {
-
       return;
     }
 
@@ -591,12 +667,13 @@ export class CourseLearningComponent implements OnInit {
       previousLesson.id
     );
 
+    this.loadVideo(previousLesson);
+
     console.log(
       'PREVIOUS LESSON:',
       previousLesson
     );
   }
-
 
   // =========================================================
   // LESSON STARTED?
@@ -615,10 +692,10 @@ export class CourseLearningComponent implements OnInit {
 
           (
             progress.status ===
-              'IN_PROGRESS' ||
+            'IN_PROGRESS' ||
 
             progress.status ===
-              'COMPLETED'
+            'COMPLETED'
           )
 
       );
@@ -641,7 +718,7 @@ export class CourseLearningComponent implements OnInit {
           progress.lessonId === lessonId &&
 
           progress.status ===
-            'COMPLETED'
+          'COMPLETED'
 
       );
   }
@@ -777,5 +854,121 @@ export class CourseLearningComponent implements OnInit {
       p !== null &&
       p.progressPercentage >= 100
     );
+  }
+
+
+  // loadVideo(lesson: Lesson): void {
+
+  //   // Only videos need MinIO streaming
+  //   if (lesson.contentType !== 'VIDEO') {
+  //     this.clearVideo();
+  //     return;
+  //   }
+
+  //   this.videoLoading.set(true);
+
+  //   this.clearVideo();
+
+  //   this.courseService
+  //     .getLessonVideo(lesson.id)
+  //     .subscribe({
+
+  //       next: blob => {
+
+  //         this.videoObjectUrl =
+  //           URL.createObjectURL(blob);
+
+  //         this.videoUrl.set(
+  //           this.videoObjectUrl
+  //         );
+
+  //         this.videoLoading.set(false);
+
+  //         console.log(
+  //           'VIDEO LOADED:',
+  //           lesson.id
+  //         );
+  //       },
+
+  //       error: error => {
+
+  //         console.error(
+  //           'VIDEO LOAD ERROR:',
+  //           error
+  //         );
+
+  //         this.videoLoading.set(false);
+
+  //         this.videoUrl.set(null);
+  //       }
+  //     });
+  // }
+  loadVideo(lesson: Lesson): void {
+
+    // Non-video lesson
+    if (lesson.contentType !== 'VIDEO') {
+      this.clearVideo();
+      return;
+    }
+
+    this.clearVideo();
+
+    this.videoLoading.set(true);
+
+    console.log(
+      'Loading video for lesson:',
+      lesson.id
+    );
+
+    this.courseService
+      .getLessonVideo(lesson.id)
+      .subscribe({
+
+        next: (blob: Blob) => {
+
+          console.log(
+            'Video blob received:',
+            blob.type,
+            blob.size
+          );
+
+          this.videoObjectUrl =
+            URL.createObjectURL(blob);
+
+          this.videoUrl.set(
+            this.videoObjectUrl
+          );
+
+          this.videoLoading.set(false);
+        },
+
+        error: (error) => {
+
+          console.error(
+            'VIDEO LOAD ERROR:',
+            error
+          );
+
+          this.videoLoading.set(false);
+          this.videoUrl.set(null);
+        }
+      });
+  }
+  clearVideo(): void {
+
+    if (this.videoObjectUrl) {
+
+      URL.revokeObjectURL(
+        this.videoObjectUrl
+      );
+
+      this.videoObjectUrl = null;
+    }
+
+    this.videoUrl.set(null);
+  }
+
+  ngOnDestroy(): void {
+    this.clearVideo();
   }
 }

@@ -6,7 +6,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql://learning_admin:learning_password@localhost:5432/learning_platform_reporting"
+    "postgresql://learning_admin:learning_password@localhost:5432/learning_platform_recommendation"
 )
 
 

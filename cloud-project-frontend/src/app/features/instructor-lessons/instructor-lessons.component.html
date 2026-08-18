@@ -83,7 +83,40 @@
             </select>
 
 
-            <input [(ngModel)]="contentUrl" placeholder="Content URL" class="w-full rounded-lg border p-3" />
+            @if (contentType === 'VIDEO') {
+
+            <div class="space-y-3">
+
+                <label class="block text-sm font-medium text-gray-700">
+                    Video File
+                </label>
+
+                <input type="file" accept="video/*" (change)="onVideoSelected($event)"
+                    class="w-full rounded-lg border p-3" />
+
+                @if (selectedVideoFile) {
+
+                <div class="rounded-lg bg-gray-50 p-3 text-sm">
+
+                    <p class="font-medium">
+                        Selected video:
+                    </p>
+
+                    <p class="text-gray-500">
+                        {{ selectedVideoFile.name }}
+                    </p>
+
+                    <p class="text-gray-400">
+                        {{ (selectedVideoFile.size / 1024 / 1024).toFixed(2) }} MB
+                    </p>
+
+                </div>
+
+                }
+
+            </div>
+
+            }
 
 
             <input type="number" [(ngModel)]="durationMinutes" min="1" placeholder="Duration"

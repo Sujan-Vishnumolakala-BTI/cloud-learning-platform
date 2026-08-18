@@ -16,6 +16,7 @@ import {
   imports: [CourseCardComponent],
   templateUrl: './dashboard.component.html',
 })
+
 export class DashboardComponent implements OnInit {
   // 1. Inject dependencies directly into class properties
   private auth = inject(AuthService);
@@ -242,149 +243,231 @@ export class DashboardComponent implements OnInit {
   //   });
   // }
 
+  // loadRecommendations(): void {
+
+  //   this.recommendationsLoading.set(true);
+  //   this.recommendationsError.set(null);
+
+  //   this.auth.getMySkills().subscribe({
+
+  //     next: userSkillsResponse => {
+
+  //       const studentSkills: Record<string, number> = {};
+
+  //       for (const item of userSkillsResponse.skills) {
+
+  //         studentSkills[item.skill] =
+  //           item.proficiency;
+  //       }
+
+  //       console.log(
+  //         'STUDENT SKILLS FOR ML:',
+  //         studentSkills
+  //       );
+
+  //       this.courseService.getCourses().subscribe({
+
+  //         next: courses => {
+
+  //           console.log(
+  //             'COURSES FOR ML:',
+  //             courses
+  //           );
+
+  //           const recommendationCourses =
+  //             courses.map(course => {
+
+  //               const skills: Record<string, number> = {};
+
+  //               for (const skill of course.skills ?? []) {
+
+  //                 /*
+  //                  * Every skill currently has
+  //                  * equal course importance.
+  //                  *
+  //                  * We can improve this later.
+  //                  */
+  //                 skills[skill] = 5;
+  //               }
+
+  //               return {
+  //                 course_id: String(course.id),
+  //                 course_title: course.title,
+  //                 difficulty: 'Intermediate',
+  //                 skills
+  //               };
+  //             });
+
+  //           const request = {
+
+  //             student_skills: studentSkills,
+
+  //             courses: recommendationCourses,
+
+  //             completed_courses: [],
+
+  //             enrolled_courses: [],
+
+  //             top_n: 10
+  //           };
+
+  //           console.log(
+  //             'RECOMMENDATION REQUEST:',
+  //             request
+  //           );
+
+  //           this.recommendationService
+  //             .getRecommendations(request)
+  //             .subscribe({
+
+  //               next: response => {
+
+  //                 console.log(
+  //                   'RECOMMENDATIONS:',
+  //                   response
+  //                 );
+
+  //                 this.recommendations.set(
+  //                   response.recommendations
+  //                 );
+
+  //                 this.recommendationsLoading
+  //                   .set(false);
+  //               },
+
+  //               error: error => {
+
+  //                 console.error(
+  //                   'RECOMMENDATION API ERROR:',
+  //                   error
+  //                 );
+
+  //                 this.recommendationsLoading
+  //                   .set(false);
+
+  //                 this.recommendationsError.set(
+  //                   'Unable to load recommendations.'
+  //                 );
+  //               }
+  //             });
+  //         },
+
+  //         error: error => {
+
+  //           console.error(
+  //             'COURSE API ERROR:',
+  //             error
+  //           );
+
+  //           this.recommendationsLoading
+  //             .set(false);
+
+  //           this.recommendationsError.set(
+  //             'Unable to load courses.'
+  //           );
+  //         }
+  //       });
+  //     },
+
+  //     error: error => {
+
+  //       console.error(
+  //         'USER SKILLS API ERROR:',
+  //         error
+  //       );
+
+  //       this.recommendationsLoading
+  //         .set(false);
+
+  //       this.recommendationsError.set(
+  //         'Unable to load your skills.'
+  //       );
+  //     }
+  //   });
+  // }
+
   loadRecommendations(): void {
 
     this.recommendationsLoading.set(true);
     this.recommendationsError.set(null);
 
-    this.auth.getMySkills().subscribe({
+    const u = this.user();
 
-      next: userSkillsResponse => {
+    if (!u) {
 
-        const studentSkills: Record<string, number> = {};
+      this.recommendationsLoading.set(false);
 
-        for (const item of userSkillsResponse.skills) {
+      this.recommendationsError.set(
+        'Unable to identify the current user.'
+      );
 
-          studentSkills[item.skill] =
-            item.proficiency;
+      return;
+    }
+
+    console.log(
+      '========== LOADING RECOMMENDATIONS =========='
+    );
+
+    console.log(
+      'USER ID:',
+      u.id
+    );
+
+    this.recommendationService
+      .getRecommendations(Number(u.id))
+      .subscribe({
+
+        next: (response) => {
+
+          console.log(
+            '========== RECOMMENDATIONS RESPONSE =========='
+          );
+
+          console.log(
+            response
+          );
+
+          console.log(
+            'RECOMMENDATION COUNT:',
+            response.recommendations.length
+          );
+
+          this.recommendations.set(
+            response.recommendations
+          );
+
+          this.recommendationsLoading.set(
+            false
+          );
+
+          console.log(
+            '=============================================='
+          );
+        },
+
+        error: (error) => {
+
+          console.error(
+            '========== RECOMMENDATION API ERROR =========='
+          );
+
+          console.error(
+            error
+          );
+
+          this.recommendations.set([]);
+
+          this.recommendationsLoading.set(
+            false
+          );
+
+          this.recommendationsError.set(
+            'Unable to load recommendations.'
+          );
         }
 
-        console.log(
-          'STUDENT SKILLS FOR ML:',
-          studentSkills
-        );
-
-        this.courseService.getCourses().subscribe({
-
-          next: courses => {
-
-            console.log(
-              'COURSES FOR ML:',
-              courses
-            );
-
-            const recommendationCourses =
-              courses.map(course => {
-
-                const skills: Record<string, number> = {};
-
-                for (const skill of course.skills ?? []) {
-
-                  /*
-                   * Every skill currently has
-                   * equal course importance.
-                   *
-                   * We can improve this later.
-                   */
-                  skills[skill] = 5;
-                }
-
-                return {
-                  course_id: String(course.id),
-                  course_title: course.title,
-                  difficulty: 'Intermediate',
-                  skills
-                };
-              });
-
-            const request = {
-
-              student_skills: studentSkills,
-
-              courses: recommendationCourses,
-
-              completed_courses: [],
-
-              enrolled_courses: [],
-
-              top_n: 10
-            };
-
-            console.log(
-              'RECOMMENDATION REQUEST:',
-              request
-            );
-
-            this.recommendationService
-              .getRecommendations(request)
-              .subscribe({
-
-                next: response => {
-
-                  console.log(
-                    'RECOMMENDATIONS:',
-                    response
-                  );
-
-                  this.recommendations.set(
-                    response.recommendations
-                  );
-
-                  this.recommendationsLoading
-                    .set(false);
-                },
-
-                error: error => {
-
-                  console.error(
-                    'RECOMMENDATION API ERROR:',
-                    error
-                  );
-
-                  this.recommendationsLoading
-                    .set(false);
-
-                  this.recommendationsError.set(
-                    'Unable to load recommendations.'
-                  );
-                }
-              });
-          },
-
-          error: error => {
-
-            console.error(
-              'COURSE API ERROR:',
-              error
-            );
-
-            this.recommendationsLoading
-              .set(false);
-
-            this.recommendationsError.set(
-              'Unable to load courses.'
-            );
-          }
-        });
-      },
-
-      error: error => {
-
-        console.error(
-          'USER SKILLS API ERROR:',
-          error
-        );
-
-        this.recommendationsLoading
-          .set(false);
-
-        this.recommendationsError.set(
-          'Unable to load your skills.'
-        );
-      }
-    });
+      });
   }
-
   openCourse(courseId: string): void {
 
     this.router.navigate([

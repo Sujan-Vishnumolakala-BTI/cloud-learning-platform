@@ -31,6 +31,27 @@ services:
       timeout: 5s
       retries: 10
   
+  minio:
+    image: minio/minio:latest
+    container_name: learning-platform-minio
+    restart: unless-stopped
+    
+    command: server /data --console-address ":9001"
+
+    environment:
+      MINIO_ROOT_USER: learning_minio
+      MINIO_ROOT_PASSWORD: learning_minio_password
+      MINIO_SERVER_URL: http://localhost:9000
+
+
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+
+    volumes:
+      - minio_data:/data
+
+  
     # =========================================================
   # KAFKA
   # =========================================================
@@ -140,6 +161,10 @@ services:
 
       USER_SERVICE_URL: http://user-service:8081
       ENROLLMENT_SERVICE_URL: http://enroll-service:8083
+      MINIO_ENDPOINT: http://minio:9000
+      MINIO_ACCESS_KEY: learning_minio
+      MINIO_SECRET_KEY: learning_minio_password
+      MINIO_BUCKET: learning-videos
 
     depends_on:
       postgres:
@@ -186,8 +211,8 @@ services:
 
         kafka:
           condition: service_healthy
-
-  # =========================================================
+  
+    # =========================================================
   # RECOMMENDATION SERVICE
   # =========================================================
 
@@ -197,12 +222,27 @@ services:
       dockerfile: Dockerfile
 
     container_name: learning-platform-recommendation-service
+
     restart: unless-stopped
 
     ports:
       - "8000:8000"
-  
-    # =========================================================
+
+    environment:
+
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+
+      DATABASE_URL: postgresql://learning_admin:learning_password@postgres:5432/learning_platform_recommendation
+
+    depends_on:
+
+      postgres:
+        condition: service_healthy
+
+      kafka:
+        condition: service_healthy
+
+   # =========================================================
   # REPORTING SERVICE
   # =========================================================
 
@@ -264,3 +304,5 @@ volumes:
   postgres_data:
 
   kafka_data:
+
+  minio_data:

@@ -240,6 +240,10 @@ public class SecurityConfig {
                                                  */
                                                 .requestMatchers(
                                                                 HttpMethod.GET,
+                                                                "/api/lessons/*/video/stream")
+                                                .hasAnyRole("STUDENT", "INSTRUCTOR", "ADMIN")
+                                                .requestMatchers(
+                                                                HttpMethod.GET,
                                                                 "/api/modules/*/lessons",
                                                                 "/api/lessons/**")
                                                 .authenticated()
@@ -380,6 +384,60 @@ public class SecurityConfig {
                                                                 HttpMethod.GET,
                                                                 "/api/instructor/quizzes/*/results")
                                                 .hasAnyRole("INSTRUCTOR", "ADMIN")
+
+                                                /*
+ * LESSON CREATE
+ */
+.requestMatchers(
+        HttpMethod.POST,
+        "/api/modules/*/lessons")
+.hasAnyRole("INSTRUCTOR", "ADMIN")
+
+/*
+ * VIDEO UPLOAD URL
+ */
+.requestMatchers(
+        HttpMethod.POST,
+        "/api/lessons/*/video/upload-url")
+.hasAnyRole("INSTRUCTOR", "ADMIN")
+
+/*
+ * VIDEO UPLOAD COMPLETE
+ */
+.requestMatchers(
+        HttpMethod.POST,
+        "/api/lessons/*/video/complete")
+.hasAnyRole("INSTRUCTOR", "ADMIN")
+
+/*
+ * LESSON READ
+ */
+.requestMatchers(
+        HttpMethod.GET,
+        "/api/lessons/*/video/stream")
+.hasAnyRole("STUDENT", "INSTRUCTOR", "ADMIN")
+
+.requestMatchers(
+        HttpMethod.GET,
+        "/api/modules/*/lessons",
+        "/api/lessons/**")
+.authenticated()
+
+/*
+ * LESSON UPDATE
+ */
+.requestMatchers(
+        HttpMethod.PUT,
+        "/api/lessons/**")
+.hasAnyRole("INSTRUCTOR", "ADMIN")
+
+/*
+ * LESSON DELETE
+ */
+.requestMatchers(
+        HttpMethod.DELETE,
+        "/api/lessons/**")
+.hasAnyRole("INSTRUCTOR", "ADMIN")
                                                 /*
                                                  * Everything else
                                                  */
@@ -396,41 +454,42 @@ public class SecurityConfig {
         // @Bean
         // public CorsConfigurationSource corsConfigurationSource() {
 
-        //         CorsConfiguration configuration = new CorsConfiguration();
+        // CorsConfiguration configuration = new CorsConfiguration();
 
-        //         configuration.setAllowedOrigins(
-        //                         List.of(
-        //                                         "http://127.0.0.1:4200",
-        //                                         "http://localhost:4200"));
+        // configuration.setAllowedOrigins(
+        // List.of(
+        // "http://127.0.0.1:4200",
+        // "http://localhost:4200"));
 
-        //         configuration.setAllowedMethods(
-        //                         List.of(
-        //                                         "GET",
-        //                                         "POST",
-        //                                         "PUT",
-        //                                         "DELETE",
-        //                                         "PATCH",
-        //                                         "OPTIONS"));
+        // configuration.setAllowedMethods(
+        // List.of(
+        // "GET",
+        // "POST",
+        // "PUT",
+        // "DELETE",
+        // "PATCH",
+        // "OPTIONS"));
 
-        //         configuration.setAllowedHeaders(
-        //                         List.of(
-        //                                         "Authorization",
-        //                                         "Content-Type",
-        //                                         "Accept",
-        //                                         "Origin"));
+        // configuration.setAllowedHeaders(
+        // List.of(
+        // "Authorization",
+        // "Content-Type",
+        // "Accept",
+        // "Origin"));
 
-        //         configuration.setExposedHeaders(
-        //                         List.of(
-        //                                         "Authorization"));
+        // configuration.setExposedHeaders(
+        // List.of(
+        // "Authorization"));
 
-        //         configuration.setAllowCredentials(true);
+        // configuration.setAllowCredentials(true);
 
-        //         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        // UrlBasedCorsConfigurationSource source = new
+        // UrlBasedCorsConfigurationSource();
 
-        //         source.registerCorsConfiguration(
-        //                         "/**",
-        //                         configuration);
+        // source.registerCorsConfiguration(
+        // "/**",
+        // configuration);
 
-        //         return source;
+        // return source;
         // }
 }

@@ -833,6 +833,111 @@ export class CourseService {
     );
   }
 
+  getLessonVideo(lessonId: number): Observable<Blob> {
+    const url = `${this.API_URL}/lessons/${lessonId}/video/stream`;
+
+    console.log('GET VIDEO:', url);
+
+    return this.http.get(url, {
+      responseType: 'blob'
+    });
+  }
+
+  generateVideoUploadUrl(
+    lessonId: number
+  ): Observable<{
+    lessonId: number;
+    objectKey: string;
+    uploadUrl: string;
+  }> {
+
+    const url =
+      `${this.API_URL}/lessons/${lessonId}/video/upload-url`;
+
+    console.log(
+      'GENERATE VIDEO UPLOAD URL:',
+      url
+    );
+
+    return this.http.post<{
+      lessonId: number;
+      objectKey: string;
+      uploadUrl: string;
+    }>(
+      url,
+      {}
+    );
+  }
+
+  // uploadVideoToMinio(
+  //   uploadUrl: string,
+  //   file: File
+  // ): Observable<any> {
+
+  //   console.log(
+  //     'UPLOADING VIDEO DIRECTLY TO MINIO:',
+  //     file.name,
+  //     file.size
+  //   );
+
+  //   return this.http.put(
+  //     uploadUrl,
+  //     file,
+  //     {
+  //       headers: {
+  //         'Content-Type': file.type
+  //       },
+  //       responseType: 'text'
+  //     }
+  //   );
+  // }
+
+  uploadVideoToMinio(
+    uploadUrl: string,
+    file: File
+  ): Observable<any> {
+
+    console.log(
+      'UPLOADING VIDEO DIRECTLY TO MINIO:',
+      file.name,
+      file.size,
+      file.type
+    );
+
+    return this.http.put(
+      uploadUrl,
+      file,
+      {
+        headers: {
+          'Content-Type': file.type
+        },
+        responseType: 'text'
+      }
+    );
+  }
+
+
+  completeVideoUpload(
+    lessonId: number,
+    objectKey: string
+  ): Observable<Lesson> {
+
+    const url =
+      `${this.API_URL}/lessons/${lessonId}/video/complete`;
+
+    console.log(
+      'COMPLETE VIDEO UPLOAD:',
+      url,
+      objectKey
+    );
+
+    return this.http.post<Lesson>(
+      url,
+      {
+        objectKey
+      }
+    );
+  }
   getLessonsByCourse(
     courseId: number
   ): Observable<CourseLesson[]> {
