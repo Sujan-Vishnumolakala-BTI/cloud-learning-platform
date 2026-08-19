@@ -65,6 +65,27 @@
             <textarea [(ngModel)]="description" rows="4" placeholder="Lesson description"
                 class="w-full rounded-lg border p-3"></textarea>
 
+            <!-- Module Selection -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Module
+                </label>
+
+                <select [(ngModel)]="moduleId" class="w-full rounded-lg border p-3"
+                    [disabled]="editingLessonId !== null">
+
+                    <option [ngValue]="null">
+                        Select a module
+                    </option>
+
+                    @for (module of modules(); track module.id) {
+                    <option [ngValue]="module.id">
+                        Module {{ module.orderIndex }} — {{ module.title }}
+                    </option>
+                    }
+
+                </select>
+            </div>
 
             <select [(ngModel)]="contentType" class="w-full rounded-lg border p-3">
 

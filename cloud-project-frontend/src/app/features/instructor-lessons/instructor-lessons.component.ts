@@ -619,10 +619,7 @@ export class InstructorLessonsComponent
     this.orderIndex =
       this.lessons().length + 1;
 
-    this.moduleId =
-      this.modules().length > 0
-        ? this.modules()[0].id
-        : null;
+    this.moduleId = null;
 
     this.showForm = true;
 
@@ -844,6 +841,9 @@ export class InstructorLessonsComponent
     // CREATE
     // =========================
 
+    console.log('========== BEFORE CREATE LESSON ==========');
+    console.log('this.moduleId =', this.moduleId);
+    console.log('request =', request);
     this.courseService
       .createLesson(
         this.moduleId!,
